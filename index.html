@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstEnergy</title>
+    <link rel="shortcut icon" href="assests/img/ficon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assests/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    
+  </head>
+  <body>
+    <div class="container-div">  
+        
+      <!-- ----------------------------------------- navbar ----------------------------------------- -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar nav-block-outer">
+            <div class="navbar-left">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assests/img/fe1.png" width="200"  class="d-inline-block align-top" alt="">
+                </a>
+            </div>
+            <div class="navbar-right">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Products & Partners
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Solutions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Contact US
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Test -->
+        <div class="nav-small">
+            <input type="checkbox" class="checkbox_check" id="menu-check" onclick="clickfunction()">
+            <span id="ham-menu"></span>
+            <span id="ham-menu2"></span>
+        </div>
+    </div>
+
+    <main>
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                    <img src="assests/img/carousel/s1.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption2 d-none d-md-block">
+                        <h2>Welcome to First Energy</h2>
+                        <p> We are changing the world with renewable energy one roof at a time. We are
+                            passionate in providing world-class solar solutions and we act with the fundamental vision of creating
+                            a better and a greener world.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="assests/img/carousel/s2.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption2 d-none d-md-block">
+                        <h2>We cater your energy needs</h2>
+                        <p>Whether it's your home, your business, or even your land, we are prepared to offer unmatched solutions. You are only restricted by your imagination. So, what do you have in your mind?</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="assests/img/carousel/s3.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption2 d-none d-md-block">
+                        <h2>Grow with us</h2>
+                        <p>Whether you are a houseowner, a contractor, a consultant, you can grow with us to see a better tomorrow and a greener world.</p>
+                    </div>
+                </div>
+            </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+        </div>    
+    </main>
+    <div class="padding-top"></div>
+    <div class="container">
+        <div class="solutions">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="card" class="card rounded">
+                        <div class="card__overlay">
+                        </div>
+                        <div class="card__image">
+                            <img src="assests/img/solutions/solar.jpg" alt="" />
+                        </div>
+                        <div class="card__heading">
+                            <!-- <span class="small">Solar</span> -->
+                            <h2>Ternkey Solar Projects EPC</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="card" class="card rounded">
+                        <div class="card_overlay">
+                        </div>
+                        <div class="card__image">
+                            <img src="assests/img/solutions/solar-roof.jpg" alt="" />
+                        </div>
+                        <div class="card__heading">
+                            <!-- <span class="small">Solar</span> -->
+                            <h2>Solar Roof Rentals</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="card" class="card rounded">
+                        <div class="card__overlay">
+                        </div>
+                        <div class="card__image">
+                            <img src="assests/img/solutions/concept.jpg" alt="" />
+                        </div>
+                        <div class="card__heading">
+                            <!-- <span class="small">Solar</span> -->
+                            <h2>Concepts Development</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-padding-top"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="card" class="card rounded">
+                        <div class="card__overlay">
+                        </div>
+                        <div class="card__image">
+                            <img src="assests/img/solutions/approve.jpg" alt="" />
+                        </div>
+                        <div class="card__heading">
+                            <!-- <span class="small">Solar</span> -->
+                            <h2>Permits and Approvals</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="card" class="card rounded">
+                        <div class="card_overlay">
+                        </div>
+                        <div class="card__image">
+                            <img src="assests/img/solutions/consultancy.jpg" alt=""  />
+                        </div>
+                        <div class="card__heading">
+                            <!-- <span class="small">Solar</span> -->
+                            <h2>Design and Management</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="card" class="card rounded">
+                        <div class="card__overlay">
+                        </div>
+                        <div class="card__image">
+                            <img src="assests/img/solutions/maintenance.jpg" alt="" />
+                        </div>
+                        <div class="card__heading">
+                            <!-- <span class="small">Solar</span> -->
+                            <h2>Operation and Maintenance</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="padding-top"></div>
+    <footer class="pt-4 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="assests/img/logoremaster.png" alt="" width="300" >
+            
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
+    
+    <script>
+       
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="assests/bootstrap-4.6.0-dist/jQuery/jQuery-3.5.1.slim.min.js"></script>
+    <script src="assests/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="assests/js/custom.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
