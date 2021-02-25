@@ -11,7 +11,10 @@ html{
     h1,h2,h3,h4,h5,h6{
         font-family: 'Raleway', sans-serif;
     }
+    
 }
+
+
 /* ------------------------------------------- Navbar ------------------------------------------- */
 // .container-div{
 
@@ -118,8 +121,8 @@ opacity: 1;
 .padding-top{padding-top: 10em;}
 .s-padding-top{padding-top: 2em;}
 .carousel{
+    .h100vh{height:100vh!important;}
     .carousel-inner{
-        height:100vh!important;
         img{
         animation: carousel-zoom 10s ease;
         @keyframes carousel-zoom {
@@ -148,12 +151,12 @@ opacity: 1;
             }
         }
     }
-    .carousel-control-prev-icon{
+    .carousel-control-prev-icon2{
         background:url(/assests/img/svg/left-arrow.svg)!important ;
         width:40px!important;
         height: 40px!important;
     }
-    .carousel-control-next-icon{
+    .carousel-control-next-icon2{
         background:url(/assests/img/svg/next-arrow.svg)!important ;
         width:40px!important;
         height: 40px!important;
@@ -194,7 +197,6 @@ opacity: 1;
     }}
     .card__image img {
         max-width: 100%;
-        
         height: 250px;
         border-radius: 25px;
         
@@ -205,7 +207,8 @@ opacity: 1;
         left: 20px;
         width: 100%;
         color: #FFF;
-        transform: translate(0%, -50%);
+        //transform: translate(0%, -50%);
+        
     }
 
     .card__heading .small {
@@ -219,6 +222,8 @@ opacity: 1;
     .card__heading h2 {
         margin: 0;
         transform: translateZ(30px);
+        font-size: x-large;
+        font-weight:900;
     }
 
     .card.is-out {
@@ -226,6 +231,30 @@ opacity: 1;
         transition-duration: 1s;
     }
 }
+
+/* ------------------------------------------- News Section ------------------------------------------- */
+
+.news{
+    position: relative;
+    height: 500px;
+
+    &:before{
+        top: 0;
+        left: 0;
+        content: '';
+        opacity: .5;
+        width: 540px;
+        height: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url(/assests/img/bg/abbg.png);
+    }
+    h1{
+        font-weight: 700;
+    }
+
+}
+
 
 /* ------------------------------------------- Footer Section ------------------------------------------- */
 footer{
@@ -235,5 +264,69 @@ footer{
     padding-top: 5em; 
     .mb-md-5, .my-md-5{
         padding-bottom: 0!important;
-    } 
+    }
+    .footer-content{
+        padding-top: 10vh;
+        color:#999999;
+        a{
+            text-decoration: none;
+            color:rgb(145, 145, 145);
+            &:hover{
+               color: #fec503;
+            }
+        }
+        
+        h3{
+            padding-bottom: 1rem;
+        }
+        hr{
+            text-align:left;
+            margin-left:0;
+            width:20%;
+            border-bottom: 1px solid rgb(219, 219, 219);
+        }
+        .col-lg-4 {
+            padding-left: 3rem;
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+        .form-box{
+            width:100%;
+            input{
+                width: 100%;
+                border: 0px;
+                padding: 1rem;
+                margin-bottom: 2em;
+                background-color: rgb(41, 41, 41);
+                &:focus{border:0px;}
+            }
+            textarea{
+                width: 100%;
+                border: 0px;
+                padding: 1rem;
+                margin-bottom: 2em;
+                background-color: rgb(41, 41, 41);
+            }
+            a{
+                color:#999999;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .footer-copyright-text{
+        color:rgb(145, 145, 145);
+        a{
+            text-decoration: none;
+            color:rgb(145, 145, 145);
+            &:hover{
+               color: #fec503;
+            }
+        }
+    }
+    
 }
+
