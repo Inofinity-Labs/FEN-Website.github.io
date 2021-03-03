@@ -1,5 +1,8 @@
 
 
+ /* *********************************** NAV BAR *********************************** */
+//previous nav bar
+/*
 $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
       $('.navbar').addClass('color-change');
@@ -9,33 +12,40 @@ $(window).scroll(function() {
       $('.nav-small').css({'display':'none'})
     }
   });
+*/
 
-// $(document).ready(function(){
-//     if ($('input[type=checkbox]').is(':checked')) {
-//         $('.nav-small').css({'background-color':'#DCDC39'})
-//     }
-//     else {
-//         $('.nav-small').css({'background-color':'green'})
-//     }
-// });
-// $(document).ready(clickfunction(){
-//     if ($('input.checkbox_check').is(':checked')) {
-// });
+//New nav bar
+//scrolling function
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+      $('.navbar-d').addClass('color-change');
+      $('.nav-content-center').addClass('color-change');
+      $('.nav-small').css({'display':'block','z-index': '2','left': '20px'})
+    } else {
+      $('.navbar-d').removeClass('color-change');
+      $('.nav-content-center').removeClass('color-change');
+      $('.nav-small').css({'display':'none'})
+    }
+  });
+//initial hidden
+  $(window).ready(function() {
+    if ($(document).ready()) {
+      $('.nav-small').css({'display':'none'})
+    }
+  });
 
+//small navbar button function
 function clickfunction() {
     var checkBox = document.getElementById("menu-check");
-    if (checkBox.checked == true){
+    if (checkBox.click){
         console.log('checked');
-      document.getElementById("nav-small").body.style.backgroundColor= "red";
-    } else if(checkBox.checked == false){
-        document.getElementById("nav-small").style.backgroundColor= "green";
-        console.log('checked');
-    }else{
-
+        $('.navbar-d').removeClass('color-change');
+        $('.nav-content-center').removeClass('color-change');
+        $('.nav-small').css({'display':'none'})
     }
   }
 
-  /* *********************************** solution cards *********************************** */
+/* *********************************** solution cards *********************************** */
   (function($) {
     $.fn.tilt = function() {
         var perspective = '300px',
@@ -67,3 +77,4 @@ function clickfunction() {
 //Set plugin on cards
 $('.card').tilt();
   
+

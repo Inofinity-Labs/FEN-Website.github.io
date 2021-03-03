@@ -1,0 +1,287 @@
+.nav-btn{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    background-color: inherit;
+}
+
+/* ------------------------------------------- Navbar Start------------------------------------------- */
+// .container-div{
+
+// }
+.nav-block-outer{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 1.2s ease-in-out;
+}
+.navbar{
+    position: fixed;
+    display: inline-block!important;
+    top: 25px!important;
+    padding: 0px !important;
+    //background-color: rgba(0, 0, 0, 0.1)!important;
+    height:100px;
+    
+    
+    .navbar-left{
+        position: absolute;
+        left:0;
+        width: 25%;
+        height: 50%;
+        background-color: #fff;
+        img{
+            margin-left: 50%;
+            transform: translateX(-25%);
+        }
+        
+    }
+    .navbar-right{
+        position: absolute;
+        left:25%;
+        width:75%;
+        height: 50%;
+        background-color: rgb(41, 41, 41);
+        ul li{
+            margin-top: 25px;
+            transform: translateY(-50%);
+            display: inline-flexbox;
+        }
+        .menu-item{
+            position: static;
+        }
+
+    }
+    &.color-change{
+        position: fixed;
+        top:0;
+        left:-50%;
+        width: 0;
+        height: 0;
+    }
+    .dropdown-menu{
+        position: absolute!important;
+        
+            margin-top: 0px !important; 
+            width: 100% !important; 
+            display: block;
+        
+        
+        background-color: rgb(245, 115, 115);
+        border: 0;
+        li{
+            display: inline-block;
+            
+        }
+    }
+        
+    
+    
+}
+.nav-small{
+    position: fixed;
+    top: 10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    background-color: #096510;
+    border-radius: 50%;
+    transition: all 1.2s ease-in-out;
+    animation: mymove 1s infinite;
+    @keyframes mymove {
+        0% {transform: scale(1)}
+        50% {transform: scale(1.2)}
+        100% {transform: scale(1)}
+    }
+    input[type="checkbox"] {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        opacity: 0;
+        opacity: 0;
+    }
+    
+    #ham-menu {
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        height: 4px;
+        top:40%;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+        background-color: #FFC713;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    #ham-menu2 {
+        position: absolute;
+        left: 50%;
+        top:60%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 4px;
+        border-radius: 50px;
+        background-color: #FFC713;
+        pointer-events: none;
+        transition: 0.5s;
+        
+        
+    }
+}
+/* ------------------------------------------- END Navbar------------------------------------------- */
+
+/* ------------------------------------------- Navbar-d ------------------------------------------- */
+.navbar-d {
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'ITCAvantGarde';
+    transition: all 1.2s ease;
+    &.color-change{
+        position: fixed;
+        top:0;
+        left:-50%;
+        width: 0;
+        height: 0;
+    }
+    
+    z-index: 1;
+    .nav-active{
+        color:#fff!important;
+    }
+    
+    .nav-right{
+        width: 25%;
+        background-color: #fff;
+        img{
+            margin-left: 50%;
+            transform: translate(-50%, 10%);
+        }
+    }
+    .nav-left{
+        width: 75%;
+        background-color: #000;
+        .main-nav-a {
+            float: left;
+            font-size: 16px;
+            color: #b5b5b5;
+            text-align: center;
+            padding: 14px 0px;
+            text-decoration: none;
+            width: calc(100% / 6);
+            
+    
+            &:hover{
+                text-decoration: none;
+                color:#fff;
+            }
+        }
+        .dropdown-d {
+            float: left;
+            overflow: hidden;
+            width: calc(100% / 6);
+            
+            &:hover{
+                color:#fff;
+                
+            }
+            .dropbtn{
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown-content-d {
+                display: block;
+                position: fixed;
+                background-color: #232B2D;
+                padding: 5% auto;
+                width: 100%;
+                left: 0;
+                top : 75px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                
+                .sub-nav-a {
+                    float: left;
+                    font-size: 12px;
+                    color: #b5b5b5;
+                    text-align: center;
+                    padding: 14px 0px;
+                    text-decoration: none;
+                    
+                    
+            
+                    &:hover{
+                        color: #fff;
+                        text-decoration: none;
+                        
+                    }
+                }
+                .sub-nav-a:nth-child(1){
+                    width: calc((100%/12) * 1.1);
+                }
+                .sub-nav-a:nth-child(3){
+                    width: calc((100%/12) * 1.1);
+                    
+                }
+                .sub-nav-a:nth-child(4){
+                    width: calc((100%/12) * 2.8);
+                }
+                .sub-nav-a:nth-child(5){
+                    width: calc((100%/12) * 2.3);
+                    
+                }
+                .sub-nav-a:nth-child(6){
+                    width: calc((100%/12) * 2.7);
+                    
+                }
+                .sub-nav-a:nth-child(7){
+                    width: calc((100%/12) * 2);
+                    
+                }
+
+                .level2{
+                    display: none;
+                    position: fixed;
+                    top : 120px;
+                    width: 100%;
+                    left: 0;
+                }
+                
+            }
+            
+        }
+        //enable if u want to show and hide drop down
+        /*.dropdown-d:hover .dropdown-content-d {
+            display: block;
+        }*/
+        .drop-solar:hover .level2{
+            display: block;
+        }
+        
+
+        .nav-content-center{
+            position: absolute;
+            width: 100%;
+            background-color: rgb(29, 29, 29);
+            left:0%;
+            transition: all 1.2s ease;
+            &.color-change{
+                position: fixed;
+                top:0;
+                left:-50%;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+        }
+    }
+
+    
+    
+}

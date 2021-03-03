@@ -3,10 +3,14 @@
     font-family: 'Raleway';
     src: url('/assests/font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
   }
-  @font-face {
-    font-family: 'Montserrat';
-    src: url('/assests/font/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
-  }
+@font-face {
+font-family: 'Montserrat';
+src: url('/assests/font/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ITCAvantGarde';
+    src: url('/assests/font/ITCAvantGarde/ITCAvantGardeStdBk.otf') format('truetype');
+    }
 
 html{
     padding:0;
@@ -17,133 +21,30 @@ html{
     }
     
 }
+
+
+
 @import 'component';
+@import 'navbars';
+@import'rooftop';
 
-/* ------------------------------------------- Navbar ------------------------------------------- */
-// .container-div{
 
-// }
-.nav-block-outer{
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transition: all 1.2s ease-in-out;
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(/assests/img/loading-ball.svg) center no-repeat #fff;
 }
-.navbar{
-    position: fixed;
-    display: inline-block!important;
-    top: 25px!important;
-    padding: 0px !important;
-    //background-color: rgba(0, 0, 0, 0.1)!important;
-    height:100px;
-    
-    
-    .navbar-left{
-        position: absolute;
-        left:0;
-        width: 25%;
-        height: 50%;
-        background-color: #fff;
-        img{
-            margin-left: 50%;
-            transform: translateX(-25%);
-        }
-        
-    }
-    .navbar-right{
-        position: absolute;
-        left:25%;
-        width:75%;
-        height: 50%;
-        background-color: rgb(41, 41, 41);
-        ul li{
-            margin-top: 25px;
-            transform: translateY(-50%);
-            display: inline-flexbox;
-        }
 
-    }
-    &.color-change{
-        position: fixed;
-        top:0;
-        left:-50%;
-        width: 0;
-        height: 0;
-    }
-    .dropdown-menu{
-        position: absolute!important;
-        display: block;
-        background-color: rgba(0, 0, 0, 0);
-        border: 0;
-        li{
-            display: inline-block;
-            
-        }
-    }
-        
-    .submenu{
-        position: absolute!important;
-        left:0;
-        transform: translateX(-36%);
-        margin:0;
-        background-color: seagreen;
-        width: 100vw;
-        
-    }
-    
-}
-.nav-small{
-    position: fixed;
-    top: 10px;
-    left: -10px;
-    width: 50px;
-    height: 50px;
-    background-color: #096510;
-    border-radius: 50%;
-    transition: all 1.2s ease-in-out;
-    animation: mymove 1s infinite;
-    @keyframes mymove {
-        0% {transform: scale(1)}
-        50% {transform: scale(1.2)}
-        100% {transform: scale(1)}
-    }
-    input[type="checkbox"] {
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        opacity: 0;
-        opacity: 0;
-    }
-    
-    #ham-menu {
-        position: absolute;
-        left: 50%;
-        width: 50%;
-        height: 4px;
-        top:40%;
-        transform: translate(-50%, -50%);
-        border-radius: 50px;
-        background-color: #FFC713;
-        pointer-events: none;
-        transition: 0.5s;
-    }
-    #ham-menu2 {
-        position: absolute;
-        left: 50%;
-        top:60%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        height: 4px;
-        border-radius: 50px;
-        background-color: #FFC713;
-        pointer-events: none;
-        transition: 0.5s;
-        
-        
-    }
-}
+
 
 /* ------------------------------------------- Hero Section ------------------------------------------- */
 //carousel-caption
@@ -182,6 +83,7 @@ html{
     }
     .carousel-control-prev-icon2{
         background:url(/assests/img/svg/left-arrow.svg)!important ;
+        
         width:40px!important;
         height: 40px!important;
     }
@@ -261,6 +163,8 @@ html{
     }
 }
 
+
+
 /* ------------------------------------------- News Section ------------------------------------------- */
 
 .news{
@@ -328,20 +232,26 @@ footer{
                 padding: 1rem;
                 margin-bottom: 2em;
                 background-color: rgb(41, 41, 41);
-                &:focus{border:0px;}
+                transition: all 0.5s ease-in-out;
+                &:focus{border:0px;outline: none;color: #fff;border-bottom:1px solid #fec503;}
             }
             textarea{
                 width: 100%;
                 border: 0px;
                 padding: 1rem;
                 margin-bottom: 2em;
+                transition: all 0.5s ease-in-out;
                 background-color: rgb(41, 41, 41);
+                &:focus{border:0px;outline: none;color: #fff;border-bottom:1px solid #fec503;}
             }
             a{
                 color:#999999;
                 &:hover{
                     text-decoration: none;
                 }
+            }
+            .submit-btn:hover{
+                color : #fec503;
             }
         }
         
@@ -358,4 +268,3 @@ footer{
     }
     
 }
-

@@ -1,0 +1,22 @@
+.rooftop{
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    overflow: hidden;
+    .rooftop-heading-content{
+        position: absolute;
+        
+        top:5%;
+        left: 10%;
+        transform: translate(-50% 00%);
+
+    }
+    
+
+    .rooftop-img{
+        img{
+            background-size: cover;
+        }
+
+    }
+}
