@@ -44,6 +44,14 @@ function clickfunction() {
         $('.nav-small').css({'display':'none'})
     }
   }
+/*  Hero image hide try */
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    $("#hero-section").css({
+      transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/100)/100+')'
+    });
+  });
+
 
 /* *********************************** solution cards *********************************** */
   (function($) {

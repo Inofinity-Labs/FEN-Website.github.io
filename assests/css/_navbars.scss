@@ -143,6 +143,7 @@
     background-color: #000;
     font-family: 'ITCAvantGarde';
     transition: all 1.2s ease;
+    z-index: 2;
     &.color-change{
         position: fixed;
         top:0;
@@ -151,7 +152,7 @@
         height: 0;
     }
     
-    z-index: 1;
+    
     .nav-active{
         color:#fff!important;
     }

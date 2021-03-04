@@ -16,11 +16,11 @@
 html {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'ITCAvantGarde', sans-serif;
 }
 
 html h1, html h2, html h3, html h4, html h5, html h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'ITCAvantGarde', sans-serif;
 }
 
 .hero-section {
@@ -215,7 +215,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   font-family: 'ITCAvantGarde';
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar-d.color-change {
@@ -365,14 +365,40 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   padding: 0;
   height: 100vh;
   overflow: hidden;
+  color: #fff;
 }
 
 .rooftop .rooftop-heading-content {
   position: absolute;
-  top: 5%;
-  left: 10%;
-  -webkit-transform: translate(-50% 0%);
-          transform: translate(-50% 0%);
+  top: 0%;
+  left: 0%;
+  right: -50%;
+  padding: 5% 50% 0% 10%;
+  background: linear-gradient(261deg, rgba(0, 0, 0, 0) 0%, rgba(53, 124, 185, 0) 20%, #357cb9 30%, #357cb9 100%);
+  height: 100%;
+  z-index: 1;
+}
+
+.rooftop .rooftop-heading-content .card-solution {
+  border: 1px solid #bebebe;
+  border-radius: 15px;
+}
+
+.rooftop .rooftop-heading-content .card-solution .card-no {
+  font-family: 'ITCAvantGarde';
+  font-size: 60px;
+}
+
+.rooftop .rooftop-heading-content .card-solution img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.rooftop .rooftop-heading-content .card-solution:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .rooftop .rooftop-img img {
