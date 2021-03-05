@@ -48,7 +48,7 @@ function clickfunction() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     $("#hero-section").css({
-      transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/100)/100+')'
+      transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/50)/100+')'
     });
   });
 
@@ -86,3 +86,15 @@ function clickfunction() {
 $('.card').tilt();
   
 
+/* set to section-test scroll*/
+$('.scroll-container').scroll(function() {
+  if ($('.scroll-container').scrollTop() > 100) {
+    $('.navbar-d').addClass('color-change');
+    $('.nav-content-center').addClass('color-change');
+    $('.nav-small').css({'display':'block','z-index': '2','left': '20px'})
+  } else {
+    $('.navbar-d').removeClass('color-change');
+    $('.nav-content-center').removeClass('color-change');
+    $('.nav-small').css({'display':'none'})
+  }
+});

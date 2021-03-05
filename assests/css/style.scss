@@ -82,13 +82,13 @@ if it's not present, don't show loader */
         }
     }
     .carousel-control-prev-icon2{
-        background:url(/assests/img/svg/left-arrow.svg)!important ;
+        background:url(/assests/img/svg-ico/left-arrow.svg)!important ;
         
         width:40px!important;
         height: 40px!important;
     }
     .carousel-control-next-icon2{
-        background:url(/assests/img/svg/next-arrow.svg)!important ;
+        background:url(/assests/img/svg-ico/next-arrow.svg)!important ;
         width:40px!important;
         height: 40px!important;
     }
@@ -190,11 +190,11 @@ if it's not present, don't show loader */
 
 
 /* ------------------------------------------- Footer Section ------------------------------------------- */
-footer{
+footer, .footer-section{
     max-width: 100vw;
     overflow: hidden;
     background-color: rgb(29, 29, 29);
-    padding-top: 5em; 
+    //padding-top: 5em; 
     .mb-md-5, .my-md-5{
         padding-bottom: 0!important;
     }

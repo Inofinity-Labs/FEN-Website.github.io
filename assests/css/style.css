@@ -405,6 +405,101 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   background-size: cover;
 }
 
+.sub-sections {
+  padding: 2% 5%;
+}
+
+.commercial-industrial .main-header {
+  text-align: left;
+  margin: 0 0 20px 0;
+  width: 20%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.commercial-industrial .padding-left {
+  padding-left: 20px;
+}
+
+.commercial-industrial .commercial-img-card {
+  /*.hover-card{
+            transform: translateY(-300%);
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            img{
+                width: 75%;
+            }
+        }
+        .commercial-img:hover .hover-card{
+            transform: translateY(-200%);
+            opacity: 1;
+        }*/
+}
+
+.commercial-industrial .commercial-img-card img {
+  background-size: cover;
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.commercial-industrial .commercial-img-card .commercial-img:nth-child(2) {
+  padding-top: 30px !important;
+}
+
+.commercial-industrial .commercial-img-card .commercial-img:nth-child(3) {
+  padding-top: 60px !important;
+}
+
+.commercial-industrial .commercial-img-card .hover-card img {
+  width: 50%;
+}
+
+.chart {
+  margin-top: -20px;
+}
+
+.card-container {
+  width: 100%;
+}
+
+.card-container .card-small {
+  width: 45%;
+  float: left;
+  text-align: right;
+  padding: 1rem;
+  border-radius: 25px;
+  margin: 10px 2.5%;
+  min-height: 100px;
+  background-color: rgba(248, 248, 248, 0.8);
+  -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card-small .card-no {
+  font-family: 'ITCAvantGarde';
+  font-size: 30px;
+}
+
+.domestic {
+  background: url(../../assests/img/bg/spikes.png);
+}
+
+.domestic .domestic-img-card .domestic-img .domestic-card {
+  border-radius: 50%;
+}
+
+.domestic .domestic-img-card p {
+  text-align: center;
+}
+
+.domestic .domestic-img-card .domestic-img:nth-child(even) {
+  padding-top: 10%;
+}
+
+.domestic .domestic-img-card .hover-card img {
+  width: 50%;
+}
+
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
@@ -505,13 +600,13 @@ if it's not present, don't show loader */
 }
 
 .carousel .carousel-control-prev-icon2 {
-  background: url(/assests/img/svg/left-arrow.svg) !important;
+  background: url(/assests/img/svg-ico/left-arrow.svg) !important;
   width: 40px !important;
   height: 40px !important;
 }
 
 .carousel .carousel-control-next-icon2 {
-  background: url(/assests/img/svg/next-arrow.svg) !important;
+  background: url(/assests/img/svg-ico/next-arrow.svg) !important;
   width: 40px !important;
   height: 40px !important;
 }
@@ -612,55 +707,54 @@ if it's not present, don't show loader */
 }
 
 /* ------------------------------------------- Footer Section ------------------------------------------- */
-footer {
+footer, .footer-section {
   max-width: 100vw;
   overflow: hidden;
   background-color: #1d1d1d;
-  padding-top: 5em;
 }
 
-footer .mb-md-5, footer .my-md-5 {
+footer .mb-md-5, footer .my-md-5, .footer-section .mb-md-5, .footer-section .my-md-5 {
   padding-bottom: 0 !important;
 }
 
-footer .footer-content {
+footer .footer-content, .footer-section .footer-content {
   padding-top: 10vh;
   color: #999999;
 }
 
-footer .footer-content a {
+footer .footer-content a, .footer-section .footer-content a {
   text-decoration: none;
   color: #919191;
 }
 
-footer .footer-content a:hover {
+footer .footer-content a:hover, .footer-section .footer-content a:hover {
   color: #fec503;
 }
 
-footer .footer-content h3 {
+footer .footer-content h3, .footer-section .footer-content h3 {
   padding-bottom: 1rem;
 }
 
-footer .footer-content hr {
+footer .footer-content hr, .footer-section .footer-content hr {
   text-align: left;
   margin-left: 0;
   width: 20%;
   border-bottom: 1px solid #dbdbdb;
 }
 
-footer .footer-content .col-lg-4 {
+footer .footer-content .col-lg-4, .footer-section .footer-content .col-lg-4 {
   padding-left: 3rem;
 }
 
-footer .footer-content .col-lg-4:first-child {
+footer .footer-content .col-lg-4:first-child, .footer-section .footer-content .col-lg-4:first-child {
   padding-left: 0;
 }
 
-footer .footer-content .form-box {
+footer .footer-content .form-box, .footer-section .footer-content .form-box {
   width: 100%;
 }
 
-footer .footer-content .form-box input {
+footer .footer-content .form-box input, .footer-section .footer-content .form-box input {
   width: 100%;
   border: 0px;
   padding: 1rem;
@@ -670,14 +764,14 @@ footer .footer-content .form-box input {
   transition: all 0.5s ease-in-out;
 }
 
-footer .footer-content .form-box input:focus {
+footer .footer-content .form-box input:focus, .footer-section .footer-content .form-box input:focus {
   border: 0px;
   outline: none;
   color: #fff;
   border-bottom: 1px solid #fec503;
 }
 
-footer .footer-content .form-box textarea {
+footer .footer-content .form-box textarea, .footer-section .footer-content .form-box textarea {
   width: 100%;
   border: 0px;
   padding: 1rem;
@@ -687,35 +781,35 @@ footer .footer-content .form-box textarea {
   background-color: #292929;
 }
 
-footer .footer-content .form-box textarea:focus {
+footer .footer-content .form-box textarea:focus, .footer-section .footer-content .form-box textarea:focus {
   border: 0px;
   outline: none;
   color: #fff;
   border-bottom: 1px solid #fec503;
 }
 
-footer .footer-content .form-box a {
+footer .footer-content .form-box a, .footer-section .footer-content .form-box a {
   color: #999999;
 }
 
-footer .footer-content .form-box a:hover {
+footer .footer-content .form-box a:hover, .footer-section .footer-content .form-box a:hover {
   text-decoration: none;
 }
 
-footer .footer-content .form-box .submit-btn:hover {
+footer .footer-content .form-box .submit-btn:hover, .footer-section .footer-content .form-box .submit-btn:hover {
   color: #fec503;
 }
 
-footer .footer-copyright-text {
+footer .footer-copyright-text, .footer-section .footer-copyright-text {
   color: #919191;
 }
 
-footer .footer-copyright-text a {
+footer .footer-copyright-text a, .footer-section .footer-copyright-text a {
   text-decoration: none;
   color: #919191;
 }
 
-footer .footer-copyright-text a:hover {
+footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:hover {
   color: #fec503;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FirstEnergy</title>
+    <title>Solution</title>
     <link rel="shortcut icon" href="assests/img/ficon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assests/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assests/bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+  box-sizing: border-box;
+}
 
-  </head>
-  <body>
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* All the snapping stuff */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
 
 
-    <!-- ----------------------------------------- navbar ----------------------------------------- -->
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+/* Other styles */
+
+
+    </style>
+</head>
+<body>
+    <main class="scroll-container">
+        <!-- ----------------------------------------- navbar ----------------------------------------- -->
         <div class="navbar-d">
             <div class="row">
                 <div class="nav-right">
-                    <a href="/" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
+                    <a href="index.html" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
                 </div>
                 <div class="nav-left">
-                    <a href="/" class="main-nav-a">Home</a>
+                    <a href="index.html" class="main-nav-a">Home</a>
                     <div class="dropdown-d">
                         <a class="dropbtn main-nav-a nav-active">Solutions
                             <i class="fa fa-caret-down"></i>
@@ -63,111 +87,254 @@
             <span id="ham-menu2"></span>
         </div>
     <!-- -----------------------------------------END navbar ----------------------------------------- -->    
-      
-
-    <!-- ----------------------------------------- main section ----------------------------------------- -->
-    <main class="hero-section solution" id="hero-section">
-        <h1 class="hero-header">Products & Partners</h1>
-    </main>
-
-    <section class="rooftop">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="rooftop-heading-content">
-                    <h1 class="display-2">Roof Top Solar</h1>
-                    <p class="lead">We thrive ahead of competition due to our Quality of Installation. <br>
-                        Unlike most of installers, Promised Delivery of Energy together with  Dedicated After Sales Service and 24X7 Online Monitoring makes the difference.</p>
-                    
-                    <div class="card-sector-glance">
-                        <div class="row">
-                            <div class="col-xl-6 col-sm-6 col-12"> 
-                                <div class="card-solution">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="align-self-center">
-                                            <img src="assests/img/svg & ico/completed.png" alt="" width="60px">
+     
+        <section class="hero-section solution" id="hero-section">
+            <h1 class="hero-header">Products & Partners</h1>
+        </section>
+        
+        <section class="rooftop">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="rooftop-heading-content">
+                        <h1 class="display-2">Roof Top Solar</h1>
+                        <p class="lead">We thrive ahead of competition due to our Quality of Installation. <br>
+                            Unlike most of installers, Promised Delivery of Energy together with  Dedicated After Sales Service and 24X7 Online Monitoring makes the difference.</p>
+                        
+                        <div class="card-sector-glance" id="counter">
+                            <div class="row">
+                                <div class="col-xl-6 col-sm-6 col-12"> 
+                                    <div class="card-solution">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                        <div class="media d-flex">
+                                            <div class="align-self-center">
+                                                <img src="assests/img/svg-ico/completed.png" alt="" width="60px">
+                                            </div>
+                                            <div class="media-body text-right">
+                                            <h3> <span class="card-no"> 97</span>NOS</h3>
+                                            <span>Completed Projects</span>
+                                            </div>
                                         </div>
-                                        <div class="media-body text-right">
-                                        <h3> <span class="card-no"> 97</span>NOS</h3>
-                                        <span>Completed Projects</span>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-sm-6 col-12"> 
-                                <div class="card-solution">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="align-self-center">
-                                            <img src="assests/img/svg & ico/cumulative.png" alt="" width="60px">
-                                        </div>
-                                        <div class="media-body text-right">
-                                        <h3><span class="card-no">9.76</span>MW</h3>
-                                        <span>Total Cumulative </span>
                                         </div>
                                     </div>
                                     </div>
                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="s-padding-top"></div>
-                        <div class="row">
-                            <div class="col-xl-6 col-sm-6 col-12"> 
-                                <div class="card-solution">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="align-self-center">
-                                            <img src="assests/img/svg & ico/energy.png" alt="" width="60px">
+                                <div class="col-xl-6 col-sm-6 col-12"> 
+                                    <div class="card-solution">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                        <div class="media d-flex">
+                                            <div class="align-self-center">
+                                                <img src="assests/img/svg-ico/cumulative.png" alt="" width="60px">
+                                            </div>
+                                            <div class="media-body text-right">
+                                            <h3><span class="card-no">9.76</span>MW</h3>
+                                            <span>Total Cumulative </span>
+                                            </div>
                                         </div>
-                                        <div class="media-body text-right">
-                                        <h3><span class="card-no">14</span>GWh</h3>
-                                        <span>Annual Energy Delivered (2020) </span>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-sm-6 col-12"> 
-                                <div class="card-solution">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                    <div class="media d-flex">
-                                        <div class="align-self-center">
-                                            <img src="assests/img/svg & ico/revenue.png" alt="" width="60px">
-                                        </div>
-                                        <div class="media-body text-right">
-                                        <h3><span class="card-no">1.45</span>LKR Bn</h3>
-                                        <span>Turn-Key Revenue (2016 – 2020) </span>
                                         </div>
                                     </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="s-padding-top"></div>
+                            <div class="row">
+                                <div class="col-xl-6 col-sm-6 col-12"> 
+                                    <div class="card-solution">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                        <div class="media d-flex">
+                                            <div class="align-self-center">
+                                                <img src="assests/img/svg-ico/energy.png" alt="" width="60px">
+                                            </div>
+                                            <div class="media-body text-right">
+                                            <h3><span class="card-no">14</span>GWh</h3>
+                                            <span>Annual Energy Delivered (2020) </span>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-12"> 
+                                    <div class="card-solution">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                        <div class="media d-flex">
+                                            <div class="align-self-center">
+                                                <img src="assests/img/svg-ico/revenue.png" alt="" width="60px">
+                                            </div>
+                                            <div class="media-body text-right">
+                                            <h3><span class="card-no">1.45</span>LKR Bn</h3>
+                                            <span>Turn-Key Revenue (2016 – 2020) </span>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="rooftop-img">
-                    <img src="assests/img/bg/rooftop.jpg" alt="" srcset="">
+                <div class="col-md-5">
+                    <div class="rooftop-img">
+                        <img src="assests/img/bg/rooftop.jpg" alt="" srcset="">
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="commercial-industrial sub-sections">
+            
+                <h1 class="display-4">Commercial & Industrial Rooftop Projects</h1>
+                <hr class="main-header">
+                <div class="row">
+                <div class="col-md-7">
+                    <p>
+                        First Energy has managed to complete commercial and industrial rooftop projects, with a cumulative capacity of close to 7 MW within the first five years from the company incubation.
+                        <br><br>
+                        In 2020 First Energy commenced work on the largest solar rooftop project (3.2MW) which is the largest of its kind, currently in Sri Lanka, which is a hallmark milestone for the company.
+                    </p>
+                    <div class="row commercial-img-card">
+                        <div class="col-md-4 commercial-img">
+                            <img src="assests/img/bg/orange.jpg" alt=""  width="100%">
+                            <div class="hover-card">
+                                <img src="assests/img/bg/orange-logo.jpg" alt=""  width="100%">
+                                <p>Orange Electric Factory Ambalangoda (2020) | 1,650kWp</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 commercial-img">
+                            <img src="assests/img/bg/finlays.jpg" alt=""  width="100%">
+                            <div class="hover-card">
+                                <img src="assests/img/bg/finlays-logo.png" alt=""  width="100%">
+                                <p>Finlay's Cold Storage Walisara (2017) | 1,000kWp 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 commercial-img">
+                            <img src="assests/img/bg/dsi.jpg" alt="" width="100%">
+                            <div class="hover-card">
+                                <img src="assests/img/bg/dsc-logo.jpg" alt=""  width="100%">
+                                <p>D Samson Industries (Pvt) Limited, Kadawatha (2019) | 574kWp 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-md-5 padding-left">
+                    <div class="chart">
+                        <img src="assests/img/bg/chart.PNG" alt="" width="100%">
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card-small">
+                            <h3> <span class="card-no"> 21</span>NOS</h3>
+                            <span>Projects</span>
+    
+                        </div>
+                        <div class="card-small">
+                            <h3><span class="card-no">6.96</span>MW</h3>
+                                    <span>Total Capacity </span>
+    
+                        </div>
+                        <div class="card-small">
+                            <h3><span class="card-no">18.6</span>GWh</h3>
+                                    <span>Annual Energy Delivered (2016-2020) </span>
+    
+                        </div>
+                        <div class="card-small">
+                            <h3><span class="card-no">800</span>LKR Bn</h3>
+                                    <span>Invesments <br> (2018 – 2020) </span>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+           
+            </div>
+        </section>
+        <section class="domestic sub-sections">
+            
+            <h1 class="display-4">Domestic Rooftop Solutions</h1>
+            <hr class="main-header">
+            <div class="row">
+            
+            <div class="col-md-5 padding-left">
+                <div class="chart">
+                    <img src="assests/img/bg/chart.PNG" alt="" width="100%">
+                </div>
+                
+                <div class="card-container">
+                    <div class="card-small">
+                        <h3> <span class="card-no"> 48</span>NOS</h3>
+                        <span>Projects</span>
+
+                    </div>
+                    <div class="card-small">
+                        <h3><span class="card-no">493</span>MW</h3>
+                                <span>Total Capacity</span>
+
+                    </div>
+                    <div class="card-small">
+                        <h3><span class="card-no">5.3</span>GWh</h3>
+                                <span>Annual Energy Delivered (2016-2020) </span>
+
+                    </div>
+                    <div class="card-small">
+                        <h3><span class="card-no">66.5</span>LKR Bn</h3>
+                                <span>Invesments <br> (2018 – 2020) </span>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-7">
+                <p>
+                    First Energy provide solar PV solutins for domestic customers through Net metering, Net Plus and Net Accounting schemes under the "Soorya Bala Sangramaya"
+                    <br><br>
+                    Our solar PV plants are designed and built incorporating the best engineering pratices of the industry, surpassing our competitirs. The quality of workmanship is appreciated by the sustainable energy authority
+                </p>
+                <div class="row domestic-img-card">
+                    <div class="col-md-3 domestic-img">
+                        <img src="assests/img/bg/orange.jpg" alt=""  width="100%" class="domestic-card">
+                        <div class="hover-card">
+                            
+                            <p>Mr. Damith Dasanayake | 10kWp</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 domestic-img">
+                        <img src="assests/img/bg/finlays.jpg" alt=""  width="100%" class="domestic-card">
+                        <div class="hover-card">
+                            
+                            <p>Mr. Abdul Wadud Mohomad Farook | 13.72kWp 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 domestic-img">
+                        <img src="assests/img/bg/dsi.jpg" alt="" width="100%" class="domestic-card">
+                        <div class="hover-card">
+                            
+                            <p>Mr. Vijayantha Rangajeewa | 50.4kWp 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 domestic-img">
+                        <img src="assests/img/bg/dsi.jpg" alt="" width="100%" class="domestic-card">
+                        <div class="hover-card">
+                            
+                            <p>Mr. Nisal Perera | 17.4kWp 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+       
         </div>
     </section>
-
-
-    <div class="padding-top"></div>
-
-
-    <footer class="footer-section">
+    
+    <section class="footer-section">
 
 
 
@@ -247,24 +414,13 @@
           </div-->
         </div>
 
-    </footer>
+    </section>
 
+      </main>
 
-    <script>
-
-    </script>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="assests/bootstrap-4.6.0-dist/jQuery/jQuery-3.5.1.slim.min.js"></script>
     <script src="assests/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" ></script>
     <script src="assests/js/custom.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
-  </body>
+</body>
 </html>
-
