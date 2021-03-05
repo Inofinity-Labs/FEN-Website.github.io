@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Raleway';
-  src: url("/assests/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("../font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/assests/font/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  src: url("../font/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'ITCAvantGarde';
-  src: url("/assests/font/ITCAvantGarde/ITCAvantGardeStdBk.otf") format("truetype");
+  src: url("../font/ITCAvantGarde/ITCAvantGardeStdBk.otf") format("truetype");
 }
 
 html {
@@ -25,8 +25,8 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .hero-section {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(/assests/img/bg/Solutions.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(/assests/img/bg/Solutions.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(../img/bg/Solutions.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(../img/bg/Solutions.jpg);
   background-size: cover;
 }
 
