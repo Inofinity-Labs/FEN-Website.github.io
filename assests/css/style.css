@@ -422,6 +422,12 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   background-size: cover;
 }
 
+.rooftop .rooftop-card-img {
+  float: left;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .sub-sections {
   padding: 2% 5%;
 }
@@ -480,14 +486,14 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 }
 
 .card-container .card-small {
-  width: 45%;
+  width: 40%;
   float: left;
   text-align: right;
   padding: 1rem;
   border-radius: 25px;
   margin: 10px 2.5%;
   min-height: 100px;
-  background-color: rgba(248, 248, 248, 0.8);
+  background-color: rgba(248, 248, 248, 0.5);
   -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 }
@@ -520,9 +526,21 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
+@media screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
 /* ------------------------------------------- Hero Section ------------------------------------------- */
 .padding-top {
   padding-top: 10em;
+}
+
+@media screen and (max-width: 600px) {
+  .padding-top {
+    padding-top: 5em;
+  }
 }
 
 .s-padding-top {
@@ -531,6 +549,12 @@ if it's not present, don't show loader */
 
 .carousel .h100vh {
   height: 100vh !important;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel .h100vh {
+    height: auto !important;
+  }
 }
 
 .carousel .carousel-inner img {
@@ -648,6 +672,12 @@ if it's not present, don't show loader */
   border-radius: 25px;
 }
 
+@media screen and (max-width: 600px) {
+  .solutions .card__image {
+    padding-block: 1rem;
+  }
+}
+
 .solutions .card__heading {
   position: absolute;
   top: 70%;
@@ -683,7 +713,7 @@ if it's not present, don't show loader */
 /* ------------------------------------------- News Section ------------------------------------------- */
 .news {
   position: relative;
-  height: 500px;
+  min-height: 500px;
 }
 
 .news:before {
@@ -744,12 +774,19 @@ footer .footer-content hr, .footer-section .footer-content hr {
   border-bottom: 1px solid #dbdbdb;
 }
 
-footer .footer-content .col-lg-4, .footer-section .footer-content .col-lg-4 {
-  padding-left: 3rem;
+@media screen and (min-width: 600px) {
+  footer .footer-content .footer-small-section, .footer-section .footer-content .footer-small-section {
+    padding-left: 3rem !important;
+  }
+  footer .footer-content .footer-small-section:first-child, .footer-section .footer-content .footer-small-section:first-child {
+    padding-left: 0 !important;
+  }
 }
 
-footer .footer-content .col-lg-4:first-child, .footer-section .footer-content .col-lg-4:first-child {
-  padding-left: 0;
+@media screen and (max-width: 600px) {
+  footer .footer-content .footer-small-section, .footer-section .footer-content .footer-small-section {
+    padding-top: 3rem !important;
+  }
 }
 
 footer .footer-content .form-box, .footer-section .footer-content .form-box {
@@ -813,5 +850,22 @@ footer .footer-copyright-text a, .footer-section .footer-copyright-text a {
 
 footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:hover {
   color: #fec503;
+}
+
+footer .footer-logo-widget .f-left, .footer-section .footer-logo-widget .f-left {
+  width: 20%;
+  text-align: center;
+}
+
+footer .footer-logo-widget .f-left i, .footer-section .footer-logo-widget .f-left i {
+  font-size: 30px;
+}
+
+footer .footer-logo-widget .f-right, .footer-section .footer-logo-widget .f-right {
+  width: 70%;
+}
+
+footer .footer-logo-widget .f-row, .footer-section .footer-logo-widget .f-row {
+  padding-block: 6px;
 }
 /*# sourceMappingURL=style.css.map */

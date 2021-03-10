@@ -46,13 +46,25 @@ if it's not present, don't show loader */
 // }
 
 
-
+@media screen and (max-width: 600px) {
+   .mobile-hide{
+        display: none;
+   }
+}
 /* ------------------------------------------- Hero Section ------------------------------------------- */
 //carousel-caption
 .padding-top{padding-top: 10em;}
+@media screen and (max-width: 600px) {
+    .padding-top{padding-top: 5em;}
+}
 .s-padding-top{padding-top: 2em;}
 .carousel{
     .h100vh{height:100vh!important;}
+    @media screen and (max-width: 600px) {
+        .h100vh{height:auto!important;}
+    }
+    
+      
     .carousel-inner{
         img{
         animation: carousel-zoom 10s ease;
@@ -132,6 +144,11 @@ if it's not present, don't show loader */
         height: 250px;
         border-radius: 25px;
         
+        
+    }
+    @media screen and (max-width: 600px) {
+        .card__image{
+        padding-block: 1rem;}
     }
     .card__heading {
         position: absolute;
@@ -170,7 +187,7 @@ if it's not present, don't show loader */
 
 .news{
     position: relative;
-    height: 500px;
+    min-height: 500px;
 
     &:before{
         top: 0;
@@ -225,12 +242,25 @@ footer, .footer-section{
             width:20%;
             border-bottom: 1px solid rgb(219, 219, 219);
         }
-        .col-lg-4 {
-            padding-left: 3rem;
-            &:first-child{
-                padding-left: 0;
+        @media screen and (min-width: 600px) {
+            .footer-small-section{
+                padding-left: 3rem!important;
+                
+                &:first-child{
+                    padding-left: 0!important;
+                }
             }
-        }
+           
+         }
+         @media screen and (max-width: 600px) {
+            .footer-small-section{
+                
+                padding-top: 3rem!important;
+                
+            }
+           
+         }
+        
         .form-box{
             width:100%;
             input{
@@ -272,6 +302,28 @@ footer, .footer-section{
                color: #fec503;
             }
         }
+    }
+    .footer-logo-widget{
+        .f-left{
+            width: 20%;
+            text-align: center;
+            // border: 1px solid white;
+            // height: 50px;
+            // border-radius:200px;
+            
+            i{
+                font-size: 30px;
+                
+            }
+        }
+        .f-right{
+            width: 70%;
+        }
+        .f-row{
+            padding-block: 6px;
+        }
+        
+
     }
     
 }
