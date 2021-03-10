@@ -27,6 +27,32 @@ body {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
+/* width */
+.scroll-container::-webkit-scrollbar {
+  width: 10px;  
+  display: none;
+  
+}
+
+/* Track */
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  
+  
+}
+ 
+/* Handle */
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 25px;
+  
+}
+
+/* Handle on hover */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+ 
+}
 
 
 section {

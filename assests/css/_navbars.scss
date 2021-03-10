@@ -282,6 +282,21 @@
             }
         }
     }
+    @media screen and (max-width: 600px) {
+        .nav-right{
+            position: absolute;
+            width: 55%;
+            height: 100%;
+            display: block;
+            img{
+                margin-left: 10%;
+                transform: none;
+            }
+        }
+        .nav-left{
+            display: none;
+        }
+    }
 
     
     

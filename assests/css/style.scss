@@ -20,6 +20,7 @@ html{
         font-family: 'ITCAvantGarde', sans-serif;
     }
     
+    
 }
 
 
@@ -32,17 +33,17 @@ html{
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(/assests/img/loading-ball.svg) center no-repeat #fff;
-}
+// .no-js #loader { display: none;  }
+// .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+// .se-pre-con {
+// 	position: fixed;
+// 	left: 0px;
+// 	top: 0px;
+// 	width: 100%;
+// 	height: 100%;
+// 	z-index: 9999;
+// 	background: url(/assests/img/loading-ball.svg) center no-repeat #fff;
+// }
 
 
 
@@ -181,6 +182,12 @@ if it's not present, don't show loader */
         position: absolute;
         background-repeat: no-repeat;
         background-image: url(/assests/img/bg/abbg.png);
+    }
+    @media only screen and (max-width: 768px) {
+        &:before{
+        
+            width: 100vw;
+        }
     }
     h1{
         font-weight: 700;
