@@ -1,7 +1,7 @@
 .hero-section{
     height:100vh;
-    background:  linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%), url(../img/bg/Solutions.jpg);
-    background-size: cover;
+    //background:  linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%);
+    
     .hero-header{
         font-family: 'Montserrat';
         font-size: 100px;
@@ -12,4 +12,13 @@
         
         
     }
+   
+}
+.solar-roof{
+    background:linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%) , url(../img/bg/Solutions.jpg) ;
+    background-size: cover;
+}
+.solar-project{
+    background:linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%) , url(../img/bg/solar-projects.jpg) ;
+    background-size: cover;
 }

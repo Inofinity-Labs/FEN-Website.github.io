@@ -25,9 +25,6 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .hero-section {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(../img/bg/Solutions.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(../img/bg/Solutions.jpg);
-  background-size: cover;
 }
 
 .hero-section .hero-header {
@@ -38,6 +35,18 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   color: #fff;
+}
+
+.solar-roof {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(../img/bg/Solutions.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(../img/bg/Solutions.jpg);
+  background-size: cover;
+}
+
+.solar-project {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(../img/bg/solar-projects.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(../img/bg/solar-projects.jpg);
+  background-size: cover;
 }
 
 .nav-btn {
@@ -227,7 +236,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 }
 
 .navbar-d .nav-active {
-  color: #fff !important;
+  color: #258a2a !important;
 }
 
 .navbar-d .nav-right {
@@ -496,11 +505,17 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   background-color: rgba(248, 248, 248, 0.5);
   -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .card-container .card-small .card-no {
   font-family: 'ITCAvantGarde';
   font-size: 30px;
+}
+
+.card-container .card-small:hover {
+  background-color: rgba(248, 248, 248, 0.7);
 }
 
 .domestic {

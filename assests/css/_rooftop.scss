@@ -125,9 +125,13 @@
         min-height: 100px;
         background-color:rgba(248, 248, 248, 0.5);
         box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+        transition:  all 0.5s ease-in;
         .card-no{
             font-family: 'ITCAvantGarde';
             font-size: 30px;
+        }
+        &:hover{
+            background-color: rgba(248, 248, 248, 0.7)
         }
     }
 }
