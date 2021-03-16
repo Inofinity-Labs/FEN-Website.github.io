@@ -1,25 +1,38 @@
 .hero-section{
     height:100vh;
-    //background:  linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%);
+    //background:  linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%);   
+    overflow: hidden;
+}
+.hero-header{
+    font-family: 'Montserrat';
+    font-size: 100px;
+    text-align: center;
+    padding-top: 40vh;
+    //transform: translate(0%, -50%);
+    color: #5da943;
     
-    .hero-header{
-        font-family: 'Montserrat';
-        font-size: 100px;
-        text-align: center;
-        padding-top: 50%;
-        transform: translate(0%, -50%);
-        color: #fff;
-        
-        
-    }
-   
+    
+}
+.my-container{
+    position: relative;
+    padding-top: 5rem;
+}
+.overflow-bg{
+    position: absolute;
+    width: 102vw;
+    top:-10vh;
+    left:-10vw;
+    height: 120vh;
+    background-image: linear-gradient(315deg, #f9f9f9 0%, #02a388 74%);
+    border-radius: 0 100px 100px 0;
+    z-index: -2;
 }
 .solar-roof{
-    background:linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%) , url(../img/bg/Solutions.jpg) ;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.152) 0%, rgba(255, 255, 255, 0.149) 65%, rgba(255, 255, 255, 0.734) 85%, rgb(255, 255, 255) 100%) , url(../img/bg/Solutions.jpg), rgba(255, 255, 255, 0.5) ;
     background-size: cover;
 }
 .solar-project{
-    background:linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%) , url(../img/bg/solar-projects.jpg) ;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.152) 0%, rgba(255, 255, 255, 0.149) 65%, rgba(255, 255, 255, 0.734) 85%, rgb(255, 255, 255) 100%) , url(../img/bg/solar-projects.jpg),rgba(255, 255, 255, 0.5) ;
     background-size: cover;
 }
 .main-header{
@@ -27,4 +40,8 @@
     margin: 0 0 20px 0; 
     width:20%;
     border-bottom: 1px solid rgb(219, 219, 219);
+}
+.display-4{
+    color: #fabe11 ;
+    
 }

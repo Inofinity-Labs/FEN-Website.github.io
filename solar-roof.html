@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assests/bootstrap-4.6.0-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         * {
   box-sizing: border-box;
@@ -23,12 +25,12 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
-/* All the snapping stuff */
+/* All the snapping stuff 
 .scroll-container {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-}
+}*/
 /* width */
 .scroll-container::-webkit-scrollbar {
   width: 10px;  
@@ -59,7 +61,7 @@ body {
 
 section {
   height: 100vh;
-  scroll-snap-align: center;
+  /*scroll-snap-align: center;*/
 }
 
 /* Other styles */
@@ -116,61 +118,76 @@ section {
         </div>
     <!-- -----------------------------------------END navbar ----------------------------------------- -->    
      
-        <section class="hero-section solution solar-roof" id="hero-section">
-            <h1 class="hero-header">Solar Roof Rentals</h1>
+        <section class="hero-section">
+            <div class="my-wrapper">
+                <img src="assests/img/bg/Solutions.jpg" alt="" srcset="" class="my-bg mobile-hide" >
+            
+                <div class="my-content">
+                    <h1 class="hero-header" data-aos="fade-up" data-aos-duration="2000">Solar Roof Rentals</h1>
+                </div>
+            </div>
         </section>
         
         <section class="rooftop">
         
             <div class="container">
-                <h1 class="display-4">Solar Roof Rentals</h1>
-                <hr class="main-header"/>
-                    <div class="bullet-content">
-                
-                        <div class="left">
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> Earn  by just renting your  roof  for solar installations</p>
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> Roof area from 2000 Sqft onward</p>
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> Zero investment  yet  good income</p>
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> We give the best rates in the market   15%  plus    of  monthly CEB  payments </p>
-                        </div>
-                        <div class="right">
-                            <div class="img-container">
-                                <img src="assests/img/bg/solar-roof-home.jpg" alt="image with roof rentals" width="100%"/>
+                <div class="my-container">
+                    <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">Solar Roof Rentals</h1>
+                    <hr class="main-header" data-aos="fade-right" data-aos-delay="600"/>
+                        <div class="row bullet-content">
+                    
+                            <div class="col-md-7 left">
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> Earn  by just renting your  roof  for solar installations</p>
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> Roof area from 2000 Sqft onward</p>
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> Zero investment  yet  good income</p>
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> We give the best rates in the market   15%  plus    of  monthly CEB  payments </p>
+                            </div>
+                            <div class="col-md-5 right" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="img-container">
+                                    <img src="assests/img/bg/solar-roof-home.jpg" alt="image with roof rentals" width="100%"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                </div>
             </div>
         </section>
         <section>
-            <div class="container">
-                <h4 class="display-4">Domestic</h4>
-                <div class="s-padding-top"></div>
-                <div class="flex-container">
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>Platinum </span> <br> REC Solar Modules   Singapore/ Norway ,  European Inverter  Ingeteam/ SMA</div></div>
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>Gold</span> <br>Q-CELLS Solar Modules – Korean /German ,  Ingeteam/ SMA -European Inverter </div></div>
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>Sliver</span> <br>Phono Solar / JA Solar  Chinese Module,   Solis –Goodwe Chinese Inverter </div></div>
+            
+                <div class="container">
+                    <div class="my-container">
+                        <div class="overflow-bg"></div>
+                        <h4 class="display-4" data-aos="fade-up" data-aos-duration="1500">Domestic</h4><hr class="main-header" data-aos="fade-right" data-aos-delay="600"/>
+                        <div class="s-padding-top"></div>
+                        <div class="flex-container">
+                            <div class="solar-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>Platinum </span> <br> REC Solar Modules   Singapore/ Norway ,  European Inverter  Ingeteam/ SMA</div></div>
+                            <div class="solar-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>Gold</span> <br>Q-CELLS Solar Modules – Korean /German ,  Ingeteam/ SMA -European Inverter </div></div>
+                            <div class="solar-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>Sliver</span> <br>Phono Solar / JA Solar  Chinese Module,   Solis –Goodwe Chinese Inverter </div></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            
 
         </section>
         <section>
             <div class="container">
-                <h1 class="display-4">Commercial  & Industrial  Rooftops</h1>
-                <hr class="main-header"/>
-                    <div class="bullet-content">
-                
-                        <div class="left">
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> Rock Solid  single MPPT   String architecture  by Ingeteam  </p>
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> Low  weight on roof  </p>
-                            <p> <i class="fa fa-check-circle" aria-hidden="true"></i> Best connections & cable management systems in the industry  </p>
-                            
-                        </div>
-                        <div class="right">
-                            <div class="img-container">
-                                <img src="assests/img/bg/Solutions.jpg" alt="image with roof rentals" width="100%"/>
+                <div class="my-container">
+                    <h1 class="display-4"data-aos="fade-up" data-aos-duration="1500">Commercial  & Industrial  Rooftops</h1>
+                    <hr class="main-header" data-aos="fade-right" data-aos-delay="600"/>
+                        <div class="row bullet-content">
+                    
+                            <div class="col-md-7 left">
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> Rock Solid  single MPPT   String architecture  by Ingeteam  </p>
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> Low  weight on roof  </p>
+                                <p data-aos="fade-right" data-aos-duration="1500"> <i class="fa fa-check-circle" aria-hidden="true"></i> Best connections & cable management systems in the industry  </p>
+                    
+                            </div>
+                            <div class="col-md-5 right">
+                                <div class="img-container" data-aos="fade-left" data-aos-delay="200" data-aos-duration="2000">
+                                    <img src="assests/img/bg/Solutions.jpg" alt="image with roof rentals" width="100%"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                </div>
             </div>
 
         </section>
@@ -264,5 +281,11 @@ section {
     <script src="assests/bootstrap-4.6.0-dist/jQuery/jQuery-3.5.1.slim.min.js"></script>
     <script src="assests/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" ></script>
     <script src="assests/js/custom.js"></script>
+
+    <!-- Scroll Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

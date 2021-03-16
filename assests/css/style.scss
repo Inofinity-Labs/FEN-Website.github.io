@@ -46,11 +46,18 @@ if it's not present, don't show loader */
 // 	background: url(/assests/img/loading-ball.svg) center no-repeat #fff;
 // }
 
-
+section {
+    height: 100vh;
+    
+}
 @media screen and (max-width: 600px) {
    .mobile-hide{
-        display: none;
+        display: none !important;
    }
+   section {
+    height: auto!important;
+    
+}
 }
 /* ------------------------------------------- Hero Section ------------------------------------------- */
 //carousel-caption
@@ -79,7 +86,7 @@ if it's not present, don't show loader */
             position: absolute;
             width: 30em;
             top: 50%;
-            transform: translate(0%, -50%);
+            transform: translate(0%, -50%)!important;
             left: 10%;
             z-index: 10;
             padding: 40px;

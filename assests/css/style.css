@@ -25,27 +25,42 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .hero-section {
   height: 100vh;
+  overflow: hidden;
 }
 
-.hero-section .hero-header {
+.hero-header {
   font-family: 'Montserrat';
   font-size: 100px;
   text-align: center;
-  padding-top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-  color: #fff;
+  padding-top: 40vh;
+  color: #5da943;
+}
+
+.my-container {
+  position: relative;
+  padding-top: 5rem;
+}
+
+.overflow-bg {
+  position: absolute;
+  width: 102vw;
+  top: -10vh;
+  left: -10vw;
+  height: 120vh;
+  background-image: linear-gradient(315deg, #f9f9f9 0%, #02a388 74%);
+  border-radius: 0 100px 100px 0;
+  z-index: -2;
 }
 
 .solar-roof {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(../img/bg/Solutions.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(../img/bg/Solutions.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.152)), color-stop(65%, rgba(255, 255, 255, 0.149)), color-stop(85%, rgba(255, 255, 255, 0.734)), to(white)), url(../img/bg/Solutions.jpg), rgba(255, 255, 255, 0.5);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.152) 0%, rgba(255, 255, 255, 0.149) 65%, rgba(255, 255, 255, 0.734) 85%, white 100%), url(../img/bg/Solutions.jpg), rgba(255, 255, 255, 0.5);
   background-size: cover;
 }
 
 .solar-project {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.151698)), color-stop(65%, rgba(0, 0, 0, 0.148897)), color-stop(85%, rgba(0, 0, 0, 0.734331)), to(black)), url(../img/bg/solar-projects.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.151698) 0%, rgba(0, 0, 0, 0.148897) 65%, rgba(0, 0, 0, 0.734331) 85%, black 100%), url(../img/bg/solar-projects.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.152)), color-stop(65%, rgba(255, 255, 255, 0.149)), color-stop(85%, rgba(255, 255, 255, 0.734)), to(white)), url(../img/bg/solar-projects.jpg), rgba(255, 255, 255, 0.5);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.152) 0%, rgba(255, 255, 255, 0.149) 65%, rgba(255, 255, 255, 0.734) 85%, white 100%), url(../img/bg/solar-projects.jpg), rgba(255, 255, 255, 0.5);
   background-size: cover;
 }
 
@@ -54,6 +69,10 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   margin: 0 0 20px 0;
   width: 20%;
   border-bottom: 1px solid #dbdbdb;
+}
+
+.display-4 {
+  color: #fabe11;
 }
 
 .nav-btn {
@@ -551,6 +570,25 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   background-size: cover;
 }
 
+.my-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.my-wrapper .my-bg {
+  opacity: 0.13;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.my-wrapper .my-content {
+  position: relative;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,7 +681,6 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 }
 
 .bullet-content .left {
-  width: 50%;
   font-family: ITCAvantGarde;
   font-size: 20px;
 }
@@ -654,21 +691,26 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 }
 
 .bullet-content .right {
-  width: 50%;
   height: 100%;
 }
 
-.bullet-content .right .img-container {
-  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+.bullet-content .right .img-container img {
+  border-radius: 100px 0 100px 0;
 }
 
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
+section {
+  height: 100vh;
+}
+
 @media screen and (max-width: 600px) {
   .mobile-hide {
-    display: none;
+    display: none !important;
+  }
+  section {
+    height: auto !important;
   }
 }
 
@@ -728,8 +770,8 @@ if it's not present, don't show loader */
   position: absolute;
   width: 30em;
   top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%) !important;
+          transform: translate(0%, -50%) !important;
   left: 10%;
   z-index: 10;
   padding: 40px;

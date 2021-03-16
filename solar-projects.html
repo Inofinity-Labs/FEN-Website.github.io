@@ -12,58 +12,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assests/bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Helvetica', sans-serif;
-        }
-
-        /* All the snapping stuff */
-        .scroll-container {
-            height: 100vh;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-        }
-
-        /* width */
-        .scroll-container::-webkit-scrollbar {
-            width: 10px;
-            display: none;
-
-        }
-
-        /* Track */
-        .scroll-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
-
-
-        }
-
-        /* Handle */
-        .scroll-container::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 25px;
-
-        }
-
-        /* Handle on hover */
-        .scroll-container::-webkit-scrollbar-thumb:hover {
-            background: #555;
-
-        }
-
-
-        section {
-            height: 100vh;
-            scroll-snap-align: center;
-        }
-
-        /* Other styles */
-    </style>
+    <!-- AOS Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -118,22 +69,40 @@
         </div>
         <!-- -----------------------------------------END navbar ----------------------------------------- -->
 
-        <section class="hero-section solution solar-project" id="hero-section">
+        <!-- <section class="hero-section solution solar-project" id="hero-section">
             <h1 class="hero-header">Ternkey Solar Projects EPC</h1>
+        </section> -->
+        <section class="hero-section">
+            <div class="my-wrapper">
+                <img src="assests/img/bg/solar-projects.jpg" alt="" srcset="" class="my-bg">
+            
+                <div class="my-content">
+                    <h1 class="hero-header" data-aos="fade-up" data-aos-duration="2000">Ternkey Solar Projects EPC</h1>
+                </div>
+            </div>
         </section>
 
 
 
-        <section class="ternkey-solar-projects">
-            <div class="container">
-                <h4 class="display-4">Turn-key Solar Projects EPC as of December 2020</h4>
-                <div class="s-padding-top"></div>
-                <div class="flex-container">
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>10 MWp </span> <br> of Installations</div></div>
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>11</span> Largest capacity - <span>1,200</span> <br>kWp rooftop</div></div>
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>5</span> <br>projects over <span>500 kWp</span></div></div>
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>10</span><br> Projects over <span>200 kWp</span></div> </div>
-                    <div class="solar-card"><div class="shape2"></div><div class="shape"></div><div class="card-inside">Over <span>100</span> <br>Domestic projects</div></div>
+        <section>
+            <div class="my-wrapper">
+                <img src="assests/img/bg/ternkey-solar-projects.jpg" alt="" srcset="" class="my-bg"/>
+                
+                <div class="my-content">
+                    <div class="container">
+                        <div class="my-container">
+                            <h4 class="display-4" data-aos="fade-up" data-aos-duration="1000">Turn-key Solar Projects EPC as of December 2020</h4>
+                            <hr class="main-header"  data-aos="fade-right" data-aos-delay="1000">
+                            <div class="s-padding-top"></div>
+                            <div class="flex-container">
+                                <div class="solar-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>10 MWp </span> <br> of Installations</div></div>
+                                <div class="solar-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>11</span> Largest capacity - <span>1,200</span> <br>kWp rooftop</div></div>
+                                <div class="solar-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>5</span> <br>projects over <span>500 kWp</span></div></div>
+                                <div class="solar-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800"><div class="shape2"></div><div class="shape"></div><div class="card-inside"><span>10</span><br> Projects over <span>200 kWp</span></div> </div>
+                                <div class="solar-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000"><div class="shape2"></div><div class="shape"></div><div class="card-inside">Over <span>100</span> <br>Domestic projects</div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -233,6 +202,12 @@
     <script src="assests/bootstrap-4.6.0-dist/jQuery/jQuery-3.5.1.slim.min.js"></script>
     <script src="assests/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assests/js/custom.js"></script>
+
+    <!-- Scroll Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

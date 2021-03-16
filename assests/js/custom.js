@@ -98,3 +98,7 @@ $('.scroll-container').scroll(function() {
     $('.nav-small').css({'display':'none'})
   }
 });
+
+/* *********************************** Scroll Animation *********************************** */
+
+ 

@@ -3,6 +3,23 @@
     background-position: top;
     background-size: cover;
 }
+.my-wrapper{
+    position: relative;
+    overflow: hidden;
+    height:100vh;
+    .my-bg{
+        opacity: 0.13;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .my-content{
+        position: relative;
+    }
+}
+
 .flex-container{
     display: flex;
     height: 300px;
@@ -88,7 +105,7 @@
         justify-content: center;
         margin-top:  3rem;
         .left{
-            width: 50%;
+            //width: 50%;
             font-family: ITCAvantGarde;
             font-size: 20px;
             .fa-check-circle{
@@ -97,12 +114,10 @@
             }
         }
         .right{
-            width: 50%;
+            //width: 50%;
             height:100%;
-            .img-container{
-                clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-
-            }
+            .img-container{img{border-radius: 100px 0 100px 0;}}
         }
     }
 
+    
