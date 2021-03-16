@@ -1,0 +1,108 @@
+.ternkey-solar-projects{
+    background: url(../img/bg/ternkey-solar-projects.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+
+    .solar-card{
+        position: relative;
+        width: 350px;
+        height: 100%;
+        margin-inline-end: 20px;
+        background-color: #fff;
+        font-family: ITCAvantGarde;
+        font-size: 1.4rem;
+        text-align: left;
+        color: #dfffd6;
+        border-radius: 25px;
+        //vertical-align: middle;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        
+        
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+
+        &:nth-child(1){background: url(../img/bg/ternkey-solar-projects.jpg);background-size: cover;}
+        &:nth-child(2){background: url(../img/bg/wind.jpg);background-size: cover;}
+        &:nth-child(3){background: url(../img/bg/bg-rooftop.jpg);background-size: cover;}
+        &:nth-child(4){background: url(../img/bg/orange.jpg);background-size: cover;}
+        &:nth-child(5){background: url(../img/bg/solar-projects.jpg);background-size: cover;}
+        // .shape{
+        //     position: absolute;
+        //     height: 150px;
+        //     width: 250px;
+        //     background-color:red ;
+        //     border-radius: 50px;
+        //     top: 0px;
+        //     transform: rotate(76deg) skew(0deg);
+        //     -webkit-transform: rotate(76deg) skew(0deg);
+        //     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        //     &::before{
+        //         content: "";
+        //         position: absolute;
+        //         width: 100%;
+        //         height: 200%;
+        //         left: 26px;
+        //         top:-32px;
+        //         transform: rotate(-76deg);
+        //         background: url(../img/bg/ternkey-solar-projects.jpg) #53afff;
+        //         background-size: cover;
+        //     }
+        // }
+        .shape2{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: #25a3a3;
+            border-radius: 50px;
+            top: 225px;
+            left: -185px;
+            transform: rotate(123deg) skew(0deg);
+            -webkit-transform: rotate(123deg) skew(0deg);
+            border-top: 0px transparent;
+        }
+        span{
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+        .card-inside{
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            padding-inline: 20px;
+        }
+    }
+
+}
+
+    
+    .bullet-content{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        margin-top:  3rem;
+        .left{
+            width: 50%;
+            font-family: ITCAvantGarde;
+            font-size: 20px;
+            .fa-check-circle{
+                font-size: 40px;
+                color: #25a3a3;
+            }
+        }
+        .right{
+            width: 50%;
+            height:100%;
+            .img-container{
+                clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+
+            }
+        }
+    }
+

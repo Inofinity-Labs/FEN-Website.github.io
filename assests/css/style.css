@@ -49,6 +49,13 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   background-size: cover;
 }
 
+.main-header {
+  text-align: left;
+  margin: 0 0 20px 0;
+  width: 20%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
 .nav-btn {
   width: 100%;
   height: 100%;
@@ -391,7 +398,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   padding: 0;
   height: 100vh;
   overflow: hidden;
-  color: #fff;
+  color: #000;
 }
 
 .rooftop .rooftop-heading-content {
@@ -536,6 +543,124 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .domestic .domestic-img-card .hover-card img {
   width: 50%;
+}
+
+.ternkey-solar-projects {
+  background: url(../img/bg/ternkey-solar-projects.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-container .solar-card {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
+  background-color: #fff;
+  font-family: ITCAvantGarde;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #dfffd6;
+  border-radius: 25px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.flex-container .solar-card:nth-child(1) {
+  background: url(../img/bg/ternkey-solar-projects.jpg);
+  background-size: cover;
+}
+
+.flex-container .solar-card:nth-child(2) {
+  background: url(../img/bg/wind.jpg);
+  background-size: cover;
+}
+
+.flex-container .solar-card:nth-child(3) {
+  background: url(../img/bg/bg-rooftop.jpg);
+  background-size: cover;
+}
+
+.flex-container .solar-card:nth-child(4) {
+  background: url(../img/bg/orange.jpg);
+  background-size: cover;
+}
+
+.flex-container .solar-card:nth-child(5) {
+  background: url(../img/bg/solar-projects.jpg);
+  background-size: cover;
+}
+
+.flex-container .solar-card .shape2 {
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  background-color: #25a3a3;
+  border-radius: 50px;
+  top: 225px;
+  left: -185px;
+  transform: rotate(123deg) skew(0deg);
+  -webkit-transform: rotate(123deg) skew(0deg);
+  border-top: 0px transparent;
+}
+
+.flex-container .solar-card span {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.flex-container .solar-card .card-inside {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding-inline: 20px;
+}
+
+.bullet-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.bullet-content .left {
+  width: 50%;
+  font-family: ITCAvantGarde;
+  font-size: 20px;
+}
+
+.bullet-content .left .fa-check-circle {
+  font-size: 40px;
+  color: #25a3a3;
+}
+
+.bullet-content .right {
+  width: 50%;
+  height: 100%;
+}
+
+.bullet-content .right .img-container {
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 }
 
 /* Paste this css to your style sheet file or under head tag */
