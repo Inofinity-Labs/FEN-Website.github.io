@@ -14,60 +14,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- AOS Animation-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Helvetica', sans-serif;
-}
-
-/* All the snapping stuff 
-.scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}*/
-/* width */
-.scroll-container::-webkit-scrollbar {
-  width: 10px;  
-  display: none;
-  
-}
-
-/* Track */
-.scroll-container::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  
-  
-}
- 
-/* Handle */
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 25px;
-  
-}
-
-/* Handle on hover */
-.scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #555; 
- 
-}
-
-
-section {
-  height: 100vh;
-  /*scroll-snap-align: center;*/
-}
-
-/* Other styles */
-
-
-    </style>
+    <link href="assests/css/animate/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <main class="scroll-container">
@@ -123,7 +71,7 @@ section {
                 <img src="assests/img/bg/Solutions.jpg" alt="" srcset="" class="my-bg mobile-hide" >
             
                 <div class="my-content">
-                    <h1 class="hero-header" data-aos="fade-up" data-aos-duration="2000">Solar Roof Rentals</h1>
+                    <h1 class="hero-header p-40" data-aos="fade-up" data-aos-duration="2000">Solar Roof Rentals</h1>
                 </div>
             </div>
         </section>
@@ -283,7 +231,7 @@ section {
     <script src="assests/js/custom.js"></script>
 
     <!-- Scroll Animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assests/css/animate/aos.js"></script>
     <script>
         AOS.init();
     </script>

@@ -14,10 +14,38 @@
     <!-- Font Awesome-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- AOS Animation-->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assests/css/animate/aos.css" rel="stylesheet">
 
     
-    
+    <script>
+        function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+    </script>
   </head>
   <body>
     
@@ -306,110 +334,9 @@
     </div>
 
   
+    <div w3-include-html="include/footer.html" data-aos="zoom-in-up"></div> 
     
     
-    <footer class="footer-section">
-
-
-        
-        <div class="footer-content">
-            <div class="container">
-                <div class="footer-widget-area">
-                    <div class="row">
-    
-                        <div class="col-lg-4 col-md-6 footer-small-section" data-aos="fade-up" data-aos-delay="200">
-                            <div class="footer-widget-item pera-content">
-                                <div class="footer-menu-widget ul-li-block">
-                                    <h3 class="el-widget-title">VISIT</h3>
-                                    <hr>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63388.63706111157!2d79.86849307910155!3d6.795408999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3ae245423b324adf%3A0x366b642f92d11627!2sFirstEnergy%20SL%20(Pvt)%20Ltd%2C%20No%20305%20Bandaranayake%20Mawatha%2C%20Moratuwa%2010400!3m2!1d6.795408999999999!2d79.90351199999999!5e0!3m2!1sen!2slk!4v1604425216527!5m2!1sen!2slk"
-                                        height="350px" width="100%" frameborder="0" allowfullscreen=""
-                                        aria-hidden="false" tabindex="0"></iframe>
-    
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-4 col-md-6 footer-small-section" data-aos="fade-up" data-aos-delay="400">
-                            <div class="footer-widget-item">
-                                <div class="footer-logo-widget">
-                                    <!-- <a class="footer-logo" href="#" style="background-color: #dddddd"><img src="assets/img/logo/logoremaster.png" alt="" width="200px"></a> -->
-                                    <h3 class="el-widget-title">TALK TO US</h3>
-                                    <hr>
-                                    <div class="row f-row">
-                                        <div class="f-left"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                                        <div class="f-right"><p>No 55/5 , Nikape, <br>Dehiwala, Sri Lanka</p></div>
-                                    </div>
-                                    <div class="row f-row">
-                                        <div class="f-left"><i class="fa fa-map-pin" aria-hidden="true"></i></div>
-                                        <div class="f-right"><p>Branches : No 305, <br> Bandaranayake Mawatha, <br> Katubedda, Sri Lanka</p></div>
-                                    </div>
-                                    <div class="row f-row">
-                                        <div class="f-left"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                                        <div class="f-right"><p>+94 777 700 700</p></div>
-                                    </div>
-                                    <div class="row f-row">
-                                        <div class="f-left"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                                        <div class="f-right"><p>info@firstenergy.lk</p></div>
-                                    </div>
-                                    <div class="row f-row">
-                                        <div class="f-left"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
-                                        <div class="f-right"><p><a href="https://www.facebook.com/firstenergysl"
-                                            target="_blank">fb.com/firstenergysl</a></p></div>
-                                    </div>
-
-                                    
-                                    
-                                    
-                                    
-                                   
-                                </div>
-                            </div>
-                        </div>
-    
-    
-    
-                        <div class="col-lg-4 col-md-6 footer-small-section" data-aos="fade-up" data-aos-delay="600">
-                            <div class="footer-widget-item pera-content">
-                                <div class="footer-location-widget ul-li-block">
-                                    <h3 class="el-widget-title">SAY HELLO</h3>
-                                    <hr>
-                                    <p>Tell us what you Feel / Complaint / Suggestions</p>
-                                    <br class="space s" />
-                                    <form action="" class="form-box form-ajax" method="post" data-email="federico@pixor.it">
-                                        <input id="name" name="name" placeholder="Name" type="text" class="input-textbox form-value" required>
-                                        
-                                        <input id="email" name="email" placeholder="Email" type="email" class="input-textbox form-value" required>
-                                        
-                                        <textarea id="messagge" name="messagge" placeholder="Message" class=" input-textbox form-value" required></textarea>
-                                        
-                                        <div class="text-uppercase text-center">
-                                            <a href="#" class="submit-btn">submit message</a>
-                                        </div>
-                                    </form>
-    
-                                </div>
-                            </div>
-                        </div>
-    
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright-text text-center" >
-            <p class="develop-by" >Designed and Developed by
-                <script>document.write(new Date().getFullYear());</script> © <a
-                    href="http://www.inofinitylabs.com/">inofinity Labs</a></p>
-            <!--div class="copyright-menu">
-              <a href="#">Terms</a>
-              <a href="#"> Privacy Policy </a>
-              <a href="#">Sitemap</a>
-          </div-->
-        </div>
-    
-    </footer>
     
     
     
@@ -420,9 +347,11 @@
     <script src="assests/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" ></script>
     <script src="assests/js/custom.js"></script>
     <!-- Scroll Animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assests/css/animate/aos.js"></script>
+    
     <script>
         AOS.init();
+        includeHTML();
     </script>
     
     <!-- Option 2: Separate Popper and Bootstrap JS -->

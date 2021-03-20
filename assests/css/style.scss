@@ -23,12 +23,14 @@ html{
     
 }
 
-
+//colors
+$fen-green : #5DA943;
 
 @import 'component';
 @import 'navbars';
 @import'rooftop';
 @import 'solutions';
+@import 'about';
 
 
 /* Paste this css to your style sheet file or under head tag */
@@ -46,9 +48,10 @@ if it's not present, don't show loader */
 // 	background: url(/assests/img/loading-ball.svg) center no-repeat #fff;
 // }
 
+
+
 section {
-    height: 100vh;
-    
+   min-height: 100vh;
 }
 @media screen and (max-width: 600px) {
    .mobile-hide{

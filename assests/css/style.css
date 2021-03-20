@@ -23,6 +23,22 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   font-family: 'ITCAvantGarde', sans-serif;
 }
 
+.p-10 {
+  padding-top: 10vh;
+}
+
+.p-20 {
+  padding-top: 20vh;
+}
+
+.p-30 {
+  padding-top: 30vh;
+}
+
+.p-40 {
+  padding-top: 40vh;
+}
+
 .hero-section {
   height: 100vh;
   overflow: hidden;
@@ -30,10 +46,15 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .hero-header {
   font-family: 'Montserrat';
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
-  padding-top: 40vh;
   color: #5da943;
+}
+
+.about-para {
+  font-family: ITCAvantGarde;
+  font-weight: 100;
+  font-size: 15.5px;
 }
 
 .my-container {
@@ -71,8 +92,16 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   border-bottom: 1px solid #dbdbdb;
 }
 
-.display-4 {
+.display-4, .display-5 {
   color: #fabe11;
+}
+
+.fen-green {
+  color: #5DA943;
+}
+
+.width-9 {
+  width: calc(100% / 9);
 }
 
 .nav-btn {
@@ -698,11 +727,168 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   border-radius: 100px 0 100px 0;
 }
 
+.about-image {
+  margin-top: 5vh;
+  height: 40vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0))), url(../img/bg/aboutus-40.jpg);
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 50%), url(../img/bg/aboutus-40.jpg);
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.about-hero {
+  position: relative;
+}
+
+.about-hero .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.vision-mission {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, right top, left top, color-stop(10%, white), to(rgba(255, 255, 255, 0))), url(../img/bg/v-m-image3.jpg);
+  background-image: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(270deg, white 10%, rgba(255, 255, 255, 0) 100%), url(../img/bg/v-m-image3.jpg);
+  background-size: cover;
+  min-height: 120vh;
+}
+
+.card-flagship {
+  border: 2px solid gray;
+  border-radius: 25px;
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  min-height: 200px;
+  text-align: center;
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+}
+
+.our-team {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../img/bg/v-m-image3.jpg);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../img/bg/v-m-image3.jpg);
+  background-size: cover;
+  min-height: 120vh;
+}
+
+.team-leads {
+  background-color: #fff;
+  padding-block: 15vh;
+}
+
+.leader-card {
+  display: -ms-grid;
+  display: grid;
+  min-height: 200px;
+  text-align: center;
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+}
+
+.leader-card .card-l-header img {
+  border-radius: 25px;
+}
+
+.leader-card .card-l-content {
+  font-size: 14px;
+  text-align: left;
+}
+
+/* **************************************************** Tabs ************************************************************ */
+/* Style the tab */
+.tab {
+  float: left;
+  width: 10%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  width: 100%;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 5px;
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+  position: relative;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffe8a3;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+  border: 2px solid #FABE11;
+}
+
+.tab button.active::after {
+  color: #5DA943;
+  content: "\f0a9";
+  font-family: fontawesome;
+  font-size: 30px;
+  margin-top: -10px;
+  position: absolute;
+  right: -40px;
+  top: 40%;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+  margin-left: 5%;
+}
+
+.btn-tab {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.btn-teamLeads {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.fa-angle-down {
+  padding-left: 25px;
+  font-size: 30px !important;
+}
+
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
