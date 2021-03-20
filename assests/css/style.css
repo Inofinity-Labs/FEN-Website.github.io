@@ -753,6 +753,8 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 .product-partner-image {
   margin-top: 15vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0))), url(../img/bg/product-partners.jpg);
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 50%), url(../img/bg/product-partners.jpg);
 }
 
 .about-hero {
