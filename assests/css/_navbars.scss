@@ -271,21 +271,7 @@
                         
                     }
                 }
-                .sub-nav{
-                    float: left;
-                    font-size: 12px;
-                    color: #b5b5b5;
-                    text-align: center;
-                    padding: 14px 0px;
-                    text-decoration: none;
-                    width: calc(100%/5);
-                    //width: 20%;
-                    &:hover{
-                        color: #fff;
-                        text-decoration: none;
-                        
-                    }
-                }
+                
                 
             }
             
@@ -333,4 +319,20 @@
 
     
     
+}
+
+.sub-nav{
+    float: left;
+    font-size: 12px;
+    color: #b5b5b5;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    width: calc(100%/5);
+    //width: 20%;
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+        
+    }
 }

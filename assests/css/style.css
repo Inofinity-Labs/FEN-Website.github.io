@@ -439,21 +439,6 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   text-decoration: none;
 }
 
-.navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav {
-  float: left;
-  font-size: 12px;
-  color: #b5b5b5;
-  text-align: center;
-  padding: 14px 0px;
-  text-decoration: none;
-  width: calc(100%/5);
-}
-
-.navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
 .navbar-d .nav-left .drop-solar:hover .level2 {
   display: block;
 }
@@ -491,6 +476,21 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   .navbar-d .nav-left {
     display: none;
   }
+}
+
+.sub-nav {
+  float: left;
+  font-size: 12px;
+  color: #b5b5b5;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  width: calc(100%/5);
+}
+
+.sub-nav:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .rooftop {
