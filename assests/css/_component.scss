@@ -57,3 +57,13 @@
 .width-9{
     width: calc(100% / 9);
 }
+
+.product-items-center{
+    display: flex;flex-direction: column;justify-content: center;
+}
+.item-center{
+    text-align: center;
+}
+.shadow-d{
+    box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.21);
+}

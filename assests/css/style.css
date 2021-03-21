@@ -104,6 +104,28 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   width: calc(100% / 9);
 }
 
+.product-items-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-center {
+  text-align: center;
+}
+
+.shadow-d {
+  -webkit-box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.21);
+}
+
 .nav-btn {
   width: 100%;
   height: 100%;
@@ -413,6 +435,21 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 }
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-product:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav {
+  float: left;
+  font-size: 12px;
+  color: #b5b5b5;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  width: calc(100%/5);
+}
+
+.navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -909,6 +946,28 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 .fa-angle-down {
   padding-left: 25px;
   font-size: 30px !important;
+}
+
+.component .card-component {
+  border: 5px solid transparent;
+  margin-bottom: 20px;
+}
+
+.component .border-component {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.component .component-image {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.component .component-image img {
+  width: 100%;
 }
 
 /* Paste this css to your style sheet file or under head tag */

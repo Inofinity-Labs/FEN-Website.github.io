@@ -209,6 +209,7 @@
     margin-left: 5%;
     background-color: rgba(0, 255, 76, 0.1);
     //height: 300px;
+    
   }
 
   .btn-tab{
@@ -231,3 +232,31 @@
     font-size: 30px!important;
     
   }
+.component{
+    .card-component{
+        
+        border: 5px solid transparent;
+        
+        //background-color: rgba(45, 210, 30, 0.103);
+        margin-bottom: 20px;
+    }
+    .border-component{
+        width: 100%;
+        height: 100%;
+        //border: 1px solid #6495ed;
+        border-radius: 25px;
+        //background-color: #6494ed1c;
+        //box-shadow:darken($color: #000000, $amount: 1);
+        padding: 20px;
+    }
+  .component-image{
+      width: 100%;
+      height: 100px;
+      //background-color:chocolate ;
+      text-align: center;
+      //border: 1px solid green;
+      img{
+        width: 100%;
+      }
+  }
+}
