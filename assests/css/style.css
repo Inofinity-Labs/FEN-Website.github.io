@@ -478,7 +478,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   }
 }
 
-.sub-nav {
+.sub-nav-about {
   float: left;
   font-size: 12px;
   color: #b5b5b5;
@@ -488,7 +488,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   width: calc(100%/5);
 }
 
-.sub-nav:hover {
+.sub-nav-about:hover {
   color: #fff;
   text-decoration: none;
 }
