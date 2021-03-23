@@ -203,13 +203,29 @@
   /* Style the tab content */
   .tabcontent {
     float: left;
-    padding: 12px 12px;
+    padding: 20px 20px;
     //border-left: 5px solid #ccc;
     width: 80%;
     margin-left: 5%;
-    background-color: rgba(0, 255, 76, 0.1);
+    background-color: rgba(235, 235, 235, 0.5);
+    border-radius: 25px;
     //height: 300px;
-    
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+
+    /* Fade in tabs */
+    @-webkit-keyframes fadeEffect {
+      from {padding-left :50px;}
+      to {padding-left :12px;}
+    }
+
+    @keyframes fadeEffect {
+      from {transform: translateX(50px)}
+      to {transform: translateX(0px)}
+    }
+    img{
+      border-radius: 25px;
+    }
   }
 
   .btn-tab{

@@ -1,5 +1,11 @@
-
-
+//loader
+let spinnerWrapper = document.querySelector('.spinner-wrapper');
+    
+        window.addEventListener('load', function () {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });
+// Loader end
  /* *********************************** NAV BAR *********************************** */
 //previous nav bar
 /*
@@ -83,7 +89,7 @@ function clickfunction() {
 }(jQuery));
 
 //Set plugin on cards
-$('.card').tilt();
+$('.rounded').tilt();
   
 
 /* set to section-test scroll*/
