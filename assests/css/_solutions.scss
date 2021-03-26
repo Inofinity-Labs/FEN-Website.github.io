@@ -120,4 +120,13 @@
         }
     }
 
-    
+
+    .background-solutions{
+        background: linear-gradient(270deg, rgba(255,255,255,0.6474964985994398) 0%, rgba(255,255,255,0.3449754901960784) 75%, rgba(255,255,255,0) 100%),url(../img/solutions/solar.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(194, 194, 194);
+    }
+    .padding-block{
+        padding-block: 5rem;
+    }

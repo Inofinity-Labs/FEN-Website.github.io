@@ -3,6 +3,10 @@
 .p-30{padding-top: 30vh}
 .p-40{padding-top: 40vh}
 
+.row-error{
+   margin-right: 0!important;
+}
+
 .hero-section{
     height:100vh;
     //background:  linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%, rgba(0,0,0,0.14889705882352944) 65%, rgba(0,0,0,0.7343312324929971) 85%, rgba(0,0,0,1) 100%);   
@@ -14,7 +18,8 @@
     text-align: center;
     
     //transform: translate(0%, -50%);
-    color: #5da943;
+    color: $fen-green;
+    //color: #5da943;
 }
 .about-para{
     font-family: ITCAvantGarde;
@@ -60,6 +65,18 @@
 
 .product-items-center{
     display: flex;flex-direction: column;justify-content: center;
+
+    p{
+        font-family: ITCAvantGarde;
+        font-size: 20px;
+    }
+    
+}
+.i-left{
+   @media only screen and (min-width: 768px){
+   i{
+      margin-left: -32px;
+   }}
 }
 .item-center{
     text-align: center;

@@ -100,7 +100,7 @@
 }
 .vision-mission{
     background-color: #fff;
-    background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 10%),linear-gradient(270deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%), url(../img/bg/v-m-image3.jpg);
+    background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 10%),linear-gradient(270deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 70%), url(../img/bg/v-m-image3.jpg);
     background-size: cover;
     min-height: 120vh;
 }
@@ -274,5 +274,14 @@
       img{
         width: 100%;
       }
+  }
+}
+
+/* --------------------------------------- Product and Partners --------------------------------------- */
+.fa-check-circle{
+  color:#5DA943;
+  //font-size: 40px;
+  &::before{
+    font-size: 30px;
   }
 }

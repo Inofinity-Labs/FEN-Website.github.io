@@ -1,31 +1,21 @@
 //import Statements
-@font-face {
-    font-family: 'Raleway';
-    src: url('../font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
-  }
-@font-face {
-font-family: 'Montserrat';
-src: url('../font/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'ITCAvantGarde';
-    src: url('../font/ITCAvantGarde/ITCAvantGardeStdBk.otf') format('truetype');
-    }
+
 
 html{
     padding:0;
     margin: 0;
     font-family: 'ITCAvantGarde', sans-serif;
-    h1,h2,h3,h4,h5,h6{
+    h1,h2,h3,h4,h5,h6,p{
         font-family: 'ITCAvantGarde', sans-serif;
     }
     
     
 }
 
-//colors
-$fen-green : #5DA943;
+@import 'abstract/color';
+@import 'abstract/font';
 
+@import 'product';
 @import 'component';
 @import 'navbars';
 @import'rooftop';
@@ -50,9 +40,7 @@ if it's not present, don't show loader */
 
 
 
-section {
-   min-height: 100vh;
-}
+
 @media screen and (max-width: 600px) {
    .mobile-hide{
         display: none !important;
@@ -149,8 +137,10 @@ section {
     
       
     .carousel-inner{
+      border-radius: 15px;
         img{
         animation: carousel-zoom 10s ease;
+        
         @keyframes carousel-zoom {
             0% {transform: scale(1.0);}
             100% {transform: scale(1.05);}
@@ -207,7 +197,7 @@ section {
         backface-visibility: hidden;
         will-change: tranform;
         border: 0px solid black;
-        
+        border-radius: 15px!important;
         
     
     .card_overlay {
@@ -220,14 +210,17 @@ section {
         //background: url(http://alexandrebuffet.fr/codepen/parallax-cards/blur-overlay.jpg) no-repeat center center;
         background-size: cover;
         mix-blend-mode: lighten;
-        border-radius: 25px;
+        border-radius: 15px;
         
     }}
+    .rounded{
+      border-radius: 15px!important;
+    }
     
     .card__image img {
         max-width: 100%;
         height: 250px;
-        border-radius: 25px;
+        border-radius: 15px;
         
         
     }
@@ -367,19 +360,28 @@ footer, .footer-section{
                 &:focus{border:0px;outline: none;color: #fff;border-bottom:1px solid #fec503;}
             }
             a{
+              width: 100%;
                 color:#999999;
+                border: 1px solid #999999;
                 &:hover{
                     text-decoration: none;
+                    color : #fec503;
                 }
             }
-            .submit-btn{
+            button{
+              width: 100%;
+              color:#999999;
+              outline: none;
+              background-color: transparent;
               border: 1px solid #999999;
-              
-              padding: 10px 29%;
-            }
-            .submit-btn:hover{
+              padding-block: 10px;
+              &:hover{
+                text-decoration: none;
                 color : #fec503;
             }
+            }
+            
+            
         }
         
     }
@@ -425,7 +427,7 @@ footer, .footer-section{
     width: 100%;
     height: 100%;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;

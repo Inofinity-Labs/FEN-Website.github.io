@@ -1,3 +1,13 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'ITCAvantGarde', sans-serif;
+}
+
+html h1, html h2, html h3, html h4, html h5, html h6, html p {
+  font-family: 'ITCAvantGarde', sans-serif;
+}
+
 @font-face {
   font-family: 'Raleway';
   src: url("../font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
@@ -13,14 +23,79 @@
   src: url("../font/ITCAvantGarde/ITCAvantGardeStdBk.otf") format("truetype");
 }
 
-html {
-  padding: 0;
-  margin: 0;
-  font-family: 'ITCAvantGarde', sans-serif;
+.card {
+  border: none !important;
+  -webkit-transition: all 1s !important;
+  transition: all 1s !important;
 }
 
-html h1, html h2, html h3, html h4, html h5, html h6 {
-  font-family: 'ITCAvantGarde', sans-serif;
+.card .card-header {
+  min-height: 160px;
+}
+
+.card .card-header .card-img-top-product {
+  padding: 1rem;
+}
+
+.shadow-product {
+  border-radius: 15px !important;
+  -webkit-box-shadow: 1px 13px 22px 1px rgba(125, 125, 125, 0.8);
+          box-shadow: 1px 13px 22px 1px rgba(125, 125, 125, 0.8);
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+  /*&:hover .card-body .card-title{
+        transform: scale(1.2);
+
+    }*/
+}
+
+.shadow-product:hover {
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  -webkit-box-shadow: 1px 5px 5px 1px rgba(125, 125, 125, 0.65);
+          box-shadow: 1px 5px 5px 1px rgba(125, 125, 125, 0.65);
+}
+
+.shadow-product:hover img {
+  -webkit-transition: all 1s !important;
+  transition: all 1s !important;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.about-hero .card {
+  margin-top: -50px;
+}
+
+.rest-component {
+  position: relative;
+}
+
+.rest-component .card {
+  min-height: 340px;
+  padding-block: 10px;
+  margin-block: 25px;
+}
+
+.rest-component .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.rest-component .padding-error {
+  margin-top: -55px;
 }
 
 .p-10 {
@@ -39,6 +114,10 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   padding-top: 40vh;
 }
 
+.row-error {
+  margin-right: 0 !important;
+}
+
 .hero-section {
   height: 100vh;
   overflow: hidden;
@@ -48,7 +127,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   font-family: 'Montserrat';
   font-size: 80px;
   text-align: center;
-  color: #5da943;
+  color: #32A991;
 }
 
 .about-para {
@@ -97,7 +176,7 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 }
 
 .fen-green {
-  color: #5DA943;
+  color: #32A991;
 }
 
 .width-9 {
@@ -115,6 +194,17 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product-items-center p {
+  font-family: ITCAvantGarde;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .i-left i {
+    margin-left: -32px;
+  }
 }
 
 .item-center {
@@ -601,7 +691,7 @@ button.contact_form_submit {
 .navbar-d .nav-left .nav-content-center {
   position: absolute;
   width: 100%;
-  background-color: #1d1d1d;
+  background-color: #232B2D;
   left: 0%;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
@@ -934,6 +1024,18 @@ button.contact_form_submit {
   border-radius: 100px 0 100px 0;
 }
 
+.background-solutions {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.647496)), color-stop(75%, rgba(255, 255, 255, 0.344975)), to(rgba(255, 255, 255, 0))), url(../img/solutions/solar.jpg);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.647496) 0%, rgba(255, 255, 255, 0.344975) 75%, rgba(255, 255, 255, 0) 100%), url(../img/solutions/solar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #c2c2c2;
+}
+
+.padding-block {
+  padding-block: 5rem;
+}
+
 .about-image {
   margin-top: 5vh;
   height: 40vh;
@@ -972,8 +1074,8 @@ button.contact_form_submit {
 
 .vision-mission {
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, right top, left top, color-stop(10%, white), to(rgba(255, 255, 255, 0))), url(../img/bg/v-m-image3.jpg);
-  background-image: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(270deg, white 10%, rgba(255, 255, 255, 0) 100%), url(../img/bg/v-m-image3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, right top, left top, color-stop(5%, white), color-stop(70%, rgba(255, 255, 255, 0))), url(../img/bg/v-m-image3.jpg);
+  background-image: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(270deg, white 5%, rgba(255, 255, 255, 0) 70%), url(../img/bg/v-m-image3.jpg);
   background-size: cover;
   min-height: 120vh;
 }
@@ -1153,13 +1255,18 @@ button.contact_form_submit {
   width: 100%;
 }
 
+/* --------------------------------------- Product and Partners --------------------------------------- */
+.fa-check-circle {
+  color: #5DA943;
+}
+
+.fa-check-circle::before {
+  font-size: 30px;
+}
+
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
-section {
-  min-height: 100vh;
-}
-
 @media screen and (max-width: 600px) {
   .mobile-hide {
     display: none !important;
@@ -1308,6 +1415,10 @@ section {
   }
 }
 
+.carousel .carousel-inner {
+  border-radius: 15px;
+}
+
 .carousel .carousel-inner img {
   -webkit-animation: carousel-zoom 10s ease;
           animation: carousel-zoom 10s ease;
@@ -1403,6 +1514,7 @@ section {
           backface-visibility: hidden;
   will-change: tranform;
   border: 0px solid black;
+  border-radius: 15px !important;
 }
 
 .solutions .card .card_overlay {
@@ -1415,13 +1527,17 @@ section {
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0) 100%);
   background-size: cover;
   mix-blend-mode: lighten;
-  border-radius: 25px;
+  border-radius: 15px;
+}
+
+.solutions .rounded {
+  border-radius: 15px !important;
 }
 
 .solutions .card__image img {
   max-width: 100%;
   height: 250px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -1580,19 +1696,27 @@ footer .footer-content .form-box textarea:focus, .footer-section .footer-content
 }
 
 footer .footer-content .form-box a, .footer-section .footer-content .form-box a {
+  width: 100%;
   color: #999999;
+  border: 1px solid #999999;
 }
 
 footer .footer-content .form-box a:hover, .footer-section .footer-content .form-box a:hover {
   text-decoration: none;
+  color: #fec503;
 }
 
-footer .footer-content .form-box .submit-btn, .footer-section .footer-content .form-box .submit-btn {
+footer .footer-content .form-box button, .footer-section .footer-content .form-box button {
+  width: 100%;
+  color: #999999;
+  outline: none;
+  background-color: transparent;
   border: 1px solid #999999;
-  padding: 10px 29%;
+  padding-block: 10px;
 }
 
-footer .footer-content .form-box .submit-btn:hover, .footer-section .footer-content .form-box .submit-btn:hover {
+footer .footer-content .form-box button:hover, .footer-section .footer-content .form-box button:hover {
+  text-decoration: none;
   color: #fec503;
 }
 
@@ -1631,7 +1755,7 @@ footer .footer-logo-widget .f-row, .footer-section .footer-logo-widget .f-row {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -1698,7 +1822,7 @@ footer .footer-logo-widget .f-row, .footer-section .footer-logo-widget .f-row {
 .spinner {
   position: absolute;
   top: 25%;
-  color: #5DA943;
+  color: #32A991;
   font-size: 10px;
   margin: 80px auto;
   text-indent: -9999em;

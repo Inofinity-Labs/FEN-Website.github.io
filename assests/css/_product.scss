@@ -1,0 +1,60 @@
+.card{
+    border: none!important; 
+    transition: all 1s!important;
+    .card-header{
+        
+        min-height: 160px;
+        .card-img-top-product{
+            padding: 1rem;
+            
+        }
+    }
+}
+
+.shadow-product{
+    border-radius: 15px!important;
+    box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.8);
+    transition: all .5s ease-in-out!important;
+    &:hover {
+        //top: -20px;
+        transition: all .5s!important;
+        box-shadow: 1px 5px 5px 1px rgba(125,125,125,0.65);
+        img{
+            transition: all 1s!important;
+            transform: scale(1.1);
+        }
+    }
+    /*&:hover .card-body .card-title{
+        transform: scale(1.2);
+
+    }*/
+}
+
+.about-hero{
+    .card{
+        margin-top: -50px;
+    }
+}
+
+.rest-component{
+    position: relative;
+    .card{
+        min-height: 340px;
+        padding-block: 10px;
+        margin-block: 25px;
+    }
+    
+    .about-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        height:40vh;
+    }
+    .padding-error{
+        margin-top: -55px;
+    }
+}
