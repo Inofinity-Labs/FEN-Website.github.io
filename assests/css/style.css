@@ -1,11 +1,11 @@
 html {
   padding: 0;
   margin: 0;
-  font-family: 'ITCAvantGarde', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html h1, html h2, html h3, html h4, html h5, html h6, html p {
-  font-family: 'ITCAvantGarde', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 @font-face {
@@ -21,6 +21,11 @@ html h1, html h2, html h3, html h4, html h5, html h6, html p {
 @font-face {
   font-family: 'ITCAvantGarde';
   src: url("../font/ITCAvantGarde/ITCAvantGardeStdBk.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../font/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
 }
 
 .card {
@@ -124,10 +129,10 @@ html h1, html h2, html h3, html h4, html h5, html h6, html p {
 }
 
 .hero-header {
-  font-family: 'Montserrat';
-  font-size: 80px;
+  font-family: 'Rubik';
+  font-size: 2.5em;
+  font-weight: 600;
   text-align: center;
-  color: #32A991;
 }
 
 .about-para {
@@ -172,6 +177,10 @@ html h1, html h2, html h3, html h4, html h5, html h6, html p {
 }
 
 .display-4, .display-5 {
+  color: #fabe11;
+}
+
+.fen-yellow {
   color: #fabe11;
 }
 
@@ -371,6 +380,17 @@ button.contact_form_submit {
   overflow: hidden;
 }
 
+/* text formating */
+.fen-heading {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.fen-para {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
 .nav-btn {
   width: 100%;
   height: 100%;
@@ -540,10 +560,8 @@ button.contact_form_submit {
   position: fixed;
   top: 25px;
   width: 100%;
-  height: 50px;
   overflow: hidden;
-  background-color: #000;
-  font-family: 'ITCAvantGarde';
+  font-family: 'Rubik';
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
   z-index: 2;
@@ -557,12 +575,9 @@ button.contact_form_submit {
   height: 0;
 }
 
-.navbar-d .nav-active {
-  color: #258a2a !important;
-}
-
 .navbar-d .nav-right {
   width: 25%;
+  min-height: 50px;
   background-color: #fff;
 }
 
@@ -574,7 +589,8 @@ button.contact_form_submit {
 
 .navbar-d .nav-left {
   width: 75%;
-  background-color: #000;
+  min-height: 50px;
+  background-color: #fff;
   /*.dropdown-d:hover .dropdown-content-d {
             display: block;
         }*/
@@ -582,8 +598,9 @@ button.contact_form_submit {
 
 .navbar-d .nav-left .main-nav-a {
   float: left;
-  font-size: 16px;
-  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
   text-align: center;
   padding: 14px 0px;
   text-decoration: none;
@@ -592,7 +609,12 @@ button.contact_form_submit {
 
 .navbar-d .nav-left .main-nav-a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #006008;
+}
+
+.navbar-d .nav-left .nav-active {
+  color: #006008 !important;
+  border-bottom: 5px solid #006008;
 }
 
 .navbar-d .nav-left .dropdown-d {
@@ -602,7 +624,7 @@ button.contact_form_submit {
 }
 
 .navbar-d .nav-left .dropdown-d:hover {
-  color: #fff;
+  color: #006008;
 }
 
 .navbar-d .nav-left .dropdown-d .dropbtn {
@@ -613,11 +635,10 @@ button.contact_form_submit {
 .navbar-d .nav-left .dropdown-d .dropdown-content-d {
   display: block;
   position: fixed;
-  background-color: #232B2D;
   padding: 5% auto;
   width: 100%;
   left: 0;
-  top: 75px;
+  top: 85px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -625,16 +646,19 @@ button.contact_form_submit {
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-a {
   float: left;
-  font-size: 12px;
-  color: #b5b5b5;
+  font-size: 14px;
+  font-weight: 400;
+  color: #363636;
   text-align: center;
   padding: 14px 0px;
   text-decoration: none;
+  height: 100%;
 }
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-a:hover {
-  color: #fff;
+  color: #006008;
   text-decoration: none;
+  border-bottom: 5px solid #006008;
 }
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-a:nth-child(1) {
@@ -680,7 +704,7 @@ button.contact_form_submit {
 }
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-product:hover {
-  color: #fff;
+  color: #006008;
   text-decoration: none;
 }
 
@@ -691,7 +715,7 @@ button.contact_form_submit {
 .navbar-d .nav-left .nav-content-center {
   position: absolute;
   width: 100%;
-  background-color: #232B2D;
+  background-color: #E5E5E5;
   left: 0%;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
@@ -1037,7 +1061,7 @@ button.contact_form_submit {
 }
 
 .about-image {
-  margin-top: 5vh;
+  margin-top: 16vh;
   height: 40vh;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0))), url(../img/bg/aboutus-40.jpg);
   background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 50%), url(../img/bg/aboutus-40.jpg);
@@ -1391,6 +1415,10 @@ if it's not present, don't show loader */
 
 /* ------------------------------------------- END Loader ------------------------------------------- */
 /* ------------------------------------------- Hero Section ------------------------------------------- */
+#carouselExampleInterval {
+  background: red;
+}
+
 .padding-top {
   padding-top: 10em;
 }
@@ -1413,10 +1441,6 @@ if it's not present, don't show loader */
   .carousel .h100vh {
     height: auto !important;
   }
-}
-
-.carousel .carousel-inner {
-  border-radius: 15px;
 }
 
 .carousel .carousel-inner img {
@@ -1448,17 +1472,15 @@ if it's not present, don't show loader */
 
 .carousel .carousel-inner .carousel-caption2 {
   position: absolute;
-  width: 30em;
-  top: 50%;
+  width: 45%;
+  top: 40%;
   -webkit-transform: translate(0%, -50%) !important;
           transform: translate(0%, -50%) !important;
   left: 10%;
   z-index: 10;
   padding: 40px;
   color: #fff;
-  text-align: center;
   border-radius: 15px;
-  background-color: #000000aa;
   -webkit-animation: carousel-left 1.5s ease-in-out;
           animation: carousel-left 1.5s ease-in-out;
 }
@@ -1884,18 +1906,18 @@ footer .footer-logo-widget .f-row, .footer-section .footer-logo-widget .f-row {
 /* -------------------------------------------- Loader Working End-------------------------------------------- */
 /* -------------------------------------------- Cards -------------------------------------------- */
 /* ==== Cards using Bootstrap === */
-#cards .card {
+#teamlead .card {
   border-radius: 20px;
   min-height: 100%;
 }
 
-#cards .heading-border {
+#teamlead .heading-border {
   position: absolute;
   width: 100%;
   top: 60%;
 }
 
-#cards .card .user-picture img {
+#teamlead .card .user-picture img {
   position: absolute;
   top: -25%;
   right: -5%;
@@ -1905,7 +1927,7 @@ footer .footer-logo-widget .f-row, .footer-section .footer-logo-widget .f-row {
   height: auto;
 }
 
-#cards .card .user-content .user-name {
+#teamlead .card .user-content .user-name {
   margin-right: 150px;
 }
 /*# sourceMappingURL=style.css.map */

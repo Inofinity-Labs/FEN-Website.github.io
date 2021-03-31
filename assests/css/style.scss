@@ -4,9 +4,9 @@
 html{
     padding:0;
     margin: 0;
-    font-family: 'ITCAvantGarde', sans-serif;
+    font-family: 'Rubik', sans-serif;
     h1,h2,h3,h4,h5,h6,p{
-        font-family: 'ITCAvantGarde', sans-serif;
+        font-family: 'Rubik', sans-serif;
     }
     
     
@@ -123,6 +123,10 @@ if it's not present, don't show loader */
   }
   /* ------------------------------------------- END Loader ------------------------------------------- */
 /* ------------------------------------------- Hero Section ------------------------------------------- */
+#carouselExampleInterval{
+  background: red;
+  
+}
 //carousel-caption
 .padding-top{padding-top: 10em;}
 @media screen and (max-width: 600px) {
@@ -137,7 +141,7 @@ if it's not present, don't show loader */
     
       
     .carousel-inner{
-      border-radius: 15px;
+      
         img{
         animation: carousel-zoom 10s ease;
         
@@ -146,19 +150,22 @@ if it's not present, don't show loader */
             100% {transform: scale(1.05);}
             }
         }
+        // .carousel-item{
+        //   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        // }
 
         .carousel-caption2{
             position: absolute;
-            width: 30em;
-            top: 50%;
+            width: 45%;
+            top: 40%;
             transform: translate(0%, -50%)!important;
             left: 10%;
             z-index: 10;
             padding: 40px;
             color: #fff;
-            text-align: center;
+            //text-align: center;
             border-radius: 15px;
-            background-color: #000000aa;
+            //background-color: #000000aa;
             animation: carousel-left 1.5s ease-in-out;
             
             @keyframes carousel-left {
@@ -545,18 +552,18 @@ footer, .footer-section{
 /* -------------------------------------------- Cards -------------------------------------------- */
 /* ==== Cards using Bootstrap === */
 
-#cards .card {
+#teamlead .card {
   border-radius: 20px;
   min-height: 100%;
 }
 
-#cards .heading-border {
+#teamlead .heading-border {
   position: absolute;
   width: 100%;
   top: 60%;
 }
 
-#cards .card .user-picture img {
+#teamlead .card .user-picture img {
   position: absolute;
   top: -25%;
   right: -5%;
@@ -566,6 +573,6 @@ footer, .footer-section{
   height: auto;
 }
 
-#cards .card .user-content .user-name {
+#teamlead .card .user-content .user-name {
   margin-right: 150px;
 }

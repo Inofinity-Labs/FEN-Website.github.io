@@ -140,10 +140,11 @@
     position: fixed;
     top: 25px;
     width: 100%;
-    height: 50px;
+    //height: 50px;
     overflow: hidden;
-    background-color: #000;
-    font-family: 'ITCAvantGarde';
+    //background-color: $fen-whitish;
+    
+    font-family: 'Rubik';
     transition: all 1.2s ease;
     z-index: 2;
     &.color-change{
@@ -155,12 +156,11 @@
     }
     
     
-    .nav-active{
-        color:#258a2a!important;
-    }
+    
     
     .nav-right{
         width: 25%;
+        min-height: 50px;
         background-color: #fff;
         img{
             margin-left: 50%;
@@ -169,11 +169,13 @@
     }
     .nav-left{
         width: 75%;
-        background-color: #000;
+        min-height: 50px;
+        background-color: #fff;
         .main-nav-a {
             float: left;
-            font-size: 16px;
-            color: #b5b5b5;
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
             text-align: center;
             padding: 14px 0px;
             text-decoration: none;
@@ -182,8 +184,13 @@
     
             &:hover{
                 text-decoration: none;
-                color:#fff;
+                color:$fen-active;
             }
+        }
+        .nav-active{
+            color: $fen-active!important;
+            border-bottom: 5px solid $fen-active;
+            //color:#258a2a!important;
         }
         .dropdown-d {
             float: left;
@@ -191,7 +198,7 @@
             width: calc(100% / 6);
             
             &:hover{
-                color:#fff;
+                color: $fen-active;
                 
             }
             .dropbtn{
@@ -201,27 +208,30 @@
             .dropdown-content-d {
                 display: block;
                 position: fixed;
-                background-color: #232B2D;
+                //background-color: #fff;
                 padding: 5% auto;
                 width: 100%;
                 left: 0;
-                top : 75px;
+                top : 85px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
                 
                 .sub-nav-a {
                     float: left;
-                    font-size: 12px;
-                    color: #b5b5b5;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #363636;
                     text-align: center;
                     padding: 14px 0px;
                     text-decoration: none;
+                    height: 100%;
                     
                     
             
                     &:hover{
-                        color: #fff;
+                        color: $fen-active;
                         text-decoration: none;
+                        border-bottom: 5px solid $fen-active;
                         
                     }
                 }
@@ -266,7 +276,7 @@
                     
             
                     &:hover{
-                        color: #fff;
+                        color: $fen-active;
                         text-decoration: none;
                         
                     }
@@ -288,7 +298,7 @@
         .nav-content-center{
             position: absolute;
             width: 100%;
-            background-color: #232B2D;
+            background-color: $fen-sub-nav;
             left:0%;
             transition: all 1.2s ease;
             &.color-change{
@@ -335,4 +345,5 @@
         text-decoration: none;
         
     }
+    
 }

@@ -13,12 +13,13 @@
     overflow: hidden;
 }
 .hero-header{
-    font-family: 'Montserrat';
-    font-size: 80px;
+    font-family: 'Rubik';
+    font-size: 2.5em;
+    font-weight: 600;
     text-align: center;
     
     //transform: translate(0%, -50%);
-    color: $fen-green;
+    //color: $fen-green;
     //color: #5da943;
 }
 .about-para{
@@ -56,6 +57,9 @@
 }
 .display-4 ,.display-5{
     color: #fabe11 ;
+}
+.fen-yellow{
+   color: #fabe11 ;
 }
 .fen-green{color: $fen-green }
 
@@ -204,4 +208,14 @@ button.contact_form_submit {
   margin-top: 50px;
    border-radius: 30px;
    overflow: hidden;
+}
+
+/* text formating */
+.fen-heading{
+   font-weight: 700;
+   font-size: 3em;
+}
+.fen-para{
+   font-weight: 400;
+   font-size: 1.2em;
 }
