@@ -16,36 +16,10 @@
     <!-- AOS Animation-->
     <link href="assests/css/animate/aos.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+
     
-    <script>
-        function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-    </script>
+    
   </head>
   <body>
     <!-- <div class="preloader">
@@ -110,7 +84,7 @@
     <!-- </div> --> <!-- container-div -->
     <!-- ----------------------------------------- NEW navbar ----------------------------------------- -->
     <!-- ----------------------------------------- navbar ----------------------------------------- -->
-    <div class="navbar-d" >
+    <div class="navbar-d">
         <div class="row">
             <div class="nav-right">
                 <a href="#" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
@@ -157,7 +131,7 @@
     </div>
 <!-- -----------------------------------------END navbar ----------------------------------------- --> 
     <!-- ----------------------------------------- END NEW navbar ----------------------------------------- -->
-    <main>
+    <!--main>
         <div id="carouselExampleInterval" class="carousel slide" >
             <div class="carousel-inner h100vh">
                 <div class="carousel-item active" data-interval="5000">
@@ -194,156 +168,222 @@
                 <span class="sr-only">Next</span>
                 </a>
         </div>    
-    </main>
+    </main-->
+    <!-- Main Slider Change -->
+    <section id="hero-slider">
+        <!-- <div id="logo" class="mask">
+            <span class="logo-text masked">Martin Rohde</span>
+        </div> -->
+        <div id="slideshow">
+            <div id="slides-main" class="slides">
+                <div class="slide" data-index="0">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(assests/img/carousel/s12.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="1">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(assests/img/carousel/s22.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="2">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(assests/img/carousel/s32.jpg)"></div>
+                    </div>
+                </div>
+                <!-- <div class="slide" data-index="3">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(assests/img/carousel/s5.webp)"></div>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div id="slides-aux" class="slides mask">
+                <div class="slide-title slide" data-index="0">
+                    <h1 class="fen-heading">Welcome to <span class="fen-yellow"> First Energy</span></h1>
+                    <p class="fen-para"> We are changing the world with renewable energy one roof at a time. We are
+                        passionate in providing world-class solar solutions and we act with the fundamental vision of creating
+                        a better and a greener world.
+                    </p>
+                    <a href="about.html" class="btn btn-view-more" style="z-index: 999!important;">View More </a>
+                </div>
+                <div class="slide-title slide" data-index="1">
+                    <h2 class="fen-heading">We Cater Your <span class="fen-yellow">Energy Needs</span></h2>
+                    <p class="fen-para"> Whether it's your home, your business, or even your land, we are prepared to offer unmatched solutions. You are only restricted by your imagination. So, what do you have in your mind?</p>
+                    <a href="about.html" class="btn btn-view-more">View More </a>
+                </div>
+                <div class="slide-title slide" data-index="2">
+                    <h2 class="fen-heading">Grow <span class="fen-yellow">with us</span></h2>
+                    <p class="fen-para">Whether you are a houseowner, a contractor, a consultant, you can grow with us to see a better tomorrow and a greener world.</p>
+                    <a href="about.html" class="btn btn-view-more">View More </a>
+                </div>
+                <!-- <div class="slide-title slide" data-index="3">The Colossal</div> -->
+            </div>
+        </div>
+        <!-- <div id="info">
+            <div class="slider-title-wrapper">
+                <span class="line"></span>
+                <h1 class="slider-title">
+                    <span>Projects</span>
+                </h1>
+            </div>
+            <div class="about">
+                <p>
+                    A pure CSS/JS slider layout<br/>
+                    Developed for Toptal engineering blog<br/>
+                    by <a href="http://stefan.lynxdev.io" target="_blank">Stefan V</a>,
+                    repo on <a href="https://github.com/vitass/pure-css-js-slider" target="_blank">Github</a>
+                </p>
+            </div>
+        </div> -->
+        <nav id="slider-nav">
+            <span class="current">01</span>
+            <span class="sep"></span>
+            <span class="total">03</span>
+        </nav>
+    </section>
+    <!-- Main Slider Change -->
+
     <div class="s-padding-top"></div>
     <div class="s-padding-top"></div>
 
         <section class="solutions">
             <div class="container">
-                <h1 class="hero-header" data-aos="fade-up" data-aos-duration="800">Solutions</h1>
+                <h1 class="home-index-header" data-aos="fade-up" data-aos-duration="800">Solutions</h1>
                 <div class="s-padding-top"></div>
-                <div class="row" data-aos="fade-up" data-aos-duration="1200">
+
+                <div class="card-deck">
                     <div class="col-md-4">
-                        <div id="card" class="card rounded">
-                            <a href="solar-projects.html">
-                                <div class="card_overlay">
-                                </div>
-                                <div class="card__image">
-                                    <img src="assests/img/solutions/solar.jpg" alt="" />
-                                </div>
-                                <div class="card__heading">
-                                    <!-- <span class="small">Solar</span>  -->
-                                    <h2>Ternkey Solar Projects EPC</h2>
-                                </div>
-                            </a>
-                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="shadow-home-index">
+                                <img src="assests/img/solutions/solar.jpg" class="image-home-index" alt="">
+                            </div>
+                            <div class="card-body home-index">
+                                <h5 class="title-home-index">Ternkey Solar Projects EPC</h5>
+                            </div> 
+                        </div>                                    
                     </div>
                     <div class="col-md-4">
-                        <div id="card" class="card rounded">
-                            <div class="card_overlay">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="shadow-home-index">
+                                <img src="assests/img/solutions/solar-roof.jpg" class="image-home-index" alt="">
                             </div>
-                            <div class="card__image">
-                                <img src="assests/img/solutions/solar-roof.jpg" alt="" />
-                            </div>
-                            <div class="card__heading">
-                                <!-- <span class="small">Solar</span> -->
-                                <h2>Solar Roof Rentals</h2>
-                            </div>
-                        </div>
+                            <div class="card-body home-index">
+                                <h5 class="title-home-index">Solar Roof Rentals</h5>
+                            </div> 
+                        </div>                                    
                     </div>
                     <div class="col-md-4">
-                        <div id="card" class="card rounded">
-                            <div class="card_overlay">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="shadow-home-index">
+                                <img src="assests/img/solutions/concept.jpg" class="image-home-index" alt="">
                             </div>
-                            <div class="card__image">
-                                <img src="assests/img/solutions/concept.jpg" alt="" />
-                            </div>
-                            <div class="card__heading">
-                                <!-- <span class="small">Solar</span> -->
-                                <h2>Concepts Development</h2>
-                            </div>
-                        </div>
+                            <div class="card-body home-index">
+                                <h5 class="title-home-index">Concept Development</h5>
+                            </div> 
+                        </div>                                    
                     </div>
+                    <div class="col-md-4">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="shadow-home-index">
+                                <img src="assests/img/solutions/approve.jpg" class="image-home-index" alt="">
+                            </div>
+                            <div class="card-body home-index">
+                                <h5 class="title-home-index">Permits and Approvals</h5>
+                            </div> 
+                        </div>                                    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="shadow-home-index">
+                                <img src="assests/img/solutions/consultancy.jpg" class="image-home-index" alt="">
+                            </div>
+                            <div class="card-body home-index">
+                                <h5 class="title-home-index">Design and Management</h5>
+                            </div> 
+                        </div>                                    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="shadow-home-index">
+                                <img src="assests/img/solutions/maintenance.jpg" class="image-home-index" alt="">
+                            </div>
+                            <div class="card-body home-index">
+                                <h5 class="title-home-index">Operations and Maintenance</h5>
+                            </div> 
+                        </div>                                    
+                    </div>
+                    
+                    
+                    
                 </div>
-                <div class="s-padding-top mobile-hide"></div>
-                <div class="row" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="col-md-4">
-                        <div id="card" class="card rounded">
-                            <div class="card_overlay">
-                            </div>
-                            <div class="card__image">
-                                <img src="assests/img/solutions/approve.jpg" alt="" />
-                            </div>
-                            <div class="card__heading">
-                                <!-- <span class="small">Solar</span> -->
-                                <h2>Permits and Approvals</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div id="card" class="card rounded">
-                            <div class="card_overlay">
-                            </div>
-                            <div class="card__image">
-                                <img src="assests/img/solutions/consultancy.jpg" alt=""  />
-                            </div>
-                            <div class="card__heading">
-                                <!-- <span class="small">Solar</span> -->
-                                <h2>Design and Management</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div id="card" class="card rounded">
-                            <div class="card_overlay">
-                            </div>
-                            <div class="card__image">
-                                <img src="assests/img/solutions/maintenance.jpg" alt="" />
-                            </div>
-                            <div class="card__heading">
-                                <!-- <span class="small">Solar</span> -->
-                                <h2>Operation and Maintenance</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+    
+                
             </div>
         </section>
-        <div class="padding-top"></div>
+        <div class="s-padding-top"></div>
         <section class="news">
             <div class="container">
-            <div class="row">
+                <h1 class="home-index-header" data-aos="fade-up" data-aos-duration="800">News</h1>
+                <div class="s-padding-top"></div>
+                <div class="row d-flex align-items-center">
                 
                     <div class="col-md-6 col-sm-12" data-aos="fade-up"  data-aos-duration="1500">
-                        <h1>FIRST GROUND MOUNTED BY <span class="fen-yellow">FIRST ENERGY</span> COMMISSION</h1>
+                        <h1 >FIRST GROUND MOUNTED BY <span class="fen-yellow">FIRST ENERGY</span> COMMISSION</h1>
                         <p>At dolore magna aliqua enim veniam quis nostrud minim exercitation ulamco aliquip exa commodo consequat duis aute aure dolor reprehen derit voluptate cillum dole afugiat nula pariatur vitae. Sagittis dia facilis convalis dictumst sed ipsum tempore.</p>
                     </div>
                     <div class="col-md-6 col-sm-12" data-aos="fade-up"  data-aos-duration="1500" data-aos-delay="300">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <!-- <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                             
-                            </ol>
+                            </ol> -->
                             <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s1.webp" alt="First slide">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s1.webp" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s2.webp" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s3.webp" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s4.webp" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s5.webp" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s6.webp" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assests/img/carousel/small-carousel/s7.webp" alt="Third slide">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s2.webp" alt="Second slide">
+
+                            <div class="news-controls">
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <div class="num"></div>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s3.webp" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s4.webp" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s5.webp" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s6.webp" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assests/img/carousel/small-carousel/s7.webp" alt="Third slide">
-                            </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        </div>
-                    </div> 
+                            <div class="carousel-hover "><i class="fa fa-pause-circle" aria-hidden="true"></i></div>
+                        </div>  
+                    </div>
                 </div> 
             </div> <!-- end row -->
 
@@ -353,7 +393,7 @@
     </div>
 
   
-    <div w3-include-html="include/footer.html" data-aos="fade-up" data-aos-duration="500"></div> 
+    <div w3-include-html="include/footer.html"></div>
     
     
     
@@ -367,6 +407,7 @@
     <script src="assests/js/custom.js"></script>
     <!-- Scroll Animation -->
     <script src="assests/css/animate/aos.js"></script>
+    <script src="assests/js/w3include.js"></script>
 
     <!-- GSAP -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
@@ -374,11 +415,27 @@
     <!-- Loader -->
     <!-- <script src="assests/js/loader.js"></script> -->
 
-    
+    <!--Image Slider-->
+    <script src="assests/js/main-image-slider.js"></script>
 
     <script>
         AOS.init();
         includeHTML();
+    </script>
+
+    <script>
+        // News Section Slider number
+        var totalItems = $('.carousel-item').length;
+        var currentIndex = $('div.active').index() + 1;
+        $('.num').html('' + currentIndex + ' of ' + totalItems + '');
+
+        $('#carouselExampleIndicators').carousel({
+        interval: 2000
+        });
+
+        $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+            $('.num').html((e.to+1)+' of '+totalItems);
+        });
     </script>
     
     <!-- Option 2: Separate Popper and Bootstrap JS -->

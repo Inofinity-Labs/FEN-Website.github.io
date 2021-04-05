@@ -212,10 +212,18 @@ button.contact_form_submit {
 
 /* text formating */
 .fen-heading{
-   font-weight: 700;
-   font-size: 3em;
+   font-family: 'Poppins-Bold';
+   font-weight: bold;
+   font-size: 55px;
+   line-height: 65px;
+   @media only screen and (max-width: 768px) {
+      font-size: 14px;
+   }
 }
 .fen-para{
    font-weight: 400;
    font-size: 1.2em;
+   @media only screen and (max-width: 768px) {
+      font-size: 12px;
+   }
 }

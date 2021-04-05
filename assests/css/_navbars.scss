@@ -1,3 +1,6 @@
+$nav-height : 60px;
+
+
 .nav-btn{
     width: 100%;
     height: 100%;
@@ -140,11 +143,13 @@
     position: fixed;
     top: 25px;
     width: 100%;
-    //height: 50px;
+    background-color: #f8f8f8;
+    min-height: $nav-height;
     overflow: hidden;
+    z-index: 9999!important;
     //background-color: $fen-whitish;
     
-    font-family: 'Rubik';
+    font-family: 'Poppins';
     transition: all 1.2s ease;
     z-index: 2;
     &.color-change{
@@ -160,26 +165,32 @@
     
     .nav-right{
         width: 25%;
-        min-height: 50px;
-        background-color: #fff;
+        height: $nav-height ;
+        
         img{
+            
             margin-left: 50%;
-            transform: translate(-50%, 10%);
+           
+            //margin-top: 50%;
+            transform: translate(-50%, 30%);
         }
     }
     .nav-left{
-        width: 75%;
-        min-height: 50px;
-        background-color: #fff;
+        position: absolute;
+        right: 0;
+        
+        
         .main-nav-a {
             float: left;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             color: #000;
-            text-align: center;
-            padding: 14px 0px;
+            padding-block: 17px;
+            padding-inline: 30px;
             text-decoration: none;
-            width: calc(100% / 6);
+            height: $nav-height;
+            //width: calc(100% / 6);
+        
             
     
             &:hover{
@@ -195,7 +206,7 @@
         .dropdown-d {
             float: left;
             overflow: hidden;
-            width: calc(100% / 6);
+            //width: calc(100% / 6);
             
             &:hover{
                 color: $fen-active;

@@ -15,6 +15,7 @@ html{
 @import 'abstract/color';
 @import 'abstract/font';
 
+@import 'slider';
 @import 'product';
 @import 'component';
 @import 'navbars';
@@ -45,11 +46,21 @@ if it's not present, don't show loader */
    .mobile-hide{
         display: none !important;
    }
-   section {
-    height: auto!important;
-    
+  //  section {
+  //   height: auto!important;
+  //   }
 }
+.padding-top{padding-top: 10em;}
+@media screen and (max-width: 600px) {
+    .padding-top{padding-top: 5em;}
 }
+.s-padding-top{padding-top: 2em;}
+
+.h100vh{height:100vh!important;}
+    @media screen and (max-width: 600px) {
+        .h100vh{height:auto!important;}
+    }
+
 /* ------------------------------------------- Loader ------------------------------------------- */
 /*PRELOADING------------ */
 #overlayer {
@@ -121,74 +132,66 @@ if it's not present, don't show loader */
       height: 0%;
     }
   }
-  /* ------------------------------------------- END Loader ------------------------------------------- */
+
 /* ------------------------------------------- Hero Section ------------------------------------------- */
-#carouselExampleInterval{
-  background: red;
-  
-}
+
 //carousel-caption
-.padding-top{padding-top: 10em;}
-@media screen and (max-width: 600px) {
-    .padding-top{padding-top: 5em;}
-}
-.s-padding-top{padding-top: 2em;}
 .carousel{
-    .h100vh{height:100vh!important;}
-    @media screen and (max-width: 600px) {
-        .h100vh{height:auto!important;}
+  transition: .3s all ease-in;
+  .carousel-hover{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    display: none;
+    //transition: 1s all ease-in;
+    i{
+      font-size: 50px;
     }
+  }
+  &:hover{opacity: 0.8;}
+  &:hover .carousel-hover{
+    display: block;
+    opacity: 1!important;
+  }
+    
     
       
-    .carousel-inner{
-      
-        img{
-        animation: carousel-zoom 10s ease;
-        
-        @keyframes carousel-zoom {
-            0% {transform: scale(1.0);}
-            100% {transform: scale(1.05);}
-            }
-        }
-        // .carousel-item{
-        //   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-        // }
-
-        .carousel-caption2{
-            position: absolute;
-            width: 45%;
-            top: 40%;
-            transform: translate(0%, -50%)!important;
-            left: 10%;
-            z-index: 10;
-            padding: 40px;
-            color: #fff;
-            //text-align: center;
-            border-radius: 15px;
-            //background-color: #000000aa;
-            animation: carousel-left 1.5s ease-in-out;
-            
-            @keyframes carousel-left {
-                0% {left: 2%;}
-                100% {left: 10%;}
-            }
-        }
-    }
-    .carousel-control-prev-icon2{
-        background:url(/assests/img/svg-ico/left-arrow.svg)!important ;
-        
-        width:40px!important;
-        height: 40px!important;
-    }
-    .carousel-control-next-icon2{
-        background:url(/assests/img/svg-ico/next-arrow.svg)!important ;
-        width:40px!important;
-        height: 40px!important;
-    }
-    .carousel-control-next, .carousel-control-prev {
-        width: 5%!important;
+  
+    .carousel-control-next, .carousel-control-prev {opacity: 1;}
+    .carousel-control-next{right: 5%}
+    .carousel-control-prev{left:5%}
+    .fa-long-arrow-left, .fa-long-arrow-right{
+      color: #fff;
+      font-size: 16px;
     }
 }
+#carouselExampleIndicators li .active{
+  opacity: 1;
+}
+.news-controls{
+   position: absolute;
+   height: 60px;
+   width: 30%;
+   bottom: 0;
+   left: 0;
+   padding: 20px;
+   background-color: #333333;
+}
+.num{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //height: auto;
+  //width: 50px;
+  //padding: 5px 15px;
+  color: #fff;
+  //background-color: rgba(43, 43, 43, 0.9);
+}
+
 
 /* ------------------------------------------- Solution Section ------------------------------------------- */
 //carousel-caption
@@ -271,8 +274,10 @@ if it's not present, don't show loader */
 /* ------------------------------------------- News Section ------------------------------------------- */
 
 .news{
-    position: relative;
-    min-height: 500px;
+  position: relative;
+  min-height: 80vh;
+  padding:2% 0 8% 0;
+  background: #F5F5FA;
 
     &:before{
         top: 0;
@@ -292,10 +297,22 @@ if it's not present, don't show loader */
         }
     }
     h1{
-        font-weight: 700;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 178.5%;
+    }
+    p{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 248.5%;
     }
 
 }
+
+
+
 
 
 /* ------------------------------------------- Footer Section ------------------------------------------- */
@@ -575,4 +592,78 @@ footer, .footer-section{
 
 #teamlead .card .user-content .user-name {
   margin-right: 150px;
+}
+
+
+/* Solution in Home Page */
+.home-index-header{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+}
+.card-deck{
+  //padding-inline: 3rem;
+  
+  /*@media only screen and (max-width: 992px) {
+    padding-inline: 0px;
+  }*/
+  .card{
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (max-width: 768px) {
+      min-width: 100%;
+    }
+  }
+  .shadow-home-index{
+    border-radius: 15px;
+    border:none;
+    .image-home-index{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    .title-home-index{
+      font-size: 16px;
+    }
+  }
+  .title-home-index{
+    font-size: 16px;
+  }
+  .home-index{
+    text-align: center;
+    font-size: 16px;
+    .title-home-index{
+      font-size: 16px;
+    }
+  }
+}
+ 
+/*------------------------------------------------- Projects CSS -------------------------------------------------*/
+#clients{
+  .card{
+    margin-block: 20px;
+  }
+  .card{
+    .card-header{
+      img{
+        border-radius: 15px!important;
+        filter: grayscale(90%);
+        &:hover{filter: none;}
+        //&:hover .card-body h5{transform: scale(1.2);}
+      }
+    }
+    .card-body{
+      h5{
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+       
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
 }
