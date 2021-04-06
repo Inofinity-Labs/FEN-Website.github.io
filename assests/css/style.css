@@ -627,9 +627,12 @@ html,
 
 .hero-header {
   font-family: 'Rubik';
-  font-size: 2.5em;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
   text-align: center;
+  color: #616161;
 }
 
 .about-para {
@@ -674,11 +677,15 @@ html,
 }
 
 .display-4, .display-5 {
-  color: #fabe11;
+  color: #FABE11;
+}
+
+.text-black {
+  color: #000;
 }
 
 .fen-yellow {
-  color: #fabe11;
+  color: #FABE11;
 }
 
 .fen-green {
@@ -1134,10 +1141,6 @@ button.contact_form_submit {
   overflow: hidden;
 }
 
-.navbar-d .nav-left .dropdown-d:hover {
-  color: #006008;
-}
-
 .navbar-d .nav-left .dropdown-d .dropbtn {
   width: 100%;
   text-align: center;
@@ -1161,9 +1164,9 @@ button.contact_form_submit {
   font-weight: 400;
   color: #363636;
   text-align: center;
-  padding: 14px 0px;
   text-decoration: none;
   height: 100%;
+  padding: 14px 0;
 }
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-a:hover {
@@ -1206,15 +1209,39 @@ button.contact_form_submit {
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-product {
   float: left;
-  font-size: 12px;
-  color: #b5b5b5;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #616161;
   text-align: center;
   padding: 14px 0px;
   text-decoration: none;
+  width: calc(100%/5);
   width: 25%;
 }
 
 .navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-product:hover {
+  color: #006008;
+  text-decoration: none;
+}
+
+.navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-about {
+  float: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #616161;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  width: calc(100%/5);
+}
+
+.navbar-d .nav-left .dropdown-d .dropdown-content-d .sub-nav-about:hover {
   color: #006008;
   text-decoration: none;
 }
@@ -1226,6 +1253,12 @@ button.contact_form_submit {
 .navbar-d .nav-left .nav-content-center {
   position: absolute;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #E5E5E5;
   left: 0%;
   -webkit-transition: all 1.2s ease;
@@ -1256,21 +1289,6 @@ button.contact_form_submit {
   .navbar-d .nav-left {
     display: none;
   }
-}
-
-.sub-nav-about {
-  float: left;
-  font-size: 12px;
-  color: #b5b5b5;
-  text-align: center;
-  padding: 14px 0px;
-  text-decoration: none;
-  width: calc(100%/5);
-}
-
-.sub-nav-about:hover {
-  color: #fff;
-  text-decoration: none;
 }
 
 .rooftop {
@@ -1607,11 +1625,16 @@ button.contact_form_submit {
   height: 40vh;
 }
 
-.vision-mission {
+.v-m-image {
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, right top, left top, color-stop(5%, white), color-stop(70%, rgba(255, 255, 255, 0))), url(../img/bg/v-m-image3.jpg);
-  background-image: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(270deg, white 5%, rgba(255, 255, 255, 0) 70%), url(../img/bg/v-m-image3.jpg);
+  background-image: url(../img/bg/v-m-image.jpg);
   background-size: cover;
+  background-position: center;
+  min-height: 120vh;
+}
+
+.v-m-text {
+  background-color: #F4F4F4;
   min-height: 120vh;
 }
 
@@ -1798,15 +1821,15 @@ button.contact_form_submit {
   font-size: 30px;
 }
 
+.about-view-more {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff !important;
+}
+
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
-@media screen and (max-width: 600px) {
-  .mobile-hide {
-    display: none !important;
-  }
-}
-
 .padding-top {
   padding-top: 10em;
 }
@@ -1828,6 +1851,30 @@ if it's not present, don't show loader */
 @media screen and (max-width: 600px) {
   .h100vh {
     height: auto !important;
+  }
+}
+
+.mobile-only {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  padding: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(49, 49, 49, 0.8);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-hide {
+    display: none;
   }
 }
 
@@ -2516,5 +2563,42 @@ footer .footer-logo-widget .f-row, .footer-section .footer-logo-widget .f-row {
 
 #clients .card .card-body p {
   font-size: 14px;
+}
+
+/* ************************************* Model ************************************* */
+.modal {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Black w/ opacity */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+/* Modal Content */
+.fen-modal-content {
+  width: 80%;
+  background-color: #fefefe;
+  padding: 20px;
+  -webkit-box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 20px !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.fen-modal-content button {
+  text-align: right;
+}
+
+.fen-modal-content .fen-modal-image {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.fen-modal-content .fen-modal-image img {
+  border-radius: 50%;
+  border: 10px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */

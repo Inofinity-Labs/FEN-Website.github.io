@@ -13,10 +13,13 @@
     overflow: hidden;
 }
 .hero-header{
-    font-family: 'Rubik';
-    font-size: 2.5em;
-    font-weight: 600;
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 56px;
+   line-height: 66px;
     text-align: center;
+    color: #616161;
     
     //transform: translate(0%, -50%);
     //color: $fen-green;
@@ -56,11 +59,10 @@
     border-bottom: 1px solid rgb(219, 219, 219);
 }
 .display-4 ,.display-5{
-    color: #fabe11 ;
+    color: $fen-yellow ;
 }
-.fen-yellow{
-   color: #fabe11 ;
-}
+.text-black{color: #000}
+.fen-yellow{color: $fen-yellow}
 .fen-green{color: $fen-green }
 
 .width-9{

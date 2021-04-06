@@ -208,10 +208,10 @@ $nav-height : 60px;
             overflow: hidden;
             //width: calc(100% / 6);
             
-            &:hover{
-                color: $fen-active;
+            // &:hover{
+            //     color: $fen-active;
                 
-            }
+            // }
             .dropbtn{
                 width: 100%;
                 text-align: center;
@@ -233,10 +233,12 @@ $nav-height : 60px;
                     font-weight: 400;
                     color: #363636;
                     text-align: center;
-                    padding: 14px 0px;
+                    
                     text-decoration: none;
                     height: 100%;
-                    
+                    padding: 14px 0;
+                    //padding ro content center
+                    //padding: 14px 12px;
                     
             
                     &:hover{
@@ -278,11 +280,16 @@ $nav-height : 60px;
                 }
                 .sub-nav-product {
                     float: left;
-                    font-size: 12px;
-                    color: #b5b5b5;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #616161;
                     text-align: center;
                     padding: 14px 0px;
                     text-decoration: none;
+                    width: calc(100%/5);
                     width: 25%;
                     
             
@@ -292,7 +299,26 @@ $nav-height : 60px;
                         
                     }
                 }
-                
+                .sub-nav-about{
+                    float: left;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #616161;
+                    text-align: center;
+                    padding: 14px 0px;
+                    text-decoration: none;
+                    width: calc(100%/5);
+                    //width: 20%;
+                    &:hover{
+                        color: $fen-active;
+                        text-decoration: none;
+                        
+                    }
+                    
+                }
                 
             }
             
@@ -309,6 +335,8 @@ $nav-height : 60px;
         .nav-content-center{
             position: absolute;
             width: 100%;
+            display: flex;
+            justify-content: center;
             background-color: $fen-sub-nav;
             left:0%;
             transition: all 1.2s ease;
@@ -342,19 +370,3 @@ $nav-height : 60px;
     
 }
 
-.sub-nav-about{
-    float: left;
-    font-size: 12px;
-    color: #b5b5b5;
-    text-align: center;
-    padding: 14px 0px;
-    text-decoration: none;
-    width: calc(100%/5);
-    //width: 20%;
-    &:hover{
-        color: #fff;
-        text-decoration: none;
-        
-    }
-    
-}

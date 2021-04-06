@@ -42,14 +42,11 @@ if it's not present, don't show loader */
 
 
 
-@media screen and (max-width: 600px) {
-   .mobile-hide{
-        display: none !important;
-   }
-  //  section {
-  //   height: auto!important;
-  //   }
-}
+// @media screen and (max-width: 600px) {
+//    .mobile-hide{
+//         display: none !important;
+//    }
+// }
 .padding-top{padding-top: 10em;}
 @media screen and (max-width: 600px) {
     .padding-top{padding-top: 5em;}
@@ -61,6 +58,24 @@ if it's not present, don't show loader */
         .h100vh{height:auto!important;}
     }
 
+.mobile-only{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 90%;
+  padding: 5%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(49, 49, 49, 0.8);
+  color: #fff;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-hide{
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 /* ------------------------------------------- Loader ------------------------------------------- */
 /*PRELOADING------------ */
 #overlayer {
@@ -666,4 +681,42 @@ footer, .footer-section{
       }
     }
   }
+}
+
+/* ************************************* Model ************************************* */
+.modal{
+
+  background-color: rgba(255, 255, 255, 0.1); /* Black w/ opacity */
+  backdrop-filter: blur(10px);
+}
+
+/* Modal Content */
+.fen-modal-content {
+  //position: absolute;
+  //left: 10%;
+  width: 80%;
+  //top: 30%;
+  background-color: #fefefe;
+  //margin: auto;
+  padding: 20px;
+  //border: 1px solid #888;
+  box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15)!important;
+  border-radius: 20px!important;
+  outline:none!important;
+  border:none!important;
+  button{text-align: right;}
+  
+
+  .fen-modal-image{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    img{
+      border-radius: 50%;
+      border: 10px solid #fff;
+    }
+  }
+  
 }
