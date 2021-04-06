@@ -102,12 +102,17 @@
     background-color: #fff;
     background-image: url(../img/bg/v-m-image.jpg);
     background-size: cover;
-    background-position: center;
-    min-height: 120vh;
+    background-position: 0% 20%; 
+    min-height: 100vh;
 }
 .v-m-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #F4F4F4;
-  min-height: 120vh;
+  min-height: 100vh;
+  line-height: 31.76px;
+    padding-inline: 40px!important;
 }
 
 .card-flagship{
@@ -122,9 +127,11 @@
 
 .our-team{
     background-color: #fff;
-    background-image:linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%), url(../img/bg/v-m-image3.jpg);
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%), url(../img/bg/our-leads.jpg);
     background-size: cover;
-    min-height: 120vh;
+    background-position: center;
+    min-height: 100vh;
+    padding-block: 15vh;
 }
 .team-leads{
     background-color: #fff;
@@ -149,6 +156,7 @@
     .card-l-content{
         font-size: 14px;
         text-align: left;
+        padding-top: 12px;
     }
 }
 
@@ -297,7 +305,9 @@
   //margin-top: 25px!important;
   padding: 10px 20px;
   //width: 90%;
-  background-color: #000;
-  color: #fff!important;
-  //border-radius: 50px;
+  background-color: #333333;
+  color: #f0f0f0!important;
+  outline: none!important;
+  border: none;
+  border-radius: 50px;
 }
