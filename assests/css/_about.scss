@@ -77,12 +77,19 @@
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),url(../img/bg/aboutus-40.jpg);
     background-size: cover;
     opacity: 0.3;
-    
+    @media only screen and (max-width: 768px) {margin-top: 10vh;}
 }
 
 .product-partner-image{
     margin-top: 15vh;
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),url(../img/bg/product-partners.jpg);
+}
+.project-partner-image{
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),url(../img/bg/product-partners.jpg);
+  @media only screen and (min-width: 768px){
+  margin-top: 20vh;
+  
+  }
 }
 .about-hero{
     position: relative;
@@ -96,7 +103,6 @@
         width: 100%;
         height:40vh;
     }
-    
 }
 .v-m-image{
     background-color: #fff;

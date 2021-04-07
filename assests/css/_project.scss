@@ -1,0 +1,39 @@
+.ref-card{
+    background-color: #fff;
+    border-radius: 15px;
+    min-height: 350px;
+
+
+    .ref-image-card{
+        padding:50px;
+        margin-left: -100px;
+        // position: absolute;
+        // top: 50%;
+        // left:-5%;
+        // transform: translate(0, -50%);
+        .carousel-inner{
+            border-radius: 25px;
+            box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.5);
+        }
+        .projects-controls{
+            .carousel-control-prev{left:0}
+            .carousel-control-next{right:0}
+        }
+
+        
+    }
+ 
+    .ref-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 50px;
+    }
+}
+
+.projects-cards{
+    .card-margin{
+        padding-left: 40px;
+    }
+
+}

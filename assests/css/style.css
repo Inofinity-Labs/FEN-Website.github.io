@@ -508,7 +508,7 @@ html,
 
 .card .card-header {
   background-color: #fff;
-  border-radius: 15px !important;
+  border-radius: 15px 15px 0 0 !important;
 }
 
 .card .card-header .card-img-top-product {
@@ -1444,10 +1444,27 @@ html,
   opacity: 0.3;
 }
 
+@media only screen and (max-width: 768px) {
+  .about-image {
+    margin-top: 10vh;
+  }
+}
+
 .product-partner-image {
   margin-top: 15vh;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0))), url(../img/bg/product-partners.jpg);
   background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 50%), url(../img/bg/product-partners.jpg);
+}
+
+.project-partner-image {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0))), url(../img/bg/product-partners.jpg);
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 50%), url(../img/bg/product-partners.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+  .project-partner-image {
+    margin-top: 20vh;
+  }
 }
 
 .about-hero {
@@ -1689,6 +1706,49 @@ html,
   outline: none !important;
   border: none;
   border-radius: 50px;
+}
+
+.ref-card {
+  background-color: #fff;
+  border-radius: 15px;
+  min-height: 350px;
+}
+
+.ref-card .ref-image-card {
+  padding: 50px;
+  margin-left: -100px;
+}
+
+.ref-card .ref-image-card .carousel-inner {
+  border-radius: 25px;
+  -webkit-box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ref-card .ref-image-card .projects-controls .carousel-control-prev {
+  left: 0;
+}
+
+.ref-card .ref-image-card .projects-controls .carousel-control-next {
+  right: 0;
+}
+
+.ref-card .ref-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-inline: 50px;
+}
+
+.projects-cards .card-margin {
+  padding-left: 40px;
 }
 
 /* Paste this css to your style sheet file or under head tag */
@@ -2071,7 +2131,6 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 }
 
 .footer-content {
-  padding-top: 10vh;
   color: #999999;
 }
 
@@ -2324,18 +2383,18 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 /* -------------------------------------------- Loader Working End-------------------------------------------- */
 /* -------------------------------------------- Cards -------------------------------------------- */
 /* ==== Cards using Bootstrap === */
-#teamlead .card {
+.teamlead .card {
   border-radius: 20px;
   min-height: 100%;
 }
 
-#teamlead .heading-border {
+.teamlead .heading-border {
   position: absolute;
   width: 100%;
   top: 60%;
 }
 
-#teamlead .card .user-picture img {
+.teamlead .card .user-picture img {
   position: absolute;
   top: -25%;
   right: -5%;
@@ -2345,7 +2404,7 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   height: auto;
 }
 
-#teamlead .card .user-content .user-name {
+.teamlead .card .user-content .user-name {
   margin-right: 150px;
 }
 
@@ -2408,13 +2467,23 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   margin-block: 20px;
 }
 
-#clients .card .card-header img {
+#clients .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#clients .card .card-header .client-logo {
   border-radius: 15px !important;
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%);
+  max-width: 60%;
 }
 
-#clients .card .card-header img:hover {
+#clients .card .card-header .client-logo:hover {
   -webkit-filter: none;
           filter: none;
 }
@@ -2422,7 +2491,6 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 #clients .card .card-body h5 {
   font-size: 18px;
   font-weight: 600;
-  text-align: center;
 }
 
 #clients .card .card-body p {
@@ -2541,8 +2609,8 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 
 /* ************************************* Contact US ************************************* */
 .contact-hero {
-  padding: 15vh 0 15vh 0;
   background-color: #F2F2F2;
+  color: #1d1d1d;
 }
 
 .contact-hero .contact-left {
@@ -2563,7 +2631,7 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
       -ms-flex-align: left;
           align-items: left;
   padding-inline: 10%;
-  min-height: 500px;
+  min-height: 100vh;
 }
 
 .contact-hero .contact-left h4 {
@@ -2584,6 +2652,7 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 
 .contact-right {
   background-color: #fff;
+  padding: 10% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2641,6 +2710,19 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 .contact-map {
   max-height: 100vh;
   position: relative;
+}
+
+.contact-map .map-load {
+  display: none;
+  width: 100%;
+  height: 20vh;
+  background-color: #dadada;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-map .map-load {
+    display: block;
+  }
 }
 
 .contact-map .map-content iframe {

@@ -22,6 +22,7 @@ html{
 @import'rooftop';
 @import 'solutions';
 @import 'about';
+@import 'project';
 
 
 /* Paste this css to your style sheet file or under head tag */
@@ -354,7 +355,7 @@ footer, .footer-section{
     
 }
 .footer-content{
-  padding-top: 10vh;
+  //padding-top: 10vh;
   color:#999999;
   a{
       text-decoration: none;
@@ -586,18 +587,18 @@ footer, .footer-section{
 /* -------------------------------------------- Cards -------------------------------------------- */
 /* ==== Cards using Bootstrap === */
 
-#teamlead .card {
+.teamlead .card {
   border-radius: 20px;
   min-height: 100%;
 }
 
-#teamlead .heading-border {
+.teamlead .heading-border {
   position: absolute;
   width: 100%;
   top: 60%;
 }
 
-#teamlead .card .user-picture img {
+.teamlead .card .user-picture img {
   position: absolute;
   top: -25%;
   right: -5%;
@@ -607,7 +608,7 @@ footer, .footer-section{
   height: auto;
 }
 
-#teamlead .card .user-content .user-name {
+.teamlead .card .user-content .user-name {
   margin-right: 150px;
 }
 
@@ -664,9 +665,12 @@ footer, .footer-section{
   }
   .card{
     .card-header{
-      img{
+      display: flex;
+      justify-content: center;
+      .client-logo{
         border-radius: 15px!important;
         filter: grayscale(90%);
+        max-width: 60%;
         &:hover{filter: none;}
         //&:hover .card-body h5{transform: scale(1.2);}
       }
@@ -675,7 +679,7 @@ footer, .footer-section{
       h5{
         font-size: 18px;
         font-weight: 600;
-        text-align: center;
+        //text-align: center;
        
       }
       p{
@@ -772,9 +776,10 @@ footer, .footer-section{
 /* ************************************* Contact US ************************************* */
 .contact-hero{
   //min-height: 100vh;
-  padding: 15vh 0 15vh 0;
+  //padding: 15vh 0 15vh 0;
   background-color: #F2F2F2;
   //z-index: 2!important;
+  color:rgb(29, 29, 29);
   
 
   .contact-left{
@@ -787,7 +792,7 @@ footer, .footer-section{
       justify-content: center;
       align-items: left;
       padding-inline: 10%;
-      min-height: 500px;
+      min-height: 100vh;
       h4{
         font-size: 20px;
         font-weight: 600;
@@ -801,10 +806,10 @@ footer, .footer-section{
 }
 .contact-right{
   background-color: #fff;
-  
+  padding: 10%!important;
   display: flex;
-      flex-direction: column;
-      justify-content: center;
+  flex-direction: column;
+  justify-content: center;
       
       h3{text-align: center;}
       .form-box{
@@ -834,6 +839,15 @@ footer, .footer-section{
   max-height: 100vh;
   position: relative;
   //margin-top: -40vh;
+  .map-load{
+    display: none;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(218, 218, 218);
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
  
   .map-content{
     
