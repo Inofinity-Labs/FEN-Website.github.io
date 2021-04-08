@@ -565,6 +565,21 @@ html,
           transform: scale(1);
 }
 
+.shadow-card {
+  border-radius: 20px !important;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-card .shadow-image {
+  width: 70%;
+  margin-top: -30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.5);
+}
+
 .about-hero .card {
   margin-top: -50px;
 }
@@ -708,11 +723,13 @@ html,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #F4F4F4;
+  min-height: 500px;
 }
 
 .product-items-center p {
   font-family: ITCAvantGarde;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1423,16 +1440,28 @@ html,
   border-radius: 100px 0 100px 0;
 }
 
-.background-solutions {
+.section-bullets {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.647496)), color-stop(75%, rgba(255, 255, 255, 0.344975)), to(rgba(255, 255, 255, 0))), url(../img/solutions/solar.jpg);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.647496) 0%, rgba(255, 255, 255, 0.344975) 75%, rgba(255, 255, 255, 0) 100%), url(../img/solutions/solar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-bullets .background-solutions {
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.647496)), color-stop(75%, rgba(255, 255, 255, 0.344975)), to(rgba(255, 255, 255, 0))), url(../img/solutions/solar.jpg);
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.647496) 0%, rgba(255, 255, 255, 0.344975) 75%, rgba(255, 255, 255, 0) 100%), url(../img/solutions/solar.jpg);
   background-size: cover;
   background-position: center;
   background-color: #c2c2c2;
+  padding-block: 2rem;
 }
 
-.padding-block {
+.pb-5 {
   padding-block: 5rem;
+}
+
+.pb-2 {
+  padding-block: 2rem;
 }
 
 .about-image {
@@ -1446,6 +1475,22 @@ html,
 
 @media only screen and (max-width: 768px) {
   .about-image {
+    margin-top: 10vh;
+  }
+}
+
+.contact-image {
+  margin-top: 13vh;
+  height: 40vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0))), url(../img/bg/contact-40.jpg);
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 50%), url(../img/bg/contact-40.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-image {
     margin-top: 10vh;
   }
 }
@@ -1692,11 +1737,11 @@ html,
 
 /* --------------------------------------- Product and Partners --------------------------------------- */
 .fa-check-circle {
-  color: #5DA943;
+  color: #6c757d;
 }
 
 .fa-check-circle::before {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .about-view-more {

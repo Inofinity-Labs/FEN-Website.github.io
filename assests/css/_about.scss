@@ -79,6 +79,15 @@
     opacity: 0.3;
     @media only screen and (max-width: 768px) {margin-top: 10vh;}
 }
+.contact-image{
+  margin-top: 13vh;
+  height: 40vh;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),url(../img/bg/contact-40.jpg);
+  background-size: cover;
+  background-position:center;
+  opacity: 0.3;
+  @media only screen and (max-width: 768px) {margin-top: 10vh;}
+}
 
 .product-partner-image{
     margin-top: 15vh;
@@ -298,10 +307,11 @@
 
 /* --------------------------------------- Product and Partners --------------------------------------- */
 .fa-check-circle{
-  color:#5DA943;
+  //@at-root:#5DA943;
+  color: #6c757d;
   //font-size: 40px;
   &::before{
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 

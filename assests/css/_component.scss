@@ -73,11 +73,14 @@
 }
 
 .product-items-center{
-    display: flex;flex-direction: column;justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4F4F4;
+    min-height: 500px;
     p{
         font-family: ITCAvantGarde;
-        font-size: 20px;
+        font-size: 16px;
     }
     
 }
