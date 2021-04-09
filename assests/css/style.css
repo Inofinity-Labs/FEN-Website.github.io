@@ -1441,15 +1441,13 @@ html,
 }
 
 .section-bullets {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.647496)), color-stop(75%, rgba(255, 255, 255, 0.344975)), to(rgba(255, 255, 255, 0))), url(../img/solutions/solar.jpg);
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.647496) 0%, rgba(255, 255, 255, 0.344975) 75%, rgba(255, 255, 255, 0) 100%), url(../img/solutions/solar.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-bullets .background-solutions {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.647496)), color-stop(75%, rgba(255, 255, 255, 0.344975)), to(rgba(255, 255, 255, 0))), url(../img/solutions/solar.jpg);
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.647496) 0%, rgba(255, 255, 255, 0.344975) 75%, rgba(255, 255, 255, 0) 100%), url(../img/solutions/solar.jpg);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url(../img/solutions/roof1.webp);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%), url(../img/solutions/roof1.webp);
   background-size: cover;
   background-position: center;
   background-color: #c2c2c2;
@@ -1462,6 +1460,36 @@ html,
 
 .pb-2 {
   padding-block: 2rem;
+}
+
+.product-bullets {
+  list-style: none;
+  padding: 1.1em;
+}
+
+.product-bullets li {
+  padding: 0.5em;
+}
+
+.product-bullets li:before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/svg-ico/check-outer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+  margin-bottom: -5px;
+}
+
+.product-bullets li p {
+  font-size: 16px;
+  display: inline;
+}
+
+.product-image {
+  padding-top: 2em;
 }
 
 .about-image {
