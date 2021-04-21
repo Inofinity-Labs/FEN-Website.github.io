@@ -526,3 +526,57 @@ html,
     font-size: 15px;
     line-height: 22px;
 }
+
+// Loader for Slider 
+//Attempt 1 Fail { Time is not matching}
+/*
+.slide-loader{
+    position: absolute;
+    bottom:5%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    border: 2px solid #f3f3f3;
+    //border-top: 8px solid #3498db;
+    z-index: 10;
+    
+
+      .loader-square{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: blueviolet;
+        border-radius: 50%;
+        animation: spin 5s linear infinite;
+
+    @keyframes spin {
+        0% {clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+        100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+      }
+      }
+}
+*/
+// Loader for Slider 
+//Attempt 2
+.slide-loader{
+    position: absolute;
+    bottom:5%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    .lc{
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    .lc-active{
+        width: 30px;
+        height: 30px;
+        background-color: #FABE11 ;
+    }
+    
+}

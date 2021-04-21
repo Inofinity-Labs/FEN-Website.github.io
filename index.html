@@ -84,52 +84,48 @@
     <!-- </div> --> <!-- container-div -->
     <!-- ----------------------------------------- NEW navbar ----------------------------------------- -->
     <!-- ----------------------------------------- navbar ----------------------------------------- -->
-    <div class="navbar-d">
+    <!--<div class="navbar-d">
         <div class="row">
             <div class="nav-right">
                 <a href="#" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
             </div>
-            <div class="nav-left">
+            <div class="nav-left  navbar-collapse">
                 <a href="#" class="main-nav-a animsition-link nav-active">Home</a>
                 <a href="solar-projects.html" class="main-nav-a animsition-link">Solutions</a>
-                <!-- <div class="dropdown-d">
-                    <a class="dropbtn main-nav-a nav-active">Solutions
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content-d">
-                        <div class="nav-content-center"> 
-                            <a class="sub-nav-a drop-solar" href="solar-projects.html">Solar Projects</a>
-                            <div class="level2">
-                                <div class="nav-content-center">
-                                    <a href="#roof" class="sub-nav-a">Link 1</a>
-                                    <a href="#roof" class="sub-nav-a">Link 2</a>
-                                    <a href="#roof" class="sub-nav-a">Link 3</a> 
-                                </div>
-                            </div>
-
-
-                        <a href="#roof" class="sub-nav-a">Solar Roof</a>
-                        <a href="concept-project.html" class="sub-nav-a">Concept Development & Project Promotion</a>
-                        <a href="permit-approval.html" class="sub-nav-a">Land, Licenses, Permits & Approvals</a>
-                        <a href="consulting-design.html" class="sub-nav-a">Consulting, Design & Project Management</a>
-                        <a href="operation-maintainance.html" class="sub-nav-a">Operation & Maintenance</a>
-                    
-                        </div>
-                    </div>
-                </div> -->
+            
                     <a href="solar-module.html" class="main-nav-a">Product & Partners</a>
                     <a href="projects.html" class="main-nav-a">Projects</a>
                     <a href="about.html" class="main-nav-a">About Us</a>
                     <a href="contact.html" class="main-nav-a">Contact Us</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="nav-small">
         <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
         <span id="ham-menu"></span>
         <span id="ham-menu2"></span>
     </div>
 <!-- -----------------------------------------END navbar ----------------------------------------- --> 
+<!-- **************************************** NAV START **************************************** -->
+<nav class="navbar navbar-expand-xl fixed-top" id="navbar-d">
+    <a href="#" class="navbar-brand"><img src="assests/img/fe1.png"></a>
+    <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
+      <ul class="navbar-nav ml-auto">
+        <!-- Megamenu-->
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="solar-projects.html" class="nav-link">Solutions</a></li>
+        <li class="nav-item"><a href="solar-module.html" class="nav-link">Product and Partners</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>  
+    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
+      <span></span>
+    </button>
+  </nav>
+  <!-- **************************************** NAV ENDS **************************************** -->
     <!-- ----------------------------------------- END NEW navbar ----------------------------------------- -->
     <!--main>
         <div id="carouselExampleInterval" class="carousel slide" >
@@ -180,15 +176,33 @@
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(assests/img/carousel/s12.jpg)"></div>
                     </div>
+                    <!-- <div class="slide-loader"><div class="loader-square"></div></div> -->
+                    <div class="slide-loader">
+                        <div class="lc lc-active"></div>
+                        <div class="lc"></div>
+                        <div class="lc"></div>
+                    </div>
                 </div>
                 <div class="slide" data-index="1">
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(assests/img/carousel/s22.jpg)"></div>
                     </div>
+                    <!-- <div class="slide-loader"><div class="loader-square"></div></div> -->
+                    <div class="slide-loader">
+                        <div class="lc"></div>
+                        <div class="lc lc-active"></div>
+                        <div class="lc"></div>
+                    </div>
                 </div>
                 <div class="slide" data-index="2">
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(assests/img/carousel/s32.jpg)"></div>
+                    </div>
+                    <!-- <div class="slide-loader"><div class="loader-square"></div></div> -->
+                    <div class="slide-loader">
+                        <div class="lc"></div>
+                        <div class="lc"></div>
+                        <div class="lc lc-active"></div>
                     </div>
                 </div>
                 <!-- <div class="slide" data-index="3">
@@ -196,6 +210,7 @@
                         <div class="slide-image" style="background-image: url(assests/img/carousel/s5.webp)"></div>
                     </div>
                 </div> -->
+                
             </div>
             
             <div id="slides-aux" class="slides mask">
@@ -206,16 +221,19 @@
                         a better and a greener world.
                     </p>
                     <a href="about.html" class="btn btn-view-more" style="z-index: 999!important;">View More </a>
+                    
                 </div>
                 <div class="slide-title slide" data-index="1">
                     <h2 class="fen-heading">We Cater Your <span class="fen-yellow">Energy Needs</span></h2>
                     <p class="fen-para"> Whether it's your home, your business, or even your land, we are prepared to offer unmatched solutions. You are only restricted by your imagination. So, what do you have in your mind?</p>
                     <a href="about.html" class="btn btn-view-more">View More </a>
+                    
                 </div>
                 <div class="slide-title slide" data-index="2">
                     <h2 class="fen-heading">Grow <span class="fen-yellow">with us</span></h2>
                     <p class="fen-para">Whether you are a houseowner, a contractor, a consultant, you can grow with us to see a better tomorrow and a greener world.</p>
                     <a href="about.html" class="btn btn-view-more">View More </a>
+                    
                 </div>
                 <!-- <div class="slide-title slide" data-index="3">The Colossal</div> -->
             </div>
@@ -236,11 +254,14 @@
                 </p>
             </div>
         </div> -->
-        <nav id="slider-nav">
+        <nav id="slider-nav" style="opacity: 0;">
             <span class="current">01</span>
             <span class="sep"></span>
             <span class="total">03</span>
         </nav>
+        
+        
+       
     </section>
     <!-- Main Slider Change -->
 
@@ -327,14 +348,15 @@
         <section class="news">
             <div class="container">
                 <h1 class="home-index-header" data-aos="fade-up" data-aos-duration="800">News</h1>
+                
                 <div class="s-padding-top"></div>
                 <div class="row d-flex align-items-center">
                 
-                    <div class="col-md-6 col-sm-12" data-aos="fade-up"  data-aos-duration="1500">
+                    <div class="col-md-7 col-sm-12" data-aos="fade-up"  data-aos-duration="1500">
                         <h1 >FIRST GROUND MOUNTED BY <span class="fen-yellow">FIRST ENERGY</span> COMMISSION</h1>
                         <p>At dolore magna aliqua enim veniam quis nostrud minim exercitation ulamco aliquip exa commodo consequat duis aute aure dolor reprehen derit voluptate cillum dole afugiat nula pariatur vitae. Sagittis dia facilis convalis dictumst sed ipsum tempore.</p>
                     </div>
-                    <div class="col-md-6 col-sm-12" data-aos="fade-up"  data-aos-duration="1500" data-aos-delay="300">
+                    <div class="col-md-5 col-sm-12" data-aos="fade-up"  data-aos-duration="1500" data-aos-delay="300">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <!-- <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -430,7 +452,7 @@
         $('.num').html('' + currentIndex + ' of ' + totalItems + '');
 
         $('#carouselExampleIndicators').carousel({
-        interval: 2000
+        interval: 5000
         });
 
         $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {

@@ -28,7 +28,7 @@
       </div>
   </div>
     <!-- ----------------------------------------- Start navbar ----------------------------------------- --> 
-    <div class="navbar-d">
+    <!--<div class="navbar-d">
       <div class="row">
           <div class="nav-right">
               <a href="index.html" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
@@ -51,7 +51,7 @@
                             <a href="#flagship" class="sub-nav-about">Flagship Companies</a>
                             <a href="#leadership" class="sub-nav-about">Leadership</a>
                             <a href="#teamlead" class="sub-nav-about">Team Leads</a>
-                            <!-- <a href="rest-component.html" class="sub-nav">Charts</a> -->
+                            <a href="rest-component.html" class="sub-nav">Charts</a> 
                         
                     
                         </div>
@@ -61,13 +61,46 @@
                   <a href="contact.html" class="main-nav-a">Contact Us</a>
           </div>
       </div>
-  </div>
+  </div> -->
   <!-- After Scroll -->
   <div class="nav-small">
       <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
       <span id="ham-menu"></span>
       <span id="ham-menu2"></span>
   </div>
+<!-- **************************************** NAV START **************************************** -->
+<nav class="navbar navbar-expand-xl fixed-top" id="navbar-d">
+  <a href="#" class="navbar-brand"><img src="assests/img/fe1.png"></a>
+  <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
+    <ul class="navbar-nav ml-auto">
+      <!-- Megamenu-->
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="solar-projects.html" class="nav-link">Solutions</a></li>
+      <li class="nav-item"><a href="solar-module.html" class="nav-link">Product and Partners</a></li>
+      <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+      
+
+      <li class="nav-item dropdown megamenu"><a id="megamenu" href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">About Us </a>
+        <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="project-dropdown">
+          <ul class="sub-nav navbar-nav ml-auto">
+            <li class="sub-menu"><a href="#begin" class="sub-nav-about">Humble Beginings</a></li>
+            <li class="sub-menu"><a href="#vision" class="sub-nav-about">Vision & Mission</a></li>
+            <li class="sub-menu"><a href="#flagship" class="sub-nav-about">Flagship Companies</a></li>
+            <li class="sub-menu"><a href="#leadership" class="sub-nav-about">Leadership</a></li>
+            <li class="sub-menu"><a href="#teamlead" class="sub-nav-about">Team Leads</a></li>
+            
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+  </div>  
+  <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
+    <span></span>
+  </button>
+</nav>
+<!-- **************************************** NAV ENDS **************************************** -->
     <!-- ----------------------------------------- END navbar ----------------------------------------- -->
     
     <section class="about-hero" id="begin">
@@ -81,7 +114,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h1 class="display-5 text-black" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+              <h1 class="display-5 fen-gray" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
                 From Humble Beginings to a Market Leader
               </h1>
               <hr class="main-header" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
@@ -92,7 +125,7 @@
               </p>
 
             </div>
-            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
+            <div class="col-md-6">
               <img src="assests/img/solutions/journey.jpg" alt="" srcset="" width="100%">
             </div>
           </div>
@@ -105,7 +138,7 @@
         <div class="row">
           <div class="col-md-6 v-m-image">
             <div class="mobile-only">
-              <h1 class="display-5 text-black" data-aos="fade-up">Vision</h1>
+              <h1 class="display-5" data-aos="fade-up">Vision</h1>
               <p class="about-para text-muted" data-aos="fade-up" data-aos-delay="300">To contribute and to become an integral part of sustainable energy initiative as a high quality and affordable service provider in solar photo-voltaic system leveraging the expertise & innovations</p>
               <h1 class="display-5 text-black" data-aos="fade-up" data-aos-delay="600">Mission</h1>
               
@@ -120,9 +153,11 @@
           </div>
           <div class="col-md-6 v-m-text mobile-hide">
             
-              <h1 class="display-5 text-black" data-aos="fade-up">Vision</h1>
+              <h1 class="display-5 fen-gray" data-aos="fade-up" data-aos-duration="600">Company Culture</h1>
+              <hr class="main-header" data-aos="fade-up" data-aos-duration="800">
+              <h5 class="text-muted" data-aos="fade-up">Vision:</h5>
               <p class="about-para text-muted" data-aos="fade-up" data-aos-delay="300">To contribute and to become an integral part of sustainable energy initiative as a high quality and affordable service provider in solar photo-voltaic system leveraging the expertise & innovations</p>
-              <h1 class="display-5 text-black" data-aos="fade-up" data-aos-delay="600">Mission</h1>
+              <h5 class="text-muted" data-aos="fade-up">Mission:</h5>
               
               <ul class="about-para text-muted" data-aos="fade-up" data-aos-delay="900">
                 <li>Creating sustainable business models to achieve lowest Levelized Cost of Electricity (LCoE) with durability.</li>
@@ -140,7 +175,7 @@
     <div class="padding-top"></div>
     <section id="flagship">
       <div class="container">
-        <h1 class="display-5 text-black" data-aos="fade-up" data-aos-duration="800">Flagship Companies </h1>
+        <h1 class="display-5 fen-gray" data-aos="fade-up" data-aos-duration="800">Flagship Companies </h1>
         <hr class="main-header" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
         <div class="row">
           <div class="col-md-4">
@@ -320,7 +355,7 @@
         <h1 class="hero-header fen-green" data-aos="fade-up" data-aos-duration="800">Our Team</h1>
       </div> -->
       <div class="container" >
-        <h1 class="display-5 text-black" data-aos="fade-up" data-aos-duration="800">Leadership </h1>
+        <h1 class="display-5 fen-gray" data-aos="fade-up" data-aos-duration="800">Leadership </h1>
         <hr class="main-header" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
         <div class="s-padding-top"></div>
         <div class="row" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
@@ -481,7 +516,7 @@
       <div class="container">
           <div class="row pb-4">
               <div class="col-12">
-                <h1 class="display-5 text-black" data-aos="fade-up" data-aos-duration="600">Team Leads</h1>
+                <h1 class="display-5 fen-gray" data-aos="fade-up" data-aos-duration="600">Team Leads</h1>
                 <hr class="main-header" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
               </div>
           </div>
@@ -682,7 +717,7 @@
     <script src="assests/css/animate/aos.js"></script>
     
     <script src="assests/js/custom.js"></script>
-    <script src="assests/js/tabs.js"></script>
+  
     
     <script src="assests/js/w3include.js"></script>
     

@@ -617,8 +617,8 @@ footer, .footer-section{
 .home-index-header{
   font-family: Poppins;
   font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
+  font-weight: 600!important;
+  font-size: 35px!important;
   line-height: 52px;
   text-align: center;
 }
@@ -643,17 +643,20 @@ footer, .footer-section{
       border-radius: 15px;
     }
     .title-home-index{
-      font-size: 16px;
+      font-size: 18px;
+    font-weight: 600;
     }
   }
   .title-home-index{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
   }
   .home-index{
     text-align: center;
     font-size: 16px;
     .title-home-index{
-      font-size: 16px;
+      font-size: 18px;
+    font-weight: 600;
     }
   }
 }
@@ -859,4 +862,8 @@ footer, .footer-section{
       
     }
   }
+}
+
+.fa-map-marker{
+  font-size: 30px!important;
 }

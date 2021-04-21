@@ -6,6 +6,7 @@
 .row-error{
    margin-right: 0!important;
 }
+.fen-gray{color: #616161!important;}
 
 .hero-section{
     height:100vh;
@@ -30,6 +31,9 @@
     font-weight: 100;
     font-size: 15.5px;
     text-align: justify;
+    li{
+        padding-bottom: 1em;
+    }
     
     
 }

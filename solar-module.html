@@ -28,7 +28,7 @@
       </div>
   </div>
     <!-- ----------------------------------------- Start navbar ----------------------------------------- --> 
-    <div class="navbar-d" >
+    <!-- <div class="navbar-d" >
       <div class="row">
           <div class="nav-right">
               <a href="index.html" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
@@ -59,13 +59,42 @@
             <a href="contact.html" class="main-nav-a">Contact Us</a>
           </div>
       </div>
-  </div>
-   <div class="nav-small">
-      <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
-      <span id="ham-menu"></span>
-      <span id="ham-menu2"></span>
-  </div> 
-    <!-- ----------------------------------------- END navbar ----------------------------------------- -->
+  </div> -->
+<!-- **************************************** NAV START **************************************** -->
+<nav class="navbar navbar-expand-xl fixed-top" id="navbar-d">
+  <a href="index" class="navbar-brand"><img src="assests/img/fe1.png"></a>
+  <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
+    <ul class="navbar-nav ml-auto">
+      <!-- Megamenu-->
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="solar-projects.html" class="nav-link">Solutions</a></li>
+      <!-- <li class="nav-item"><a href="solar-module.html" class="nav-link">Product and Partners</a></li> -->
+      <li class="nav-item dropdown megamenu" id="product"><a id="megamenu" href="/solar-module.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Product and Partners</a>
+        <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="project-dropdown">
+          <ul class="sub-nav navbar-nav ml-auto">
+            <li class="sub-menu"><a href="solar-module.html" class="sub-link"><h6 class="">Solar Module</h6></a></li>
+            <li class="sub-menu"><a href="inverters.html" class="sub-link"><h6 class="">Inverters</h6></a></li>
+            <li class="sub-menu"><a href="mounting-system.html" class="sub-link"><h6 class="">Mounting Systems</h6></a></li>
+            <li class="sub-menu"><a href="rest-component.html" class="sub-link"><h6 class="">Rest Components</h6></a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+  </div>  
+  <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
+    <span></span>
+  </button>
+</nav>
+<div class="nav-small">
+  <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
+  <span id="ham-menu"></span>
+  <span id="ham-menu2"></span>
+</div>
+<!-- **************************************** NAV ENDS **************************************** -->
+ 
     
 <section class="about-hero">
   
@@ -83,7 +112,7 @@
             
           </div><div class="card-body">
             <h5 class="card-title">REC</h5>
-            <p class="card-text">Singapore / Norway</p>
+            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Singapore / Norway</p>
             
           </div>
         </div>
@@ -93,7 +122,7 @@
             
           </div><div class="card-body"  >
             <h5 class="card-title">Phono Solar</h5>
-            <p class="card-text">China</p>
+            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> China</p>
             
           </div>
         </div>
@@ -103,7 +132,7 @@
             
           </div><div class="card-body">
             <h5 class="card-title">JA Solar</h5>
-            <p class="card-text">China </p>
+            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> China </p>
             
           </div>
         </div>
@@ -113,7 +142,7 @@
             
           </div><div class="card-body">
             <h5 class="card-title">Hanwa Q Cells</h5>
-            <p class="card-text">Korea/ Germany</p>
+            <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Korea/ Germany</p>
             
           </div>
         </div>

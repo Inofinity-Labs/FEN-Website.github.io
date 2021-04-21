@@ -70,7 +70,14 @@
 // .about-page-about {
 // 	padding: 110px 0px 90px;
 // }
-
+.solution-image{
+  margin-top: 16vh;
+  height: 40vh;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),url(../img/bg/solution-40.jpg);
+  background-size: cover;
+  opacity: 0.3;
+  @media only screen and (max-width: 768px) {margin-top: 10vh;}
+}
 .about-image{
     margin-top: 16vh;
     height: 40vh;
@@ -80,7 +87,7 @@
     @media only screen and (max-width: 768px) {margin-top: 10vh;}
 }
 .contact-image{
-  margin-top: 13vh;
+  margin-top: 70px;
   height: 40vh;
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),url(../img/bg/contact-40.jpg);
   background-size: cover;
@@ -118,7 +125,7 @@
     background-image: url(../img/bg/v-m-image.jpg);
     background-size: cover;
     background-position: 0% 20%; 
-    min-height: 100vh;
+    min-height: 120vh;
 }
 .v-m-text{
   display: flex;
@@ -174,7 +181,22 @@
         padding-top: 12px;
     }
 }
+.card-solution{
+  //border: 2px solid gray;
+  border-radius: 25px;
+  display: grid;
+  padding: 1rem;
+  min-height: 200px;
+  text-align: center;
+  margin-block-start: 2rem;
 
+  .card-s-header{
+    i{font-size: 70px;color: #303030}
+  }
+  .card-s-content{
+    .h3{color: #6c757d!important}
+  }
+}
 /* **************************************************** Tabs ************************************************************ */
 /* Style the tab */
 .tab {
@@ -327,3 +349,4 @@
   border: none;
   border-radius: 50px;
 }
+
