@@ -775,6 +775,10 @@ html,
   width: calc(100% / 9);
 }
 
+.gray-bg {
+  background-color: #F4F4F4;
+}
+
 .product-items-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,7 +790,6 @@ html,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F4F4F4;
   min-height: 500px;
 }
 

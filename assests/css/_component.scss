@@ -75,12 +75,12 @@
 .width-9{
     width: calc(100% / 9);
 }
-
+.gray-bg{background-color: #F4F4F4;}
 .product-items-center{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F4F4F4;
+    
     min-height: 500px;
     p{
         font-family: ITCAvantGarde;
