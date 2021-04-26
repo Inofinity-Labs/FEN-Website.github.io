@@ -593,6 +593,7 @@ header {
     //font-weight: 500;
     font-size: 16px;
     padding: 0rem 1rem!important;
+    font-weight: 300;
     //transition: all 1.2s ease;
     
         .navbar-toggler {
@@ -707,7 +708,7 @@ header {
     //position: absolute!important;
     display: block;
     .dropdown-menu {
-        display: none;
+        display: block;
     background-color: #E5E5E5;
     padding: .5rem!important;
     transition: all 1.2s ease;
@@ -736,6 +737,7 @@ width: 100%!important;
     color: $nav-active!important;
     border-bottom: 5px solid $fen-active;
     //color:$nav-active!important;
+    font-weight: 500;
     @media (max-width: 991px) {
         background-color:$nav-active;
         color: #000!important;

@@ -55,6 +55,22 @@
     }
     
 }
+.shadow-solutions{
+    border-radius: 15px!important;
+    background-color: #fff!important;
+    //box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.8);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+    transition: all 1s ease-in-out!important;
+    
+    &:hover {
+        //top: -20px;
+        transition: all 1s!important;
+        //background-color: #f0f0f0!important;
+        box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.5);
+        
+        
+    }
+}
 
 .about-hero{
     .card{

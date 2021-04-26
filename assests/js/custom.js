@@ -1,4 +1,5 @@
 //************************Get Current Page Details for Navbar
+/*
 $(function () {
   setNavigation();
 });
@@ -39,7 +40,7 @@ function setNavigation() {
       
   });
 }
-
+*/
 //************************loader
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
     

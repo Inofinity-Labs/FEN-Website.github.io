@@ -23,7 +23,9 @@ html{
 @import 'solutions';
 @import 'about';
 @import 'project';
+@import 'news';
 
+.fen-green{ color: $fen-active}
 
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
@@ -291,15 +293,17 @@ if it's not present, don't show loader */
 
 .news{
   position: relative;
-  min-height: 80vh;
+  min-height: 100vh;
   padding:2% 0 8% 0;
   background: #F5F5FA;
-
+  display: flex;
+    justify-content: center;
+    align-items: center;
     &:before{
         top: 0;
         left: 0;
         content: '';
-        opacity: .5;
+        opacity: .3;
         width: 540px;
         height: 100%;
         position: absolute;
@@ -315,14 +319,15 @@ if it's not present, don't show loader */
     h1{
       font-style: normal;
       font-weight: 500;
-      font-size: 34px;
-      line-height: 178.5%;
+      font-size: 40px;
+      line-height: 48px;
+      text-transform: initial;
     }
     p{
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
-      line-height: 248.5%;
+      line-height: 28px;
     }
 
 }
@@ -343,6 +348,7 @@ footer, .footer-section{
     
     .footer-copyright-text{
         color:rgb(145, 145, 145);
+        font-size: 14px;
         a{
             text-decoration: none;
             color:rgb(145, 145, 145);
@@ -530,9 +536,9 @@ footer, .footer-section{
 .spinner {
     position: absolute;
     top: 25%;
-  color: $fen-green;
-  font-size: 10px;
-  margin: 80px auto;
+    color: $fen-yellow;
+    font-size: 10px;
+    margin: 80px auto;
   //position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
@@ -579,7 +585,6 @@ footer, .footer-section{
 .spinner-logo{
     position: absolute;
     top: 50%;
-    
     text-align: center;
 }
 /* -------------------------------------------- Loader Working End-------------------------------------------- */
@@ -611,25 +616,62 @@ footer, .footer-section{
 .teamlead .card .user-content .user-name {
   margin-right: 150px;
 }
-
-
-/* Solution in Home Page */
-.home-index-header{
-  font-family: Poppins;
+.home-title{
+  font-family: Poppins-SemiBold;
   font-style: normal;
-  font-weight: 600!important;
+  //font-weight: 600!important;
   font-size: 35px!important;
   line-height: 52px;
   text-align: center;
 }
+#home-solution{
+  
+  .card-solution{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 200px;
+    text-align: center;
+    margin-block-start: 2rem;
+    position: relative;
+  }
+  .shadow-solutions{
+    border-radius: 15px!important;
+    background-color: #fff!important;
+    //box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.8);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+    transition: all 1s ease-in-out!important;
+    
+    &:hover {
+        //top: -20px;
+        transition: all 1s!important;
+        //background-color: #f0f0f0!important;
+        box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.5);
+        
+        
+    }
+    
+  }
+  .title-div{
+    padding-top: 10px;
+    .s-title{
+      font-size: 16px;
+      font-weight: 550;
+      color: #000;
+    }
+  }
+}
+/* Solution in Home Page */
+/*
 .card-deck{
   //padding-inline: 3rem;
   
-  /*@media only screen and (max-width: 992px) {
-    padding-inline: 0px;
-  }*/
+ 
   .card{
-    /* Medium devices (landscape tablets, 768px and up) */
+    
     @media only screen and (max-width: 768px) {
       min-width: 100%;
     }
@@ -648,8 +690,8 @@ footer, .footer-section{
     }
   }
   .title-home-index{
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
   }
   .home-index{
     text-align: center;
@@ -660,7 +702,7 @@ footer, .footer-section{
     }
   }
 }
- 
+ /*
 /*------------------------------------------------- Projects CSS -------------------------------------------------*/
 #clients{
   .card{

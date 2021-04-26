@@ -166,3 +166,74 @@
     .product-image{
         padding-top: 2em;
     }
+
+    .services-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            margin-block: 1em;
+            padding-block-end: 3em;
+            border-radius: 20px;
+        }
+
+        h3{
+            padding-block: 1em;
+            @media only screen and (max-width: 992px) {
+                font-size: 20px;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 30px;
+            }
+        }
+        i{color:#6c757d}
+        i.fa-long-arrow-right{
+            position: absolute;
+            right: 0;
+            top: 30px;
+            font-size: 30px;
+            @media only screen and (max-width: 992px) {
+                top: 22px;
+                font-size: 22px;
+            }
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        i.fa-long-arrow-down{
+            display: none;
+            @media only screen and (max-width: 768px) {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                //left: 50%;
+                font-size: 30px;
+            }
+        }
+    }
+    .card-turnkey{
+        width: 60%;
+        padding: 0em 2em;
+        margin: .5em;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        @media only screen and (max-width: 992px) {
+            width:100%;
+        }
+        @media only screen and (max-width: 768px) {
+            width:50%;
+        }
+    }
+
+    .bg-gray{
+    @media only screen and (max-width: 768px) {
+        background-color: #acacac46;;
+        }
+    }       

@@ -562,20 +562,20 @@ html,
 //Attempt 2
 .slide-loader{
     position: absolute;
-    bottom:5%;
+    bottom:3%;
     right: 2%;
     display: flex;
     align-items: center;
     .lc{
-        width: 20px;
-        height: 20px;
+        width: 6px;
+        height: 6px;
         background-color: #fff;
         border-radius: 50%;
         margin-right: 5px;
     }
     .lc-active{
-        width: 30px;
-        height: 30px;
+        width: 12px;
+        height: 12px;
         background-color: #FABE11 ;
     }
     

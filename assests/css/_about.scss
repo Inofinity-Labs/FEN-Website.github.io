@@ -184,17 +184,31 @@
 .card-solution{
   //border: 2px solid gray;
   border-radius: 25px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  justify-content: center;
   padding: 1rem;
   min-height: 200px;
   text-align: center;
   margin-block-start: 2rem;
+  position: relative;
 
-  .card-s-header{
-    i{font-size: 70px;color: #303030}
+  .card-bg{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    opacity: 0.15;
+    i{font-size: 100px;color: #303030}
   }
   .card-s-content{
-    .h3{color: #6c757d!important}
+    .h3{
+      font-size: 20px;
+      font-weight: 500;
+      color: #444444!important
+    }
+    span{font-size: 36px;font-weight: 600;}
+
   }
 }
 /* **************************************************** Tabs ************************************************************ */
