@@ -157,9 +157,10 @@
               margin-bottom: -5px;
             }
             p{
-                
+                font-family: ITCAvantGarde;
                 font-size: 16px ;
                 display: inline;
+                color: #6c757d;
             }
           }
     }
@@ -236,4 +237,60 @@
     @media only screen and (max-width: 768px) {
         background-color: #acacac46;;
         }
-    }       
+    }    
+    
+    .bg-right{
+        $height : 400px;
+        background: url(../img/solutions/BG/bg-right.png);
+        //background-size: cover;
+        min-height: $height;
+
+        .bullets-points{
+            height: $height;
+            display: flex;
+            align-items: center;
+            //justify-content: center;
+            //vertical-align: middle;
+        }
+    }
+    .bg-left{
+        $height : 400px;
+        background: url(../img/solutions/BG/bg-left.png);
+        background-size: cover;
+        min-height: $height;
+
+        .bullets-points{
+            height: $height;
+            display: flex;
+            align-items: center;
+            //justify-content: center;
+            //vertical-align: middle;
+        }
+    }
+    .roof-pkg{
+        padding-top: 5em;
+        .card{
+            padding-block: 2em; 
+        }
+        .card-heading{
+            padding-block-end: 2em; 
+            h5{
+                font-weight: 500;
+                font-size: 24px;
+            }
+        }
+        .card-content{
+            color : #6c757d;
+            h6{
+                font-size: 18px;
+                font-weight: 600;
+            } 
+        }
+        .main-card{
+            transform: scale(1.1);
+            background-image: linear-gradient(135deg,  #ffc929 ,#ffd65c,);
+            .card-content{
+                color : #000!important;
+            }
+        }
+    }

@@ -1965,8 +1965,10 @@ footer {
 }
 
 .product-bullets li p {
+  font-family: ITCAvantGarde;
   font-size: 16px;
   display: inline;
+  color: #6c757d;
 }
 
 .product-image {
@@ -2089,6 +2091,74 @@ footer {
   .bg-gray {
     background-color: #acacac46;
   }
+}
+
+.bg-right {
+  background: url(../img/solutions/BG/bg-right.png);
+  min-height: 400px;
+}
+
+.bg-right .bullets-points {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-left {
+  background: url(../img/solutions/BG/bg-left.png);
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bg-left .bullets-points {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roof-pkg {
+  padding-top: 5em;
+}
+
+.roof-pkg .card {
+  padding-block: 2em;
+}
+
+.roof-pkg .card-heading {
+  -webkit-padding-after: 2em;
+          padding-block-end: 2em;
+}
+
+.roof-pkg .card-heading h5 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.roof-pkg .card-content {
+  color: #6c757d;
+}
+
+.roof-pkg .card-content h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.roof-pkg .main-card {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-image: linear-gradient(135deg, #ffc929, #ffd65c);
+}
+
+.roof-pkg .main-card .card-content {
+  color: #000 !important;
 }
 
 .solution-image {
