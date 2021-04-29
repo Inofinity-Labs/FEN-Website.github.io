@@ -144,7 +144,9 @@
         padding: 1.1em;
         li {
             padding: 0.5em;
-            &:before {
+            list-style-image: url(../img/svg-ico/check-outer.svg);
+            
+            /*&:before {
               content: '';
               display: inline-block;
               height: 25px;
@@ -155,13 +157,14 @@
               background-repeat: no-repeat;
               margin-right:0.5em;   
               margin-bottom: -5px;
-            }
-            p{
+            }*/
+            p , h5{
                 font-family: ITCAvantGarde;
-                font-size: 16px ;
+                //font-size: 16px ;
                 display: inline;
-                color: #6c757d;
+                color: #4e4e4e;
             }
+            
           }
     }
     .product-image{
@@ -232,6 +235,100 @@
             width:50%;
         }
     }
+    .card-LLPA{
+        width: 90%;
+        padding: 0em 2em;
+        margin: .5em;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+        @media only screen and (max-width: 992px) {
+            width:100%;
+        }
+        @media only screen and (max-width: 768px) {
+            width:100%;
+        }
+    }
+    .card-PP{
+        width: 90%;
+        padding: 0em 1em;
+        margin-inline: auto;
+        min-height: 100px;
+        display: flex;
+        // justify-content: center;
+        // vertical-align: middle;
+
+        color: #363636;
+        
+
+        @media only screen and (max-width: 992px) {
+            width:100%;
+            margin-block: 1em;
+        }
+        @media only screen and (max-width: 768px) {
+            width:100%;
+            margin-block: 1em;
+        
+        }
+        h4{font-size: 1em; font-weight: 600;}
+        img{
+            padding: 1em 1em;
+            // filter: grayscale(90%);
+            // &:hover{filter: none;}
+            @media only screen and (max-width: 768px) {
+                filter: none;
+            }
+        }
+        
+    }
+    //card number
+    /*.card-number{
+        content: "01" ;
+        position: absolute;
+        top: 0;
+        left: 5%;
+        opacity: 0.1;
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: 'Poppins';
+        
+    }*/
+    
+    
+    // @for $i from 1 through 8 {
+    //     .card-LLPA:nth-child(#{$i}){
+    //         .card-LLPA::before{
+    //             content: "#{$i}" ;
+    //         }
+    //     }
+          
+        
+    // }
+
+    //.card-LLPA::before{
+    //    content: "01" ;
+    //}
+
+
+    #solution-counter{
+        span{
+            position: absolute;
+            top: 0;
+            left: 5%;
+            opacity: 0.1;
+            font-weight: bold;
+            font-size: 3rem;
+            font-family: 'Poppins';
+
+        }
+    }
+    //card number end
+    
+
 
     .bg-gray{
     @media only screen and (max-width: 768px) {
@@ -242,7 +339,7 @@
     .bg-right{
         $height : 400px;
         background: url(../img/solutions/BG/bg-right.png);
-        //background-size: cover;
+        background-size: cover;
         min-height: $height;
 
         .bullets-points{
@@ -253,9 +350,9 @@
             //vertical-align: middle;
         }
     }
-    .bg-left{
+    .bg-right2{
         $height : 400px;
-        background: url(../img/solutions/BG/bg-left.png);
+        background: url(../img/solutions/BG/bg-right2.png);
         background-size: cover;
         min-height: $height;
 
@@ -288,9 +385,18 @@
         }
         .main-card{
             transform: scale(1.1);
-            background-image: linear-gradient(135deg,  #ffc929 ,#ffd65c,);
+            //background-image: linear-gradient(135deg,  #ffc929 ,#ffd65c,);
+            background-image: linear-gradient(130deg, rgba(255,196,20,1) 0%, rgba(249,247,198,1) 100%);
             .card-content{
                 color : #000!important;
             }
         }
+    }
+    .container-inside{
+        padding-inline: 5%;
+    }
+    .img-roject-mgt{
+        margin-inline: 3%;
+        margin-block: 1em;
+        border-radius: 20px;
     }

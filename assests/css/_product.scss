@@ -100,3 +100,36 @@
         margin-top: -55px;
     }
 }
+.image-div{display: flex;align-items: center;}
+
+.section-brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: 1s all ease;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    img{
+        width: 150px;
+        margin: 2em;
+        filter: grayscale(0.9);
+        
+        &:hover{filter: none;}
+        @media only screen and (max-width: 992px) {
+            width: 100px;
+        }
+        @media only screen and (max-width: 768px) {
+            width:100px;
+        }
+    }
+}
+
+.colored-bg{
+    background-color: #F3F7FA;
+}
+.product-border{
+    border: 10px solid white;
+}

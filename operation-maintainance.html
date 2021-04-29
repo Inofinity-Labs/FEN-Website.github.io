@@ -10,405 +10,162 @@
     <link rel="stylesheet" href="assests/css/style.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assests/bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <style>
-        * {
-  box-sizing: border-box;
-}
+     <link rel="stylesheet" href="assests/bootstrap-4.6.0-dist/css/bootstrap.min.css"> 
+    <!-- Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS Animation-->
+    <link href="assests/css/animate/aos.css" rel="stylesheet">
 
-body {
-  margin: 0;
-  font-family: 'Helvetica', sans-serif;
-}
-
-/* All the snapping stuff */
-.scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-/* width */
-.scroll-container::-webkit-scrollbar {
-  width: 10px;  
-  display: none;
-  
-}
-
-/* Track */
-.scroll-container::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  
-  
-}
- 
-/* Handle */
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 25px;
-  
-}
-
-/* Handle on hover */
-.scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #555; 
- 
-}
-
-
-section {
-  height: 100vh;
-  scroll-snap-align: center;
-}
-
-/* Other styles */
-
-
-    </style>
-</head>
-<body>
+    
+    
+  </head>
+  <body>
     <div class='spinner-wrapper loading'>
-        <div class="spinner"></div>
-        <div class="spinner-logo">
-            <!-- <img src="assests/img/logoremaster.png" alt="" width="500px"> -->
-            <!-- <h1 class="display-4 text-muted">Loading</h1> -->
-        </div>
+      <div class="spinner"></div>
+      <div class="spinner-logo">
+          <!-- <img src="assests/img/logoremaster.png" alt="" width="500px"> -->
+          <!-- <h1 class="display-4 text-muted">Loading</h1> -->
+      </div>
+  </div>
+    
+    <!-- **************************************** NAV START **************************************** -->
+    <nav class="navbar navbar-expand-xl fixed-top" id="navbar-d">
+        <a href="index.html" class="navbar-brand"><img src="assests/img/fe1.png"></a>
+        <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
+        <ul class="navbar-nav ml-auto">
+            <!-- Megamenu-->
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <!-- <li class="nav-item"><a href="solution-turnkey.html" class="nav-link">Solutions</a></li> -->
+            <li class="nav-item dropdown megamenu" id="solution"><a id="megamenu" href="solution-turnkey.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle nav-active">Solutions</a>
+                <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="solution-dropdown">
+                <ul class="sub-nav navbar-nav ml-auto">
+                    <li class="sub-menu"><a href="solution-turnkey.html" class="sub-link"><h6 class="">Turn-key Solar</h6></a></li>
+                    <li class="sub-menu"><a href="solar-roof.html" class="sub-link "><h6 class="">Solar Roof</h6></a></li>
+                    <li class="sub-menu"><a href="concept-project.html" class="sub-link"><h6 class="">Concept Dev & Project Promotion</h6></a></li>
+                    <li class="sub-menu"><a href="permit-approval.html" class="sub-link"><h6 class="">Land, Licenses, Permits & Approvals</h6></a></li>
+                    <li class="sub-menu"><a href="consulting-design.html" class="sub-link"><h6 class="">Consulting, Design & Project Mgt.</h6></a></li>
+                    <li class="sub-menu"><a href="operation-maintainance.html" class="sub-link sub-active"><h6 class="">Operation & Maint.</h6></a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="nav-item"><a href="solar-module.html" class="nav-link">Product and Partners</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        </div>  
+        <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
+        <span></span>
+        </button>
+    </nav>        
+    <div class="nav-small">
+        <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
+        <span id="ham-menu"></span>
+        <span id="ham-menu2"></span>
     </div>
-    <main class="scroll-container">
-        <!-- ----------------------------------------- navbar ----------------------------------------- -->
-        <div class="navbar-d">
-            <div class="row">
-                <div class="nav-right">
-                    <a href="index.html" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
-                </div>
-                <div class="nav-left">
-                    <a href="index.html" class="main-nav-a">Home</a>
-                    <div class="dropdown-d">
-                        <a class="dropbtn main-nav-a nav-active">Solutions
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                        <div class="dropdown-content-d">
-                            <div class="nav-content-center"> 
-                                <a class="sub-nav-a drop-solar" href="solar-projects.html">Solar Projects</a>
-                                <div class="level2">
-                                    <div class="nav-content-center">
-                                        <a href="#roof" class="sub-nav-a">Link 1</a>a
-                                        <a href="#roof" class="sub-nav-a">Link 2</a>
-                                        <a href="#roof" class="sub-nav-a">Link 3</a> 
-                                    </div>
-                                </div>
-
-
-                            <a href="solar-roof.html" class="sub-nav-a">Solar Roof</a>
-                            <a href="concept-project.html" class="sub-nav-a">Concept Development & Project Promotion</a>
-                            <a href="permit-approval.html" class="sub-nav-a">Land, Licenses, Permits & Approvals</a>
-                            <a href="consulting-design.html" class="sub-nav-a">Consulting, Design & Project Mgt.</a>
-                            <a href="operation-maintainance.html" class="sub-nav-a nav-active">Operation & Maint.</a>
-                        
-                            </div>
-                        </div>
-                    </div>
-                        <a href="solar-module.html" class="main-nav-a">Product & Partners</a>
-                        <a href="projects.html" class="main-nav-a">Projects</a>
-                        <a href="about.html" class="main-nav-a">About Us</a>
-                        <a href="contact.html" class="main-nav-a">Contact Us</a>
-                </div>
-            </div>
+  <!-- **************************************** NAV ENDS **************************************** -->
+    <section class="about-hero" id="begin">
+        
+        <div class="solution-image">
         </div>
-        <div class="nav-small">
-            <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
-            <span id="ham-menu"></span>
-            <span id="ham-menu2"></span>
+        <div class="about-text">
+        <h1 class="hero-header" data-aos="fade-up" data-aos-duration="800">Operation &    <span class="fen-yellow">Maintenance</span></h1>
         </div>
-    <!-- -----------------------------------------END navbar ----------------------------------------- -->    
-     
-        <section class="hero-section solution solar-project" id="hero-section">
-            <h1 class="hero-header">Operation & Maint.</h1>
-        </section>
-        
-        
-        <!-- <section class="rooftop"  style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5046393557422969) 87%, rgba(0,0,0,0.7455357142857143) 100%),url(assests/img/bg/bg-rooftop.jpg); background-size: cover;"> -->
-        <!--section class="rooftop">    
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="rooftop-heading-content">
-                        <h1 class="display-4">Roof Top Solar</h1>
-                        <p>We thrive ahead of competition due to our Quality of Installation. <br>
-                            Unlike most of installers, Promised Delivery of Energy together with  Dedicated After Sales Service and 24X7 Online Monitoring makes the difference.</p>
-                        
-                        
-                        <div class="s-padding-top"></div>
-                        <div class="card-container">
-                            <div class="card-small">
-                                <img src="assests/img/svg-ico/completed.png" alt="" width="60px" class="rooftop-card-img">
-                                <h3> <span class="card-no"> 97</span>NOS</h3>
-                                <span>Completed Projects|<br> 2020</span>
-        
-                            </div>
-                            <div class="card-small">
-                                <img src="assests/img/svg-ico/cumulative.png" alt="" width="60px" class="rooftop-card-img">
-                                <h3><span class="card-no">9.76</span>MW</h3>
-                                <span>Total Cumulative |<br>2020</span>
-        
-                            </div>
-                            <div class="card-small">
-                                <img src="assests/img/svg-ico/energy.png" alt="" width="60px" class="rooftop-card-img">
-                                <h3><span class="card-no">14</span>GWh</h3>
-                                <span>Annual Energy Delivered |<br> (2020) </span>
-        
-                            </div>
-                            <div class="card-small">
-                                <img src="assests/img/svg-ico/revenue.png" alt="" width="60px" class="rooftop-card-img">
-                                <h3><span class="card-no">1.45</span>LKR Bn</h3>
-                                <span>Turn-Key Revenue |<br>(2016 – 2020) </span>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="rooftop-img">
-                        <img src="assests/img/bg/rooftop.jpg" alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-        </!--section>
-        <section class="commercial-industrial sub-sections">
-            
-                <h1 class="display-4">Commercial & Industrial Rooftop Projects</h1>
-                <hr class="main-header">
-                <div class="row">
-                <div class="col-md-7">
-                    <p>
-                        First Energy has managed to complete commercial and industrial rooftop projects, with a cumulative capacity of close to 7 MW within the first five years from the company incubation.
-                        <br><br>
-                        In 2020 First Energy commenced work on the largest solar rooftop project (3.2MW) which is the largest of its kind, currently in Sri Lanka, which is a hallmark milestone for the company.
-                    </p>
-                    <div class="row commercial-img-card">
-                        <div class="col-md-4 commercial-img">
-                            <img src="assests/img/bg/orange.jpg" alt=""  width="100%">
-                            <div class="hover-card">
-                                <img src="assests/img/bg/orange-logo.jpg" alt=""  width="100%">
-                                <p>Orange Electric Factory Ambalangoda (2020) | 1,650kWp</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 commercial-img">
-                            <img src="assests/img/bg/finlays.jpg" alt=""  width="100%">
-                            <div class="hover-card">
-                                <img src="assests/img/bg/finlays-logo.png" alt=""  width="100%">
-                                <p>Finlay's Cold Storage Walisara (2017) | 1,000kWp 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 commercial-img">
-                            <img src="assests/img/bg/dsi.jpg" alt="" width="100%">
-                            <div class="hover-card">
-                                <img src="assests/img/bg/dsc-logo.jpg" alt=""  width="100%">
-                                <p>D Samson Industries (Pvt) Limited, Kadawatha (2019) | 574kWp 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="col-md-5 padding-left">
-                    <div class="chart">
-                        <img src="assests/img/bg/chart.PNG" alt="" width="100%">
-                    </div>
-                    
-                    <div class="card-container">
-                        <div class="card-small">
-                            <h3> <span class="card-no"> 21</span>NOS</h3>
-                            <span>Projects</span>
-    
-                        </div>
-                        <div class="card-small">
-                            <h3><span class="card-no">6.96</span>MW</h3>
-                                    <span>Total Capacity </span>
-    
-                        </div>
-                        <div class="card-small">
-                            <h3><span class="card-no">18.6</span>GWh</h3>
-                                    <span>Annual Energy Delivered (2016-2020) </span>
-    
-                        </div>
-                        <div class="card-small">
-                            <h3><span class="card-no">800</span>LKR Bn</h3>
-                                    <span>Invesments <br> (2018 – 2020) </span>
-    
-                        </div>
-                    </div>
-                    
-                </div>
-           
-            </div>
-        </section>
-        <section-- class="domestic sub-sections">
-            
-            <h1 class="display-4">Domestic Rooftop Solutions</h1>
-            <hr class="main-header">
-            <div class="row">
-            
-            <div class="col-md-5 padding-left">
-                <div class="chart">
-                    <img src="assests/img/bg/chart.PNG" alt="" width="100%">
-                </div>
-                
-                <div class="card-container">
-                    <div class="card-small">
-                        <h3> <span class="card-no"> 48</span>NOS</h3>
-                        <span>Projects</span>
-
-                    </div>
-                    <div class="card-small">
-                        <h3><span class="card-no">493</span>MW</h3>
-                                <span>Total Capacity</span>
-
-                    </div>
-                    <div class="card-small">
-                        <h3><span class="card-no">5.3</span>GWh</h3>
-                                <span>Annual Energy Delivered (2016-2020) </span>
-
-                    </div>
-                    <div class="card-small">
-                        <h3><span class="card-no">66.5</span>LKR Bn</h3>
-                                <span>Invesments <br> (2018 – 2020) </span>
-
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-7">
-                <p>
-                    First Energy provide solar PV solutins for domestic customers through Net metering, Net Plus and Net Accounting schemes under the "Soorya Bala Sangramaya"
-                    <br><br>
-                    Our solar PV plants are designed and built incorporating the best engineering pratices of the industry, surpassing our competitirs. The quality of workmanship is appreciated by the sustainable energy authority
-                </p>
-                <div class="row domestic-img-card">
-                    <div class="col-md-3 domestic-img">
-                        <img src="assests/img/bg/orange.jpg" alt=""  width="100%" class="domestic-card">
-                        <div class="hover-card">
-                            
-                            <p>Mr. Damith Dasanayake | 10kWp</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 domestic-img">
-                        <img src="assests/img/bg/finlays.jpg" alt=""  width="100%" class="domestic-card">
-                        <div class="hover-card">
-                            
-                            <p>Mr. Abdul Wadud Mohomad Farook | 13.72kWp 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 domestic-img">
-                        <img src="assests/img/bg/dsi.jpg" alt="" width="100%" class="domestic-card">
-                        <div class="hover-card">
-                            
-                            <p>Mr. Vijayantha Rangajeewa | 50.4kWp 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 domestic-img">
-                        <img src="assests/img/bg/dsi.jpg" alt="" width="100%" class="domestic-card">
-                        <div class="hover-card">
-                            
-                            <p>Mr. Nisal Perera | 17.4kWp 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-       
-        </div>
-    </section-->
-    
-    <section class="footer-section">
-
-
-
-        <div class="footer-content">
-            <div class="container">
-                <div class="footer-widget-area">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="footer-widget-item pera-content">
-                                <div class="footer-menu-widget ul-li-block">
-                                    <h3 class="el-widget-title">VISIT</h3>
-                                    <hr>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63388.63706111157!2d79.86849307910155!3d6.795408999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3ae245423b324adf%3A0x366b642f92d11627!2sFirstEnergy%20SL%20(Pvt)%20Ltd%2C%20No%20305%20Bandaranayake%20Mawatha%2C%20Moratuwa%2010400!3m2!1d6.795408999999999!2d79.90351199999999!5e0!3m2!1sen!2slk!4v1604425216527!5m2!1sen!2slk"
-                                        height="350px" width="80%" frameborder="0" allowfullscreen=""
-                                        aria-hidden="false" tabindex="0"></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="footer-widget-item">
-                                <div class="footer-logo-widget">
-                                    <!-- <a class="footer-logo" href="#" style="background-color: #dddddd"><img src="assets/img/logo/logoremaster.png" alt="" width="200px"></a> -->
-                                    <h3 class="el-widget-title">TALK TO US</h3>
-                                    <hr>
-                                    <p><i class="icon-map"></i> No 55/5 , Nikape, <br>Dehiwala, Sri Lanka</p>
-                                    <p>Branches : No 305, <br> Bandaranayake Mawatha, <br> Katubedda, Sri Lanka</p>
-                                    <p><i class="icon-call-out"></i> +94 777 700 700</p>
-                                    <p><i class="icon-pin"></i> info@firstenergy.lk</p>
-                                    <p><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/firstenergysl"
-                                            target="_blank">fb.com/firstenergysl</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="footer-widget-item pera-content">
-                                <div class="footer-location-widget ul-li-block">
-                                    <h3 class="el-widget-title">SAY HELLO</h3>
-                                    <hr>
-                                    <p>Tell us what you Feel / Complaint / Suggestions</p>
-                                    <br class="space s" />
-                                    <form action="" class="form-box form-ajax" method="post" data-email="federico@pixor.it">
-                                        <input id="name" name="name" placeholder="Name" type="text" class="input-textbox form-value" required>
-
-                                        <input id="email" name="email" placeholder="Email" type="email" class="input-textbox form-value" required>
-
-                                        <textarea id="messagge" name="messagge" placeholder="Message" class=" input-textbox form-value" required></textarea>
-
-                                        <div class="text-uppercase text-center">
-                                            <a href="#" class="submit-btn">submit message</a>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright-text text-center">
-            <p class="develop-by" >Designed and Developed by
-                <script>document.write(new Date().getFullYear());</script> © <a
-                    href="http://www.inofinitylabs.com/">inofinity Labs</a></p>
-            <!--div class="copyright-menu">
-              <a href="#">Terms</a>
-              <a href="#"> Privacy Policy </a>
-              <a href="#">Sitemap</a>
-          </div-->
-        </div>
+        <!-- <div class="s-padding-top"></div> -->
 
     </section>
+    
 
-      </main>
+    <section class="padding-solution">
+        <div class="container">
+            <h1 class="display-5 fen-gray" data-aos="fade-up" data-aos-duration="800" >Call Our Hotline <spna class="fen-yellow">0777 700 700</spna></h1>
+            <!-- <hr class="main-header" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">  -->
+            <div class="row container-padding">
+                <div class="col-md-6">
+                    <div class="container bullets-points" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <p>FirstEnergy is one of Sri Lanka's few companies with an organized & dedicated team for Service Operations and Maintenance. A dedicated maintenance team monitors the plants through online motoring platforms to provide our clients an optimum power yield.</p>
+                        <p>The O&M division possesses the most modern and state of the art equipment for detecting errors and checking of complete systems efficiently and accurately.</p>
+                    </div>
+                    <p class="text-center text-muted"><small>SUN SYNERGY | KADAWATHA <br>
+                    Capacity 562.9kWp | <strong>27TH Aug 2020</strong> | <strong>Achievement: 116%</strong> | Ave. kWh per Day per KWp : 4.59 <br>
+                    <strong>Energy</strong> Budgeted Vs <span class="fen-yellow">Actual</span> | 2,227 kWh Vs <span class="fen-yellow">2,585 kWh</span> Difference <span class="fen-yellow">358 kWh</span> <br>
+                    <strong>Income</strong> Budgeted Vs <span class="fen-yellow">Actual</span> | LKR 48,989 Vs <span class="fen-yellow">LKR 5</span></small></p>
+                    <img src="assests/img/solutions/chart.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="row justify-content-md-center text-center">
+                        <div class="col-5">
+                            <div class="card">
+                                <img src="assests/img/solutions/repair/repair1.jpg" alt="" class="shadow-product">
+                                <p class="">Thermal imaging of a solar module</p>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="card">
+                                <img src="assests/img/solutions/repair/repair2.jpg" alt="" class="shadow-product">
+                                <p class="">Checking AC and DC voltages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center text-center">
+                        <div class="col-5">
+                            <div class="card">
+                                <img src="assests/img/solutions/repair/repair3.jpg" alt="" class="shadow-product">
+                                <p class="">Visual inspection of mc4 connectors and other equipments</p>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="card">
+                                <img src="assests/img/solutions/repair/repair4.jpg" alt="" class="shadow-product">
+                                <p class="">Checking insulation resistance of AC and DC cables</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
 
-      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    
+   
+    <div class="padding-top"></div>
+    
+    
+    
+    <!-- ----------------------------------------- Footer ----------------------------------------- -->
+    <div w3-include-html="include/footer.html"></div>
+    <!-- ----------------------------------------- END Footer ----------------------------------------- -->
+    
+    
+    
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="assests/bootstrap-4.6.0-dist/jQuery/jQuery-3.5.1.slim.min.js"></script>
     <script src="assests/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" ></script>
+    
+    <!-- Scroll Animation -->
+    <script src="assests/css/animate/aos.js"></script>
+    
     <script src="assests/js/custom.js"></script>
-</body>
+  
+    
+    <script src="assests/js/w3include.js"></script>
+    
+    <script>
+      AOS.init();
+      includeHTML();
+    </script>
+    
+
+  
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
