@@ -32,7 +32,7 @@
     font-size: 15.5px;
     text-align: justify;
     line-height: 23px;
-    padding-left: 5%;
+    //padding-left: 5%;
     li{
         padding-bottom: 1em;
         list-style-type: circle;
@@ -73,6 +73,7 @@
 }
 .text-black{color: #000}
 .fen-yellow{color: $fen-yellow}
+.fen-yellow2{color: #ffbd00}
 .fen-green{color: $fen-green }
 
 .width-9{
@@ -118,8 +119,11 @@
    }
 }
 .fen-para{
-   font-weight: 400;
-   font-size: 1.2em;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Rubik';
+    padding-top: 1em;
+    line-height: 1.6em;
    @media only screen and (max-width: 768px) {
       font-size: 12px;
    }

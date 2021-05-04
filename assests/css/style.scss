@@ -5,9 +5,14 @@ html{
     padding:0;
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    h1,h2,h3,h4,h5,h6,p{
+    h1,h2,h3,h4,h5,h6{
         font-family: 'Rubik', sans-serif;
     }
+    p{
+      font-family: 'ITCAvantGarde', sans-serif;
+      font-weight: 100;
+      color: #6c757d;
+  }
     
     
 }
@@ -55,6 +60,7 @@ if it's not present, don't show loader */
     .padding-top{padding-top: 5em;}
 }
 .s-padding-top{padding-top: 2em;}
+.m-padding-top{padding-top: 4em;}
 
 .h100vh{height:100vh!important;}
     @media screen and (max-width: 600px) {
@@ -625,7 +631,7 @@ footer, .footer-section{
   text-align: center;
 }
 #home-solution{
-  
+  a{text-decoration: none;}
   .card-solution{
     border-radius: 25px;
     display: flex;
@@ -656,12 +662,15 @@ footer, .footer-section{
     
   }
   .title-div{
-    padding-top: 10px;
+    padding-top: 8px;
+    
+   
     .s-title{
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 550;
       color: #000;
     }
+    i{float: right;}
   }
 }
 /* Solution in Home Page */
@@ -915,4 +924,10 @@ footer, .footer-section{
 }
 .container-padding{
   padding-block : 5%;
+}
+
+/*Contact */
+.contact-row{
+  display: inline;
+  i{margin-left: -10%;}
 }

@@ -121,11 +121,16 @@
     }
 }
 .v-m-image{
-    background-color: #fff;
-    background-image: url(../img/bg/v-m-image.jpg);
-    background-size: cover;
-    background-position: 0% 20%; 
-    min-height: 120vh;
+  
+   @media (max-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #F4F4F4;
+    }
 }
 .v-m-text{
   display: flex;
@@ -135,6 +140,11 @@
   min-height: 100vh;
   line-height: 31.76px;
     padding-inline: 40px!important;
+
+    @media (max-width: 768px) {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../img/bg/v-m-image.jpg);
+      background-size: cover;
+    }
 }
 
 .card-flagship{
@@ -352,8 +362,8 @@
 }
 
 .about-view-more{
-  //position: absolute;
-  //bottom: 0;
+  position: absolute;
+  bottom: 5%;
   //margin-top: 25px!important;
   padding: 10px 20px;
   //width: 90%;

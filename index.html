@@ -22,149 +22,41 @@
     
   </head>
   <body>
-    <!-- <div class="preloader">
-        <div class="preloader__container">
-              <h1 class="preloader__container__percent"></h1>
-          <div class="preloader__container__preload">
-            <div class="preloader__container__preload__dot">         </div>
-            <div class="preloader__container__preload__dot">         </div>
-            <div class="preloader__container__preload__dot">         </div>
-            <div class="preloader__container__preload__dot">         </div>
-          </div>
+    <!-- ******************************************** Spinner ******************************************** -->
+    <div class='spinner-wrapper loading'>
+        <div class="spinner"></div>
+        <div class="spinner-logo">
+            <!-- <img src="assests/img/logoremaster.png" alt="" width="500px"> -->
+            <!-- <h1 class="display-4 text-muted">Loading</h1> -->
         </div>
-      </div> -->
-        <div class='spinner-wrapper loading'>
-            <div class="spinner"></div>
-            <div class="spinner-logo">
-                <!-- <img src="assests/img/logoremaster.png" alt="" width="500px"> -->
-                <!-- <h1 class="display-4 text-muted">Loading</h1> -->
-            </div>
-        </div>
-    
-        
-      <!-- ----------------------------------------- navbar ----------------------------------------- -->
-        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar nav-block-outer">
-            <div class="navbar-left">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assests/img/fe1.png" width="200"  class="d-inline-block align-top" alt="">
-                </a>
-            </div>
-            <div class="navbar-right">
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="solutions.html">Products & Partners</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Solutions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                   </ul>
-                    
-                </div>
-            </div>
-        </nav>
-        
-        <div class="nav-small">
-            <input type="checkbox" class="checkbox_check" id="menu-check" onclick="clickfunction()">
-            <span id="ham-menu"></span>
-            <span id="ham-menu2"></span>
-        </div> -->
-    <!-- </div> --> <!-- container-div -->
-    <!-- ----------------------------------------- NEW navbar ----------------------------------------- -->
-    <!-- ----------------------------------------- navbar ----------------------------------------- -->
-    <!--<div class="navbar-d">
-        <div class="row">
-            <div class="nav-right">
-                <a href="#" class=""> <img src="assests/img/fe1.png" alt="" width="200" class="d-inline-block align-top"> </a>
-            </div>
-            <div class="nav-left  navbar-collapse">
-                <a href="#" class="main-nav-a animsition-link nav-active">Home</a>
-                <a href="solution-turnkey.html" class="main-nav-a animsition-link">Solutions</a>
-            
-                    <a href="solar-module.html" class="main-nav-a">Product & Partners</a>
-                    <a href="projects.html" class="main-nav-a">Projects</a>
-                    <a href="about.html" class="main-nav-a">About Us</a>
-                    <a href="contact.html" class="main-nav-a">Contact Us</a>
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            </div>
-        </div>
-    </div> -->
+    </div>
+    <!-- ******************************************** END Spinner ******************************************** -->
+
+    <!-- **************************************** Navbar **************************************** -->
+    <nav class="navbar navbar-expand-xl fixed-top" id="navbar-d">
+        <a href="index.html" class="navbar-brand"><img src="assests/img/fe1.png"></a>
+        <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
+        <ul class="navbar-nav ml-auto">
+            <!-- Megamenu-->
+            <li class="nav-item"><a href="index.html" class="nav-link nav-active">Home</a></li>
+            <li class="nav-item"><a href="solution-turnkey.html" class="nav-link">Solutions</a></li>
+            <li class="nav-item"><a href="solar-module.html" class="nav-link">Product and Partners</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        </div>  
+        <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
+        <span></span>
+        </button>
+    </nav>
     <div class="nav-small">
         <button class="nav-btn" id="menu-check" onclick="clickfunction()" ></button>
         <span id="ham-menu"></span>
         <span id="ham-menu2"></span>
     </div>
-<!-- -----------------------------------------END navbar ----------------------------------------- --> 
-<!-- **************************************** NAV START **************************************** -->
-<nav class="navbar navbar-expand-xl fixed-top" id="navbar-d">
-    <a href="index.html" class="navbar-brand"><img src="assests/img/fe1.png"></a>
-    <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
-      <ul class="navbar-nav ml-auto">
-        <!-- Megamenu-->
-        <li class="nav-item"><a href="index.html" class="nav-link nav-active">Home</a></li>
-        <li class="nav-item"><a href="solution-turnkey.html" class="nav-link">Solutions</a></li>
-        <li class="nav-item"><a href="solar-module.html" class="nav-link">Product and Partners</a></li>
-        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
-      </ul>
-    </div>  
-    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
-      <span></span>
-    </button>
-  </nav>
-  <!-- **************************************** NAV ENDS **************************************** -->
-    <!-- ----------------------------------------- END NEW navbar ----------------------------------------- -->
-    <!--main>
-        <div id="carouselExampleInterval" class="carousel slide" >
-            <div class="carousel-inner h100vh">
-                <div class="carousel-item active" data-interval="5000">
-                    <img src="assests/img/carousel/s12.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption2 d-none d-md-block" >
-                        <h1 class="fen-heading">Welcome to <span class="fen-yellow"> First Energy</span></h1>
-                        <p class="fen-para"> We are changing the world with renewable energy one roof at a time. We are
-                            passionate in providing world-class solar solutions and we act with the fundamental vision of creating
-                            a better and a greener world.
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                    <img src="assests/img/carousel/s22.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption2 d-none d-md-block">
-                        <h2 class="fen-heading">We Cater Your <span class="fen-yellow">Energy Needs</span></h2>
-                        <p class="fen-para"> Whether it's your home, your business, or even your land, we are prepared to offer unmatched solutions. You are only restricted by your imagination. So, what do you have in your mind?</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                    <img src="assests/img/carousel/s32.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption2 d-none d-md-block">
-                        <h2 class="fen-heading">Grow <span class="fen-yellow">with us</span></h2>
-                        <p class="fen-para">Whether you are a houseowner, a contractor, a consultant, you can grow with us to see a better tomorrow and a greener world.</p>
-                    </div>
-                </div>
-            </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon2" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                <span class="carousel-control-next-icon2" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
-        </div>    
-    </main-->
+    <!-- **************************************** NAV ENDS **************************************** -->
+    
     <!-- Main Slider Change -->
     <section id="hero-slider">
         <!-- <div id="logo" class="mask">
@@ -216,23 +108,23 @@
             <div id="slides-aux" class="slides mask">
                 <div class="slide-title slide" data-index="0">
                     <h1 class="fen-heading">Welcome to <span class="fen-yellow"> First Energy</span></h1>
-                    <p class="fen-para"> We are changing the world with renewable energy one roof at a time. We are
+                    <p class="fen-para text-white"> We are changing the world with renewable energy one roof at a time. We are
                         passionate in providing world-class solar solutions and we act with the fundamental vision of creating
                         a better and a greener world.
                     </p>
-                    <a href="about.html" class="btn btn-view-more" style="z-index: 999!important;">View More </a>
+                    <a href="about.html" class="btn btn-view-more mt-3" style="z-index: 999!important;">View More </a>
                     
                 </div>
                 <div class="slide-title slide" data-index="1">
                     <h2 class="fen-heading">We Cater Your <span class="fen-yellow">Energy Needs</span></h2>
-                    <p class="fen-para"> Whether it's your home, your business, or even your land, we are prepared to offer unmatched solutions. You are only restricted by your imagination. So, what do you have in your mind?</p>
-                    <a href="about.html" class="btn btn-view-more">View More </a>
+                    <p class="fen-para text-white"> Whether it's your home, your business, or even your land, we are prepared to offer unmatched solutions. You are only restricted by your imagination. So, what do you have in your mind?</p>
+                    <a href="about.html" class="btn btn-view-more mt-3">View More </a>
                     
                 </div>
                 <div class="slide-title slide" data-index="2">
                     <h2 class="fen-heading">Grow <span class="fen-yellow">with us</span></h2>
-                    <p class="fen-para">Whether you are a houseowner, a contractor, a consultant, you can grow with us to see a better tomorrow and a greener world.</p>
-                    <a href="about.html" class="btn btn-view-more">View More </a>
+                    <p class="fen-para text-white">Whether you are a houseowner, a contractor, a consultant, you can grow with us to see a better tomorrow and a greener world.</p>
+                    <a href="about.html" class="btn btn-view-more mt-3">View More </a>
                     
                 </div>
                 <!-- <div class="slide-title slide" data-index="3">The Colossal</div> -->
@@ -265,139 +157,93 @@
     </section>
     <!-- Main Slider Change -->
 
-    <div class="s-padding-top"></div>
-    <div class="s-padding-top"></div>
+    <div class="m-padding-top"></div>
 
-        <section class="solutions" id="home-solution">
-            <div class="container">
-                <h1 class="home-title" data-aos="fade-up" data-aos-duration="800">Solutions</h1>
-                <div class="s-padding-top"></div>
+    <section class="solutions" id="home-solution">
+        <div class="container">
+            <!-- <h5 class="fen-yellow text-center" data-aos="fade-up" data-aos-duration="600">SOLUTIONS</h5>
+            <h1 class="home-title" data-aos="fade-up" data-aos-duration="800">Explore Our Amazing Solutions</h1>
+             -->
+            <h1 class="home-title" data-aos="fade-up" data-aos-duration="800">Solutions</h1>
+            
 
-                <div class="row justify-content-md-center text-center">
-                    <div class="col-md-4 d-flex" style="flex-direction: column;">
-                        <div class="card-solution " data-aos="fade-up"  data-aos-duration="800">
+            <div class="row justify-content-md-center text-center">
+                <div class="col-md-4 d-flex" style="flex-direction: column;">
+                    <a href="solution-turnkey.html" data-aos="fade-up"  data-aos-duration="800">
+                        <div class="card-solution " >
                             <img src="assests/img/solutions/solar.jpg" class="image-home-index shadow-solutions" alt="">
                         </div><div class="title-div">
-                            <h5 class="s-title" data-aos="fade-up" data-aos-duration="800">Ternkey Solar Projects EPC</h5>
+                            <h5 class="s-title">Ternkey Solar Projects EPC </h5>
+                            
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex" style="flex-direction: column;">
-                        <div class="card-solution " data-aos="fade-up"  data-aos-duration="800">
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex" style="flex-direction: column;">
+                    <a href="solar-roof.html" data-aos="fade-up"  data-aos-duration="800">
+                        <div class="card-solution ">
                             <img src="assests/img/solutions/solar-roof.jpg" class="image-home-index shadow-solutions" alt="">
                         </div><div class="title-div">
-                            <h5 class="s-title" data-aos="fade-up" data-aos-duration="800">Solar Roof Rentals</h5>
+                            <h5 class="s-title">Solar Roof Rentals</h5>
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex" style="flex-direction: column;">
-                        <div class="card-solution " data-aos="fade-up"  data-aos-duration="800">
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex" style="flex-direction: column;">
+                    <a href="concept-project.html" data-aos="fade-up"  data-aos-duration="800">
+                        <div class="card-solution ">
                             <img src="assests/img/solutions/concept.jpg" class="image-home-index shadow-solutions" alt="">
                         </div><div class="title-div">
-                            <h5 class="s-title" data-aos="fade-up" data-aos-duration="800">Concept Development</h5>
+                            <h5 class="s-title">Concept Development</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="row justify-content-md-center text-center">
-                    <div class="col-md-4 d-flex" style="flex-direction: column;">
-                        <div class="card-solution " data-aos="fade-up"  data-aos-duration="800">
+            </div>
+            <div class="row justify-content-md-center text-center">
+                <div class="col-md-4 d-flex" style="flex-direction: column;">
+                    <a href="permit-approval.html" data-aos="fade-up"  data-aos-duration="800">
+                        <div class="card-solution ">
                             <img src="assests/img/solutions/approve.jpg" class="image-home-index shadow-solutions" alt="">
                         </div><div class="title-div">
-                            <h5 class="s-title" data-aos="fade-up" data-aos-duration="800">Permits and Approvals</h5>
+                            <h5 class="s-title">Permits and Approvals</h5>
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex" style="flex-direction: column;">
-                        <div class="card-solution " data-aos="fade-up"  data-aos-duration="800">
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex" style="flex-direction: column;">
+                    <a href="consulting-design.html" data-aos="fade-up"  data-aos-duration="800">
+                        <div class="card-solution ">
                             <img src="assests/img/solutions/consultancy.jpg" class="image-home-index shadow-solutions" alt="">
                         </div><div class="title-div">
-                            <h5 class="s-title" data-aos="fade-up" data-aos-duration="800">Design and Management</h5>
+                            <h5 class="s-title">Design and Management</h5>
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex" style="flex-direction: column;">
-                        <div class="card-solution " data-aos="fade-up"  data-aos-duration="800">
+                    </a>
+                </div>
+                <div class="col-md-4 d-flex" style="flex-direction: column;">
+                    <a href="operation-maintainance.html" data-aos="fade-up"  data-aos-duration="800">
+                        <div class="card-solution ">
                             <img src="assests/img/solutions/maintenance.jpg" class="image-home-index shadow-solutions" alt="">
                         </div><div class="title-div">
-                            <h5 class="s-title" data-aos="fade-up" data-aos-duration="800">Operations and Maintenance</h5>
+                            <h5 class="s-title">Operations and Maintenance</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-                <!-- <div class="card-deck">
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="shadow-home-index">
-                                <img src="assests/img/solutions/solar.jpg" class="image-home-index" alt="">
-                            </div>
-                            <div class="card-body home-index">
-                                <h5 class="title-home-index">Concept Development</h5>
-                            </div> 
-                        </div>                                    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="shadow-home-index">
-                                <img src="assests/img/solutions/solar-roof.jpg" class="image-home-index" alt="">
-                            </div>
-                            <div class="card-body home-index">
-                                <h5 class="title-home-index">Solar Roof Rentals</h5>
-                            </div> 
-                        </div>                                    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="shadow-home-index">
-                                <img src="assests/img/solutions/concept.jpg" class="image-home-index" alt="">
-                            </div>
-                            <div class="card-body home-index">
-                                <h5 class="title-home-index">Concept Development</h5>
-                            </div> 
-                        </div>                                    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="shadow-home-index">
-                                <img src="assests/img/solutions/approve.jpg" class="image-home-index" alt="">
-                            </div>
-                            <div class="card-body home-index">
-                                <h5 class="title-home-index">Permits and Approvals</h5>
-                            </div> 
-                        </div>                                    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="shadow-home-index">
-                                <img src="assests/img/solutions/consultancy.jpg" class="image-home-index" alt="">
-                            </div>
-                            <div class="card-body home-index">
-                                <h5 class="title-home-index">Design and Management</h5>
-                            </div> 
-                        </div>                                    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="shadow-home-index">
-                                <img src="assests/img/solutions/maintenance.jpg" class="image-home-index" alt="">
-                            </div>
-                            <div class="card-body home-index">
-                                <h5 class="title-home-index">Operations and Maintenance</h5>
-                            </div> 
-                        </div>                                    
-                    </div>
-                    
-                    
-                    
-                </div> -->
-
-
-    
-                
             </div>
-        </section>
+
+            
+
+
+
+            
+        </div>
+    </section>
         <div class="s-padding-top"></div>
         <div class="s-padding-top"></div>
         <section class="news">
             <div class="container">
+                <!-- <h5 class="fen-yellow text-center" data-aos="fade-up" data-aos-duration="600">News</h5>
+                <h1 class="home-title" data-aos="fade-up" data-aos-duration="800">Update With Our Latest New</h1> -->
+
                 <h1 class="home-title" data-aos="fade-up" data-aos-duration="1000">News</h1>
                 
-                <div class="s-padding-top"></div>
+                <div class="m-padding-top"></div>
                 <div class="row d-flex align-items-center">
                 
                     <div class="col-md-7 col-sm-12" data-aos="fade-up"  data-aos-duration="1500">
