@@ -113,12 +113,37 @@ html a {
   text-decoration: none;
   text-transform: uppercase;
   color: #4b4b4b;
-  padding: 0px 15px;
+  padding: 10px 15px;
   font-family: 'proxima-nova-700';
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
 }
 
-.navbar #navbarContent .navbar-nav .nav-item a.nav-link:hover {
-  color: #006008;
+.navbar #navbarContent .navbar-nav .nav-item a.nav-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #fcd966;
+  height: 2px;
+  -webkit-transition-property: left right;
+  transition-property: left right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.navbar #navbarContent .navbar-nav .nav-item a.nav-link:hover:before {
+  left: 15px;
+  right: 15px;
 }
 
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav {
@@ -143,6 +168,23 @@ html a {
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu .sub-link h6 {
   padding: 0;
   margin: 0;
+}
+
+.nav-active:before {
+  content: "" !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  left: 15px !important;
+  right: 15px !important;
+  bottom: 0;
+  background: #fcd966;
+  height: 2px;
+  -webkit-transition-property: left right;
+  transition-property: left right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 /* -------------------------------------------- Loader Working -------------------------------------------- */
