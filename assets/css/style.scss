@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'proxima-nova-700';
+    src: url('font/Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'proxima-nova-400';
+    src: url('font/Regular.otf') format('truetype');
+}
+@font-face {
+    font-family: 'proxima-nova-600';
+    src: url('font/Semibold.otf') format('truetype');
+}
+html{
+    padding:0;
+    margin: 0;
+    font-family: 'proxima-nova-700', sans-serif;
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'proxima-nova-700', sans-serif;
+        color: #444444;
+    }
+    p{
+      font-family: 'proxima-nova-400', sans-serif;
+      font-size: 18px;
+      color: #676767;
+      line-height: 25px;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+    
+    
+}
+
+//imports
+//@import 'sub/font';
+@import 'sub/color';
+
+@import 'sub/navbar';
+@import 'sub/spinner';
+@import 'sub/bootstrap-formating';
+@import 'sub/footer';
+
+
+//utility
+.h100vh{
+    height: 100vh;
+}
+
+.fullvh{
+    height: 80vh;
+    width: 100%;
+}
+.heading-hr{
+    width: 70px;
+    //content-align: left;
+    height: 4px;
+    background-color: #FFCC00;
+    border: none;
+}
+.btn-fen{
+    border: none;
+    border-radius: 0!important;
+    background-color: #002060!important;
+    color: #fff!important;
+    font-family: 'proxima-nova-600';
+    font-size: 12px!important;
+}
+
+
+//index
+.main{
+    background:url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+.solutions{
+    
+    .col-md-4{padding: 0;}
+    .card-img-overlay{
+        padding-top : 10%;
+        background-color: rgba(0,0,0,0.3);
+        h3{color: #fff}
+
+        
+    }
+}
+.news-img{
+    background: linear-gradient(rgba(0,0,0,0.3)), url(../img/news/news.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
