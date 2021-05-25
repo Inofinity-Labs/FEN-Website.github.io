@@ -147,19 +147,31 @@ html a {
   right: 15px;
 }
 
+.navbar #navbarContent .navbar-nav .dropdown-menu {
+  border-radius: none !important;
+  background: linear-gradient(180deg, white 0%, white 40px, #2b2b2b 40.001px, #2b2b2b 100%);
+  position: absolute;
+}
+
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
 }
 
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu {
   padding: 0.5em 0.9em;
 }
 
+.navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu:first-child {
+  padding-top: 50px;
+}
+
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu .sub-link {
   text-decoration: none;
-  color: #363636;
+  color: #FFF;
 }
 
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu .sub-link:hover {
@@ -169,6 +181,8 @@ html a {
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu .sub-link h6 {
   padding: 0;
   margin: 0;
+  color: #fff;
+  font-family: 'proxima-nova-400', sans-serif;
 }
 
 .nav-active:before {
@@ -186,6 +200,16 @@ html a {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+}
+
+@media screen and (min-width: 600px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-toggle::after {
+  content: none !important;
 }
 
 /* -------------------------------------------- Loader Working -------------------------------------------- */
@@ -542,7 +566,7 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F4F4F4;
+  background-color: #dbe5ed;
   min-height: 100vh;
   line-height: 31.76px;
   padding-inline: 40px !important;
@@ -1028,6 +1052,84 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   }
 }
 
+.project-section {
+  height: calc(100vh - 125px);
+  width: 100%;
+}
+
+.project-section .row {
+  margin-inline: 0;
+  height: 100%;
+}
+
+.project {
+  background: url(../img/map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------ accordion ------------*/
+.myaccordion {
+  position: absolute;
+  width: 93%;
+  margin: 0px auto;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  height: calc(100vh - 125px);
+}
+
+.myaccordion::-webkit-scrollbar {
+  width: 5px;
+}
+
+.myaccordion::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.myaccordion::-webkit-scrollbar-thumb {
+  background: #FABE11;
+  border-radius: 50px;
+}
+
+.myaccordion::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+  border: none;
+}
+
+.myaccordion .card-header {
+  border-bottom-color: #EDEFF0;
+  background: transparent;
+}
+
+.myaccordion .fa-stack {
+  font-size: 18px;
+}
+
+.myaccordion .btn {
+  width: 100%;
+  font-weight: bold;
+  color: #004987;
+  padding: 0;
+}
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+
+.myaccordion li + li {
+  margin-top: 10px;
+}
+
+/* ------------ END accordion ------------*/
 .h100vh {
   height: 100vh;
 }

@@ -1,0 +1,68 @@
+.project-section{
+    height: calc(100vh - 125px) ;
+    width: 100%;
+
+    .row{
+        margin-inline: 0;
+        height: 100%;
+    }
+}
+.project{
+    background:url(../img/map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ------------ accordion ------------*/
+.myaccordion {
+    position: absolute;
+    width: 93%;
+    margin: 0px auto;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    overflow-y: scroll;
+    height: calc(100vh - 125px) ;
+
+    &::-webkit-scrollbar {width: 5px;}
+    // Track 
+    &::-webkit-scrollbar-track {background: #f1f1f1;}
+    // Handle 
+    &::-webkit-scrollbar-thumb {background: $fen-yellow; border-radius: 50px;}
+    // Handle on hover
+    &::-webkit-scrollbar-thumb:hover {background: #555;}
+    
+  }
+  
+  .myaccordion .card,
+  .myaccordion .card:last-child .card-header {
+    border: none;
+  }
+  
+  .myaccordion .card-header {
+    border-bottom-color: #EDEFF0;
+    background: transparent;
+  }
+  
+  .myaccordion .fa-stack {
+    font-size: 18px;
+  }
+  
+  .myaccordion .btn {
+    width: 100%;
+    font-weight: bold;
+    color: #004987;
+    padding: 0;
+  }
+  
+  .myaccordion .btn-link:hover,
+  .myaccordion .btn-link:focus {
+    text-decoration: none;
+  }
+  
+  .myaccordion li + li {
+    margin-top: 10px;
+  }
+  /* ------------ END accordion ------------*/
