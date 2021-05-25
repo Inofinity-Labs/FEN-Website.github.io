@@ -1,0 +1,124 @@
+/* ************************************* Contact US ************************************* */
+.contact-hero{
+    //min-height: 100vh;
+    //padding: 15vh 0 15vh 0;
+    background-color: #F2F2F2;
+    //z-index: 2!important;
+    color:rgb(29, 29, 29);
+    
+  
+    .contact-left{
+      background:
+      linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 100%),
+      url(../img/bg/s1.webp);
+      background-size: cover;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding-inline: 10%;
+        min-height: 100vh;
+        h4{
+          font-size: 20px;
+          font-weight: 600;
+          color: #fff;
+          line-height: 20px;
+        }
+        p{font-size: 16px;line-height: 16px;}
+        .padding-bottom{padding-bottom: 20px;}
+      
+    }
+  }
+  .contact-right{
+    background-color: #fff;
+    padding: 10%!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
+        h3{text-align: center;}
+        .form-box{
+          width:100%;
+          input{
+              width: 100%;
+              border: 1px solid rgb(148, 148, 148);
+              padding: .6rem;
+              margin-bottom: 1em;
+              background-color: rgb(255, 255, 255);
+              transition: all 0.5s ease-in-out;
+              &:focus{outline: none;color:rgb(29, 29, 29)}
+          }
+          textarea{
+              width: 100%;
+              border: 1px solid rgb(148, 148, 148);
+              padding: .6rem;
+              margin-bottom: 1em;
+              transition: all 0.5s ease-in-out;
+              background-color: rgb(255, 255, 255);
+              &:focus{outline: none;color:rgb(29, 29, 29)}
+          }
+  }
+  }
+  .map-title{padding-block: 40px;}
+  .contact-map{
+    max-height: 100vh;
+    position: relative;
+    //margin-top: -40vh;
+    .map-load{
+      display: none;
+      width: 100%;
+      height: 20vh;
+      background-color: rgb(218, 218, 218);
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+   
+    .map-content{
+      
+      iframe{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        
+      }
+    }
+  }
+  
+  .fa-map-marker{
+    font-size: 30px!important;
+  }
+  
+  .section-padding{
+    padding-block: 100px ;
+  }
+  .container-padding{
+    padding-block : 5%;
+  }
+  
+  /*Contact */
+  .contact-row{
+    display: inline;
+    i{margin-left: -10%;}
+  }
+  
+  /* new home page style */
+  
+  #new-solution{
+    .col-md-4{padding: 0;}
+    .card-img-overlay{
+      padding-top : 10%;
+    }
+    
+  }
+
+  .contact-image{
+    //margin-top: 70px;
+    height: 40vh;
+    background: linear-gradient(0deg, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0.25) 100%),
+    url(../img/bg/contact-40.jpg);
+    background-size: cover;
+    background-position:center;
+    opacity: 1;
+    @media only screen and (max-width: 768px) {margin-top: 10vh;}
+  }

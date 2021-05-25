@@ -1,0 +1,273 @@
+.v-m-image{
+    background-size: cover;
+    @media (max-width: 768px) {
+       display: none;
+     }
+     @media (min-width: 768px) {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #F4F4F4;
+     }
+ }
+ .v-m-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #F4F4F4;
+   min-height: 100vh;
+   line-height: 31.76px;
+     padding-inline: 40px!important;
+ 
+     @media (max-width: 768px) {
+       background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../img/bg/v-m-image.jpg);
+       background-size: cover;
+     }
+ }
+
+ .card-flagship{
+    //border: 2px solid gray;
+    border-radius: 25px;
+    display: grid;
+    padding: 1rem;
+    min-height: 200px;
+    text-align: center;
+    margin-block-start: 2rem;
+}
+
+.shadow-product{
+    border-radius: 15px!important;
+    background-color: #fff!important;
+    //box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.8);
+    box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15);
+    transition: all .5s ease-in-out!important;
+    //h5{transition: all .5s ease-in-out!important;}
+    img{transition: all .5s ease-in-out!important;}
+    p{transition: all .5s ease-in-out!important;}
+    &:hover {
+        //top: -20px;
+        transition: all .5s!important;
+        //box-shadow: 1px 5px 5px 1px rgba(125,125,125,0.65);
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+        img{transform: scale(1.1);}
+        //h5{transform: scale(1.05);}
+        //p{transform: scale(1);}
+    }
+    /*&:hover .card-body .card-title{
+        transform: scale(1.2);
+
+    }*/
+}
+
+//Leadership
+/* -------------------------------------------- Cards -------------------------------------------- */
+/* ==== Cards using Bootstrap === */
+
+.teamlead .card {
+    border-radius: 20px;
+    min-height: 100%;
+  }
+  
+  .teamlead .heading-border {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+  }
+  
+  .teamlead .card .user-picture img {
+    position: absolute;
+    top: -25%;
+    right: -5%;
+    background: #f8f9fa!important;
+    padding: 10px;
+    width: 150px;
+    height: auto;
+  }
+  
+  .teamlead .card .user-content .user-name {
+    margin-right: 150px;
+  }
+  .home-title{
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    //font-weight: 600!important;
+    font-size: 35px!important;
+    line-height: 52px;
+    text-align: center;
+  }
+  #home-solution{
+    a{text-decoration: none;}
+    .card-solution{
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      justify-content: center;
+      padding: 1rem;
+      min-height: 200px;
+      text-align: center;
+      margin-block-start: 2rem;
+      position: relative;
+    }
+    .shadow-solutions{
+      border-radius: 15px!important;
+      background-color: #fff!important;
+      //box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.8);
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+      transition: all 1s ease-in-out!important;
+      
+      &:hover {
+          //top: -20px;
+          transition: all 1s!important;
+          //background-color: #f0f0f0!important;
+          box-shadow: 1px 13px 22px 1px rgba(125,125,125,0.5);
+          
+          
+      }
+      
+    }
+    .title-div{
+      padding-top: 8px;
+      
+     
+      .s-title{
+        font-size: 18px;
+        font-weight: 550;
+        color: #000;
+      }
+      i{float: right;}
+    }
+  }
+  .about-view-more{
+    position: absolute;
+    bottom: 5%;
+    //margin-top: 25px!important;
+    padding: 10px 20px;
+    //width: 90%;
+    background-color: #333333;
+    color: #f0f0f0!important;
+    outline: none!important;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .leader-card{
+    //border: 2px solid gray;
+    //border-radius: 25px;
+    display: grid;
+    //padding: 1rem;
+    min-height: 200px;
+    text-align: center;
+    margin-block-start: 2rem;
+    .card-l-header img{
+        border-radius: 25px;
+    }
+    .card-tl-header img{
+        width: 150px;
+        border-radius: 25px;
+    }
+    .card-l-content{
+        font-size: 14px;
+        text-align: left;
+        padding-top: 12px;
+    }
+}
+
+.our-team{
+    background-color: #fff;
+    background-image:linear-gradient(180deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.6) 100%), url(../img/about/our-leads.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-block: 15vh;
+}
+.team-leads{
+    background-color: #fff;
+    padding-block: 15vh;
+}
+/* ************************************* Model ************************************* */
+.modal{
+
+    background-color: rgba(255, 255, 255, 0.1); /* Black w/ opacity */
+    //backdrop-filter: blur(10px);
+  }
+  
+  
+  /* Modal Content */
+  .fen-modal-content {
+    //position: absolute;
+    //left: 10%;
+    //width: 80%;
+    //top: 30%;
+    background-color: #fefefe;
+    //margin: auto;
+    padding: 20px;
+    //min-height: 510px;
+    box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15)!important;
+    border-radius: 20px!important;
+    outline:none!important;
+    border:none!important;
+    button{text-align: right;}
+    
+  
+    .fen-modal-image{
+      //position: absolute;
+      // margin-top: -15%;
+      // margin-left: 50%;
+      // transform: translate(-50%);
+  
+      img{
+        border-radius: 50%;
+        border: 10px solid #fff;
+        margin-top: -15%;
+        margin-left: 50%;
+      transform: translate(-50%);
+      }
+    }
+    
+  }
+  .fen-next-btn{
+      width: 30px;
+      z-index: 2;
+      right: -2%;
+      position: absolute;
+      top: 50%;
+      background: transparent;
+      outline: none;
+      border: none;
+      font-size: 40px;
+      //color: #fff;
+      transform: translate(0%, -50px);
+      animation: next-animation 1s ease-in-out infinite;
+  
+      @keyframes next-animation {
+        0%   { right: -2%;}
+        80%   { right: 0%;}
+        100% {right: -2%;}
+      }
+  }
+  .fen-pre-btn{
+    width: 30px;
+    z-index: 2;
+    left: -2%;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    //color: #fff;
+    transform: translate(0%, -50px);
+    animation: pre-animation 1s ease-in-out infinite;
+  
+    @keyframes pre-animation {
+      0%   { left: -2%;}
+      80%   { left: 0%;}
+      100% {left: -2%;}
+    }
+  }
+  
+  .modal, .fade, .show{
+      transition: all .5s!important;
+  }
+  

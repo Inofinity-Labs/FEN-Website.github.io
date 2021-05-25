@@ -23,6 +23,7 @@ html{
       font-size: 18px;
       color: #676767;
       line-height: 25px;
+      text-align: justify;
     }
     a{
         color: #000;
@@ -40,6 +41,9 @@ html{
 @import 'sub/spinner';
 @import 'sub/bootstrap-formating';
 @import 'sub/footer';
+@import 'sub/common';
+@import 'sub/about';
+@import 'sub/contact';
 
 
 //utility
@@ -66,7 +70,12 @@ html{
     font-family: 'proxima-nova-600';
     font-size: 12px!important;
 }
-
+.fen-yellow{
+    color: $fen-yellow; 
+}
+.section-margin{
+    margin-block: 2%;
+}
 
 //index
 .main{
