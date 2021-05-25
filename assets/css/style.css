@@ -1184,6 +1184,39 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   color: #fff;
 }
 
+.solutions .card {
+  overflow: hidden;
+}
+
+.solutions .card:after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: '';
+  border-bottom: 5px solid #002060;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  width: 100%;
+}
+
+.solutions .card:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.solutions .card:hover .solution-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
 .news-img {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/news/news.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/news/news.jpg);
